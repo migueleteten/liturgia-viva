@@ -1,0 +1,203 @@
+### Solicitud de Registro para Parroquia Administrador
+POST http://localhost:3000/api/auth/register/parroquia_administrador
+Content-Type: application/json
+
+{
+  "email": "adminparroquiaaa@ejemplo.com",
+  "password": "adminpassword"
+}
+
+### Solicitud de Registro para Parroquia Administrador
+POST http://localhost:3000/api/auth/register/feligres
+Content-Type: application/json
+
+{
+  "email": "pepitofeligres@ejemplo.com",
+  "password": "feligrespassword"
+}
+
+
+### Solicitud de Login para Administrador Parroquial
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "adminparroquiaaa@ejemplo.com",
+  "password": "adminpassword"
+}
+
+### Solicitud para Crear una Parroquia
+# Asegúrate de reemplazar <TOKEN_JWT> con el token obtenido de la solicitud de login
+POST http://localhost:3000/api/parroquia/createParroquia
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInJvbElkIjoyLCJpYXQiOjE3MjE5MzYzNzEsImV4cCI6MTcyMTkzOTk3MX0.dQegxKBUeLVuQfw9XRm_ECLUj92An2PYRkIcGWDbADw
+
+{
+  "nombre": "Parroquia San Juan",
+  "direccion": "Calle Falsa 123, Ciudad Ejemplo",
+  "horarios": {
+    "lunes": "8:00 - 12:00",
+    "martes": "8:00 - 12:00",
+    "miercoles": "8:00 - 12:00",
+    "jueves": "8:00 - 12:00",
+    "viernes": "8:00 - 12:00",
+    "sabado": "9:00 - 13:00",
+    "domingo": "10:00 - 14:00"
+  }
+}
+
+### Solicitud para Crear un Usuario Parroquial
+POST http://localhost:3000/api/auth/createParroquiaUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInJvbElkIjoyLCJpYXQiOjE3MjE5NzE3MzYsImV4cCI6MTcyMTk3NTMzNn0.0prfy-taGmHyVVcQ-SN364GlADhfw1Dzt_VJj89aSI4
+
+{
+  "email": "usuario@parroquia.com",
+  "password": "password",
+  "role": 3
+}
+
+### Solicitud para Actualizar Información de la Parroquia
+PUT http://localhost:3000/api/parroquia/updateParroquia/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInJvbElkIjoyLCJpYXQiOjE3MjE5NzE3MzYsImV4cCI6MTcyMTk3NTMzNn0.0prfy-taGmHyVVcQ-SN364GlADhfw1Dzt_VJj89aSI4
+
+{
+  "nombre": "Parroquia San Juan Actualizada",
+  "direccion": "Calle Verdadera 456, Ciudad Ejemplo",
+  "horarios": {
+    "lunes": "9:00 - 13:00",
+    "martes": "9:00 - 13:00",
+    "miercoles": "9:00 - 13:00",
+    "jueves": "9:00 - 13:00",
+    "viernes": "9:00 - 13:00",
+    "sabado": "10:00 - 14:00",
+    "domingo": "11:00 - 15:00"
+  }
+}
+
+### Obtener todas las canciones
+GET http://localhost:3000/api/songs
+
+### Obtener una canción por ID
+GET http://localhost:3000/api/songs/1
+
+### Crear una nueva canción
+POST http://localhost:3000/api/songs
+Content-Type: application/json
+
+{
+  "titulo": "PUNTA DE LANZA",
+  "secciones": "Entrada, Ofertorio",
+  "etiquetas": "amor, evangelio",
+  "autor_letra": 1,
+  "autor_musica": 2,
+  "contenido": [
+    { "tipo_linea": "t", "parte_cancion": "f1", "contenido": "PUNTA DE LANZA" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "(DO-FA-DO-SOL) (2)" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO         FA       DO       FA-DO-FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Se necesita una punta de lanza" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "SOL         FA               DO-FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "que hiera la materia de esta tierra," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO         FA        SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "que ame lo que enterraron" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA-DO-FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "los hombres" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO              SOL             lam" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "y coloque en el lugar que debiera." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "mim                              RE7" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Que, por opción, cante a la pobreza" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "mim                               FA-SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "y a la cruz como árbol de la vida," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO                        SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "y que su vivir proclame a los hombres" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA            DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "que Cristo los ama," },
+    { "tipo_linea": "x", "parte_cancion": "f1", "contenido": "---" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO-FA-DO-SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "no los olvida." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO           FA   SOL    DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Voz que grita en el desierto," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "lam            RE7           SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "luz que anuncia la Palabra," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "lam     mim  FA          DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "sal que evita corrupción," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA             SOL             DO  FA-SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "somos la punta de lanza." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO    FA                 DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Es la vida del Dios Padre" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "lam          RE7               SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "que llegará hasta sus hijos." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA                 SOL               DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Somos la antorcha de Dios," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO FA-DO-SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "anunciando sus caminos." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "(DO-FA-DO-SOL)" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO             FA     DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Queremos ser el relevo" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA-DO-FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "de las penas," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "SOL             FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "queremos ser anuncio" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO    FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "de algo nuevo," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO             FA       SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "de aquello que jamás" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA   DO-FA-DO-FA" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "la gente supo," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO                  SOL             lam" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "de Dios queremos ser su mensajero." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "mim                            RE7" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "De barro que no sirve para nada," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "mim                               FA SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "pero que vale en manos del alfarero." },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO                              SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Por amor nos ponemos en camino," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "FA             DO" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "a gritar, como Juan," },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "DO  FA-DO-SOL" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "en el desierto." },
+    { "tipo_linea": "x", "parte_cancion": "f1", "contenido": "" }
+  ]
+}
+
+
+### Actualizar una canción existente
+PUT http://localhost:3000/api/songs/1
+Content-Type: application/json
+
+{
+  "titulo": "Canción Actualizada",
+  "secciones": "Entrada, Comunión",
+  "etiquetas": "paz, esperanza",
+  "autor_letra": 1,
+  "autor_musica": 2,
+  "contenido": [
+    { "tipo_linea": "t", "parte_cancion": "f1", "contenido": "Título de la Canción" },
+    { "tipo_linea": "l", "parte_cancion": "f1", "contenido": "Primera línea de la letra" },
+    { "tipo_linea": "n", "parte_cancion": "f1", "contenido": "Acordes de la canción" },
+    { "tipo_linea": "x", "parte_cancion": "f1", "contenido": "" },
+    { "tipo_linea": "f", "parte_cancion": "f1", "contenido": "Fin de la canción" }
+  ]
+}
+
+### Eliminar una canción
+DELETE http://localhost:3000/api/songs/205
+
+### Convertir texto de canción a estructura
+POST http://localhost:3000/api/songs/convert
+Content-Type: application/json
+
+{
+  "texto": "JUNTOS NOS ACERCAMOS\nDO                         mim           lam\nJuntos nos acercamos a esta mesa\n                 FA\npara ofrecer\nDO                   rem                 SOL\ntodo lo que tenemos es para Ti;\nDO                        mim\nes nuestra vida, nuestra esperanza,\nlam                     FA\nnuestro dolor y amor\nDO                              rem                  SOL\ndeja que nuestras manos lleguen a Ti.\n\nlam                              FA\nEl pan que es tierra, fruto y trabajo\nDO                   lam\nTu cuerpo ya será;\nDO                           rem      SOL\ndánoslo y nuestra vida renacerá.\nlam                     FA\nEl vino convertido en tu sangre\nDO           lam\ndánoslo a beber\nDO            rem                   SOL\ny se hará fecundo nuestro dolor.\n\nDO                      mim\nComo el pan y el vino\n                     lam                     FA\nque se transforman en este altar\nDO                         rem\ntransforma nuestras vidas\n       SOL         DO\ny nuestro hogar."
+}
+
+
+
+### Sugerir etiquetas para una canción
+POST http://localhost:3000/api/songs/suggest-tags
+Content-Type: application/json
+
+{
+  "texto": "Aquí va el texto de la canción"
+}

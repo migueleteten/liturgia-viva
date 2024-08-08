@@ -1,0 +1,28 @@
+# Archivos de log
+*.log
+
+# Directorios de dependencias
+node_modules/
+vendor/
+
+# Archivos de entorno
+.env
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos específicos del editor
+.vscode/
+.idea/
+
+# Archivos de pruebas
+csv/
+pruebas/
+
+# Backup de la base de datos
+db_backup/
