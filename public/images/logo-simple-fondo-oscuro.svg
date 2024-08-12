@@ -1,9 +1,14 @@
-<svg xmlns:mydata="http://www.w3.org/2000/svg" mydata:contrastcolor="138275" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="150 115 200 150">
-  <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-    <g data-paper-data="{&quot;isGlobalGroup&quot;:true,&quot;bounds&quot;:{&quot;x&quot;:154.24787957167499,&quot;y&quot;:116.29802439059685,&quot;width&quot;:241.50424085665006,&quot;height&quot;:237.40395121880633}}">
-      <g data-paper-data="{&quot;fillRule&quot;:&quot;nonzero&quot;,&quot;fillRuleOriginal&quot;:&quot;nonzero&quot;,&quot;isIcon&quot;:true,&quot;iconStyle&quot;:&quot;standalone&quot;,&quot;selectedEffects&quot;:{&quot;container&quot;:&quot;&quot;,&quot;transformation&quot;:&quot;rotate0;translate50&quot;,&quot;pattern&quot;:&quot;&quot;},&quot;bounds&quot;:{&quot;x&quot;:213.9058385425297,&quot;y&quot;:116.29802439059685,&quot;width&quot;:122.18832291494061,&quot;height&quot;:129.16313204539188},&quot;iconType&quot;:&quot;icon&quot;,&quot;rawIconId&quot;:&quot;67153f78-acbc-4e7f-9384-795284b8e2d3&quot;,&quot;isDetailed&quot;:false,&quot;suitableAsStandaloneIcon&quot;:true}" id="element-id-52272">
-        <path d="M269.44599,116.29802h10.97887v119.34673h49.72781l0.12916,9.8164h-60.83584zM268.15435,205.93724l-41.3322,-74.78545h-12.91631l53.08605,95.70988h1.16247zM323.30701,131.15178l-41.59053,75.17294v20.53694h1.29163l53.08605,-95.70988z" data-paper-data="{&quot;isPathIcon&quot;:true}" id="element-id-20359"></path>
-      </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:mydata="http://www.w3.org/2000/svg" viewBox="0 0 122.2 129.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="element-id-52272">
+    <path id="element-id-20359" class="cls-1" d="M55.5.6h11v119.3h49.7v9.8c.1,0-60.7,0-60.7,0V.6ZM54.2,90.3L12.9,15.5H0l53.1,95.7h1.2v-20.9ZM109.4,15.5l-41.6,75.2v20.5h1.3L122.2,15.5h-12.8Z"/>
   </g>
 </svg>
