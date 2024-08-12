@@ -45,16 +45,20 @@ const registerFeligres = async (req, res) => {
 
 const login = async (req, res) => {
   const { email, password } = req.body;
+  console.log('Login attempt with email:', email); // Depurar
   
   try {
     const result = await db.query('SELECT * FROM usuarios WHERE email = $1', [email]);
     const user = result.rows[0];
+
+    console.log('User found:', user); // Depurar
 
     if (!user) {
       return res.status(400).json({ error: 'User not found' });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log('Password match:', isMatch); // Depurar
 
     if (!isMatch) {
       return res.status(400).json({ error: 'Invalid credentials' });

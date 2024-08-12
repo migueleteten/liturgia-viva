@@ -1,15 +1,17 @@
 main {
-  padding-top: 60px; /* Ajustar según la altura del header cargado dinámicamente */
+  padding-top: 120px; /* Ajustar según la altura del header cargado dinámicamente */
 }
 
 .logo-simple-fondo-oscuro {
   padding: 2px 2px;
   margin: 0px 0px;
+  color: white;
   height: 40px;
 }
 
 #header-placeholder {
   position: sticky;
+  color: white;
   top: 0;
   z-index: 1000; /* Mantener el header encima de otros elementos */
   background-color: #138275;

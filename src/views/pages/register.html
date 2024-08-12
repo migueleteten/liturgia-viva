@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="register-wrapper">
+        <div class="register-card">
+            <h1>Crea tu Cuenta</h1>
+            <p>Para continuar, ingresa los datos de registro</p>
+            <form id="registerForm" method="POST" action="/api/auth/register">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                <span id="email-error" class="error-message" style="display: none;">Introduce una dirección de correo válida</span>
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+                <span id="password-error" class="error-message" style="display: none;">La contraseña debe tener más de 6 caracteres y, al menos uno de ellos, debe ser numérico</span>
+                <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirmar contraseña">
+                <span id="password-confirm-error" class="error-message" style="display: none;">Las contraseñas no coinciden</span>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="temple-checkbox" name="temple-checkbox">
+                  <label for="temple-checkbox" class="form-check-label">
+                    ¿Gestionas un templo? Marca esta casilla
+                  </label>
+                </div>
+                <div id="parroquiaInfo" class="mt-4" style="display: none;">
+                    <h4>Información del Templo</h4>
+                    <input type="number" id="parroquiaNombre" name="parroquiaNombre" class="form-control" placeholder="Código postal">
+                    <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Nombre del templo">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+            </form>
+            <div class="text-center mt-3">
+                <a href="/login">¿Ya tienes cuenta? Inicia sesión aquí</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/common.js" defer></script>
+    <script src="/scripts/register.js" defer></script>
+</body>
+</html>

@@ -36,6 +36,16 @@ app.get('/create-song', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'createSong.html'));
 });
 
+// Ruta para servir la página de login
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'pages', 'login.html'));
+});
+
+// Ruta para servir la página de register
+app.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'pages', 'register.html'));
+});
+
 // Middleware para manejar errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
