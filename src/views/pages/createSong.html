@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Canción</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/styles/styles.css"> <!-- Estilos comunes -->
+    <link rel="stylesheet" href="/styles/createSong.css"> <!-- Estilos específicos -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="container">
+        <h1 class="text-center my-4">Crear Canción</h1>
+
+        <!-- Spinner pensando-->
+        <div id="loadingSpinner" class="d-none spinner-container">
+            <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg" alt="Loading" class="spinner-img">
+            <div class="mt-2 text-primary">Convirtiendo canción...</div>
+        </div>
+
+        <h3 class="my-2">Datos generales</h3>
+        <!-- Caja para Autores y Etiquetas -->
+        <div class="input-box col-md-12">
+            <div class="form-row align-items-center">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="autorLetra">Autor de la Letra</label>
+                        <input type="text" id="autorLetra" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="autorMusica">Autor de la Música</label>
+                        <input type="text" id="autorMusica" class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="etiquetas">Etiquetas</label>
+                        <div id="etiquetasContainer" class="form-control form-control-sm" style="padding: 0.2rem 0.3rem; display: flex; flex-wrap: wrap;">
+                            <input type="text" id="etiquetas" style="border: none; outline: none; box-shadow: none; flex-shrink: 0;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row col-md-12" style="display: flex; justify-content: space-between;">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="entrada">
+                    <label class="form-check-label" for="inlineCheckbox1">Entrada</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="antífona">
+                    <label class="form-check-label" for="inlineCheckbox2">Antífona</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="aleluya">
+                    <label class="form-check-label" for="inlineCheckbox3">Aleluya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="ofertorio">
+                    <label class="form-check-label" for="inlineCheckbox4">Ofertorio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="santo">
+                    <label class="form-check-label" for="inlineCheckbox5">Santo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="paz">
+                    <label class="form-check-label" for="inlineCheckbox6">Paz</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="comunión">
+                    <label class="form-check-label" for="inlineCheckbox7">Comunión</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="salida">
+                    <label class="form-check-label" for="inlineCheckbox8">Salida</label>
+                </div>
+            </div>
+            <hr>
+            <div class="form-row align-items-center">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="urlVideo">URL vídeo</label>
+                        <input type="url" id="urlVideo" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="custom-file">
+                        <label class="custom-file-label form-control" id="audioFile" for="customFile">Archivo de audio</label>
+                        <input type="file" class="custom-file-input" id="customFile">
+                    </div>  
+                </div>              
+            </div>
+        </div>
+
+        <h3 class="my-2">Estructurar canción</h3>
+        <!-- Caja para Texto de Canción y Tabla -->
+        <div class="song-box col-md-12">
+            <div class="form-row">
+                <div class="col-md-4 position-relative">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label for="songText" class="mb-0">Texto de la Canción</label>
+                            <button type="button" 
+                                    id="convertSongBtn" 
+                                    class="btn btn-sm ml-2" 
+                                    data-html="true"
+                                    data-toggle="tooltip" 
+                                    title="Convertir canción:&#013;Convierte el texto en una canción estructurada" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea class="form-control" id="songText" rows="10" placeholder="Pega aquí el texto de la canción con acordes" oninput="autoResize(this)"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-7">
+                    <h3 id="songTitle"></h3>
+                    <table id="songTable" class="table table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th class="th-lg text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                         fill="currentColor" 
+                                         class="bi bi-diagram-3" 
+                                         viewBox="0 0 16 16" 
+                                         data-html="true"
+                                         data-toggle="tooltip" 
+                                         title="Tipo de línea:&#013;
+                                            'n': nota&#013;
+                                            'l': letra&#013;
+                                            'x': espacio&#013;
+                                            'e': eco&#013;
+                                            't': título">
+                                        <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                    </svg>
+                                </th>
+                                <th class="th-lg text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                         fill="currentColor" 
+                                         class="bi bi-layout-text-window-reverse" 
+                                         viewBox="0 0 16 16"
+                                         data-html="true"
+                                         data-toggle="tooltip" 
+                                         title="Parte de la canción:&#013;
+                                            'e': estribillo&#013;
+                                            'f1': primera estrofa&#013;
+                                            'f2': segunda estrofa...&#013;
+                                            'p1': primer puente&#013;
+                                            'p2': segundo puente...
+                                            'c': indicación de cejilla">
+                                        <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5m0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5m-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
+                                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1zM1 4v10a1 1 0 0 0 1 1h2V4zm4 0v11h9a1 1 0 0 0 1-1V4z"/>
+                                    </svg>
+                                </th>
+                                <th class="th-lg text-center">Contenido</th>
+                                <th class="th-sm text-right">
+                                    <button id="undoBtn" class="btn btn-light" disabled data-toggle="tooltip" title="deshacer">
+                                        <i class="fas fa-reply"></i>
+                                    </button>
+                                    <button id="redoBtn" class="btn btn-light" disabled data-toggle="tooltip" title="rehacer">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <span class="indicacion-provisional" id="indicacion-provisional">aquí aparecerá la canción estructurada</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón Guardar -->
+        <div class="text-center">
+            <button id="saveSongBtn" class="btn btn-success">Guardar Canción</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="/scripts/createSong.js"></script> <!-- Scripts específicos -->
+    <script src="/scripts/common.js"></script> <!-- Scripts comunes -->
+</body>
+</html>

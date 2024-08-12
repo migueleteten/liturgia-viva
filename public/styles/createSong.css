@@ -1,0 +1,134 @@
+.line-type-n { color: red; font-style: italic; font-weight: normal; }
+.line-type-e { color: blue; font-style: italic; }
+.line-part-p, .line-part-p1, .line-part-p2 { font-style: italic; }
+.line-part-e { font-weight: bold; }
+.line-type-t { font-weight: bold; text-decoration: underline;}
+.table-hover tbody tr:hover .action-buttons { visibility: visible; }
+.action-buttons { visibility: hidden; position: relative; }
+.action-buttons { display: inline-block; width: 100%; text-align: right; }
+tr:hover .action-buttons { visibility: visible; }
+
+#etiquetasContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem; /* Espacio uniforme entre las etiquetas */
+  padding: 0.3rem 0.3rem;
+  border: 1px solid #138275;
+  border-radius: 0.25rem;
+  justify-content: flex-start; /* Asegura la alineación al borde izquierdo */
+  flex-direction: row;
+}
+
+#etiquetasContainer .badge {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.3rem;
+  background-color: #138275;
+  color: white;
+}
+
+/* Caja para autores y etiquetas */
+.input-box {
+  background-color: #f6f6f6;
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow .1s;
+}
+
+.input-box:hover {
+  box-shadow: 0 0 5px #10534b; 
+}
+
+.input-box .form-control {
+  background-color: #fff;
+  border: 1px solid #138275;
+  border-radius: 0.25rem;
+}
+
+/* Caja para texto de canción y tabla */
+.song-box {
+  background-color: #f6f6f6;
+  border-radius: 0.5rem;
+  border-color: #138275;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow .1s;
+}
+
+.song-box:hover {
+  box-shadow: 0 0 5px #10534b; 
+}
+
+#songText {
+  border-color: #138275;
+}
+
+#convertSongBtn {
+  padding: 0.5rem;
+  border-radius: 10%;
+  border: none;
+  background-color: #138275;
+  color: white;
+  cursor: pointer;
+}
+
+#convertSongBtn:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+}
+
+/* Botón guardar */
+#saveSongBtn {
+  background-color: #138275;
+  border-color: #138275;
+}
+
+#saveSongBtn:hover {
+  box-shadow: 0 0 5px #10534b; 
+}
+
+.d-flex {
+  padding: 0.5rem;
+}
+
+.tooltip-inner {
+  white-space: pre-line;
+  text-align: left;
+}
+
+.indicacion-provisional {
+  color: #888;
+  font-style: italic;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ajusta según sea necesario */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  z-index: 9999; /* Asegura que el spinner esté por encima de otros elementos */
+}
+
+.spinner-img {
+  width: 100px; /* Tamaño del SVG */
+  height: 100px;
+  animation: spin 1.5s linear infinite; /* Animación de rotación */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.custom-file {
+  margin-top: 1rem; /* Ajusta este valor para centrar verticalmente */
+}

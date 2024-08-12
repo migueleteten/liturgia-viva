@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+#chapter-text {
+  display: block;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 900;
+  top: 30px;
+  box-shadow: 0 2px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#chapter-header.scrolled {
+  padding: 5px 0;
+  background-color: white;
+}
+
+#chapter-header.scrolled h1 {
+  font-size: 2rem;
+}
+
+#chapter-text span {
+  white-space: pre-wrap;
+  word-break: normal; /* Permite que las palabras largas se rompan al final de la línea */
+  line-height: 1.6;
+}
+
+.versiculo {
+  display: inline;
+  margin: 0; 
+}
+
+.versiculo:hover {
+  background-color: rgb(219, 254, 242);
+}
+
+.num-versiculo {
+  display: inline;
+  margin: 0; 
+  color: #138275;
+  font-size: small;
+}
+
+.num-versiculo::after {
+  content: "\00a0"; /* Añade un espacio después del número del versículo */
+}
+
+.navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navigation .btn {
+  margin: 0 10px;
+}
+
+#toggleVersiculos {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  #chapter-content {
+      justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
+  }
+}

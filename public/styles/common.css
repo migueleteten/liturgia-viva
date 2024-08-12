@@ -1,0 +1,12 @@
+main {
+  padding-top: 60px; /* Ajustar según la altura del header cargado dinámicamente */
+}
+
+#header-placeholder {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Mantener el header encima de otros elementos */
+  background-color: #138275;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

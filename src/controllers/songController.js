@@ -248,6 +248,34 @@ const suggestTags = async (req, res) => {
   }
 };
 
+// Función para buscar autores
+const searchAutores = async (req, res) => {
+  const { term } = req.query;
+  try {
+    const result = await db.query(
+      'SELECT id, nombre FROM autores WHERE unaccent(lower(nombre)) ILIKE unaccent(lower($1)) LIMIT 10',
+      [`%${term}%`]
+    );
+    res.status(200).json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+// Función para buscar etiquetas
+const searchEtiquetas = async (req, res) => {
+  const { term } = req.query;
+  try {
+    const result = await db.query(
+      'SELECT id, etiqueta FROM etiquetas WHERE unaccent(lower(etiqueta)) ILIKE unaccent(lower($1)) LIMIT 30',
+      [`%${term}%`]
+    );
+    res.status(200).json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 module.exports = {
   getAllSongs,
   getSongById,
@@ -255,5 +283,7 @@ module.exports = {
   updateSong,
   deleteSong,
   convertSong,
-  suggestTags
+  suggestTags,
+  searchAutores,
+  searchEtiquetas
 };

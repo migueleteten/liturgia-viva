@@ -6,7 +6,9 @@ const {
   updateSong,
   deleteSong,
   convertSong,
-  suggestTags
+  suggestTags,
+  searchAutores,
+  searchEtiquetas
 } = require('../controllers/songController');
 const router = express.Router();
 
@@ -17,5 +19,8 @@ router.put('/:id', updateSong); // Actualizar una canción existente
 router.delete('/:id', deleteSong); // Eliminar una canción
 router.post('/convert', convertSong); // Convertir texto de canción a estructura
 router.post('/suggest-tags', suggestTags); // Sugerir etiquetas para una canción
+// Rutas para sugerencias de autores y etiquetas
+router.get('/autores/search', searchAutores);
+router.get('/etiquetas/search', searchEtiquetas);
 
 module.exports = router;
