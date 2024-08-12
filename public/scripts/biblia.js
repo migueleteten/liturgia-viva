@@ -13,11 +13,33 @@ $(document).ready(function() {
       success: function(response) {
           $('#chapter-title').text(`Libro ${libro}, Capítulo ${capitulo}`);
           $('#chapter-content').html(response.capituloHtml);
+          initializeChapterHeader();
       },
       error: function() {
           $('#chapter-content').text('Error al cargar el capítulo.');
       }
   });
+
+  function initializeChapterHeader() {
+        var header = $('#chapter-header');
+        var scrollThreshold = 50; // Umbral de 50px
+
+        if (header.length > 0) {
+            console.log("Elemento #chapter-header encontrado.");
+            
+            $(window).on('scroll', function() {
+                var scrollPosition = $(window).scrollTop();
+                
+                if (scrollPosition > scrollThreshold) {
+                    header.addClass('scrolled');
+                } else {
+                    header.removeClass('scrolled');
+                }
+            });
+        } else {
+            console.log("Elemento #chapter-header no encontrado.");
+        }
+    }
 
   // Mostrar/Ocultar versículos
   $(document).on('change', '#toggleVersiculos', function() {
@@ -37,20 +59,5 @@ $(document).ready(function() {
 
   $('#next-chapter').on('click', function() {
       window.location.href = `/biblia/${libro}/${parseInt(capitulo) + 1}`;
-  });
-
-  // Detectar el scroll en el nombre del libro + capítulo + switch
-  $(document).ready(function() {
-        var header = $('#chapter-header');
-
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 0) {
-                header.addClass('scrolled');
-                console.log("Clase 'scrolled' añadida");
-            } else {
-                header.removeClass('scrolled');
-                console.log("Clase 'scrolled' eliminada");
-            }
-        });
-    });
+  });  
 });

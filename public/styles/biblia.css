@@ -16,9 +16,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   z-index: 900;
-  top: 30px;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Ajustar el ancho según prefieras */
+  max-width: 1250px; /* Limitar el ancho máximo para pantallas grandes */
+  box-shadow: 0 2px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   box-shadow: 0 2px rgb(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -30,6 +36,12 @@ body {
 
 #chapter-header.scrolled h1 {
   font-size: 2rem;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+#chapter-text {
+  padding-top: 120px;
 }
 
 #chapter-text span {
@@ -40,7 +52,8 @@ body {
 
 .versiculo {
   display: inline;
-  margin: 0; 
+  margin: 0;
+  cursor: pointer;
 }
 
 .versiculo:hover {
@@ -74,5 +87,31 @@ body {
 @media (max-width: 768px) {
   #chapter-content {
       justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
+  }
+
+  #chapter-header {
+    padding: 0;
+    margin: 0;
+  }
+
+  #chapter-header h1 {
+    font-size: 2rem;
+    padding: 7px;
+    margin: 7px;
+  }
+
+  #chapter-header.scrolled {
+    padding: 5px 0;
+    background-color: white;
+  }
+  
+  #chapter-header.scrolled h1 {
+    font-size: 2rem;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+
+  #chapter-text {
+    padding-top: 80px;
   }
 }
