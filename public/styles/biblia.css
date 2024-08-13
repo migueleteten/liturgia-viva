@@ -84,6 +84,57 @@ body {
   margin-left: 10px;
 }
 
+#content-comments-container {
+  display: flex;
+}
+
+/* Estilos para el panel de comentarios */
+.comment-panel {
+  right: 0;
+  top: 60px;
+  width: 400px;
+  background-color: #f8f9fa;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  z-index: 999;
+  border-left: 1px solid #ccc;
+  height: calc(100vh - 120px);
+  position: fixed;
+}
+
+#selected-verses {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+#selected-verses .verse-card {
+  padding: 8px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+#selected-verses .verse-card:hover {
+  background-color: #ced4da;
+}
+
+#add-comment-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#comment-box {
+  margin-top: 20px;
+}
+
+#comment-status {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
 @media (max-width: 768px) {
   #chapter-content {
       justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */

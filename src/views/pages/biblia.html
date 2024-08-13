@@ -16,7 +16,27 @@
     <div id="header-placeholder"></div>
 
     <div class="container">
-        <div id="chapter-content"></div>
+        <div id="content-comments-container">
+            <div id="chapter-content"></div>
+            <!-- Panel para comentarios -->
+            <div id="comment-panel" class="comment-panel" style="display: none;">
+                <h3>Versículos seleccionados</h3>
+                <div id="selected-verses">
+                    <!-- Aquí se listarán los versículos seleccionados -->
+                </div>
+                <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+
+                <!-- Caja de texto para añadir comentarios -->
+                <div id="comment-box" style="display: none;">
+                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                    <div id="comment-links" class="mt-2" style="display: none;">
+                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navigation">
             <button id="prev-chapter" class="btn btn-primary"><</button>
             <button id="next-chapter" class="btn btn-primary">></button>

@@ -5,6 +5,7 @@ const parroquiaRoutes = require('./routes/parroquiaRoutes');
 const songRoutes = require('./routes/songRoutes'); // Importar rutas de canciones
 const authorRoutes = require('./routes/authorRoutes'); // Importar rutas de autores
 const bibliaRoutes = require('./routes/bibliaRoutes');
+const bibleCommentsRoutes = require('./routes/bibleCommentsRoutes');
 const app = express();
 
 // Middleware para parsear JSON
@@ -24,6 +25,7 @@ app.use('/api/parroquia', parroquiaRoutes);
 app.use('/api/songs', songRoutes); // Usar rutas de canciones
 app.use('/api/authors', authorRoutes); // Usar rutas de autores
 app.use('/api/biblia', bibliaRoutes);
+app.use('/api/biblia', bibleCommentsRoutes); // Rutas para comentarios de la Biblia
 
 // Servir archivos estáticos desde la carpeta public
 app.use(express.static(path.join(__dirname, '../public')));
