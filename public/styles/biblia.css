@@ -86,6 +86,15 @@ body {
 
 #content-comments-container {
   display: flex;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#chapter-content {
+  flex: 1;
+  padding-right: 15px;
+  transition: margin-right 0.3s ease-in-out;
 }
 
 /* Estilos para el panel de comentarios */
@@ -98,8 +107,21 @@ body {
   padding: 15px;
   z-index: 999;
   border-left: 1px solid #ccc;
-  height: calc(100vh - 120px);
+  height: 100%;
   position: fixed;
+  visibility: hidden; /* Usamos visibility para ocultar y mostrar el panel */
+  opacity: 0; /* Inicialmente oculto */
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+/* Clase adicional para cuando el panel de comentarios está activo */
+#content-comments-container.comment-panel-active #chapter-content {
+  margin-right: 400px; /* El margen debe ser igual al ancho del panel de comentarios */
+}
+
+#content-comments-container.comment-panel-active #comment-panel {
+  visibility: visible; /* Mostrar el panel de comentarios */
+  opacity: 1; /* Aplicar opacidad completa */
 }
 
 #selected-verses {
@@ -118,6 +140,25 @@ body {
 
 #selected-verses .verse-card:hover {
   background-color: #ced4da;
+}
+
+#comment-buttons {
+  display: block;
+}
+
+#add-comment-button {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+#cancel-comment-button {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+#save-comment-button {
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 #add-comment-button:disabled {

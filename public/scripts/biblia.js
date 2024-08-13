@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     // Evento al hacer clic en un versículo
     $(document).on('click', '.versiculo', function () {
-        $('#comment-panel').css('display','block');
+        showCommentPanel();
         const verseId = $(this).attr('id'); // ID del versículo (e.g., versiculo_1)
         const verseText = $(this).text(); // Texto del versículo
         const verseNumber = $(`#num_${verseId}`).text(); // Número de versículo a partir del ID correspondiente (e.g., num_versiculo_1)
@@ -76,8 +76,28 @@ $(document).ready(function() {
             addVerseToPanel(verseNumber, verseText);
         }
 
+        if (!$('#content-comments-container').hasClass('comment-panel-active')) {
+            showCommentPanel();
+        }
+
         toggleAddCommentButton();
     });
+
+    // Evento al hacer clic en Cancelar
+    $(document).on('click', '#cancel-comment-button', function () {
+        hideCommentPanel();
+        $('#selected-verses').empty();
+    });
+
+    // Mostrar el panel de comentarios
+    function showCommentPanel() {
+        $('#content-comments-container').addClass('comment-panel-active');
+    }
+
+    // Ocultar el panel de comentarios
+    function hideCommentPanel() {
+        $('#content-comments-container').removeClass('comment-panel-active');
+    }
 
     // Añadir versículo al panel
     function addVerseToPanel(verseNumber, verseText) {
@@ -85,6 +105,10 @@ $(document).ready(function() {
                             <strong>${verseNumber}</strong>. ${verseText.length > 65 ? verseText.substring(0, 65) + '...' : verseText}
                           </div>`;
         $('#selected-verses').append(verseCard);
+        // Mostrar el panel de comentarios si no está visible
+        if (!$('#content-comments-container').hasClass('comment-panel-active')) {
+            showCommentPanel();
+        }
     }
 
     // Habilitar/Deshabilitar botón de añadir comentario
