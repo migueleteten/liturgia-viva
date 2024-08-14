@@ -87,6 +87,9 @@ $(document).ready(function() {
     $(document).on('click', '#cancel-comment-button', function () {
         hideCommentPanel();
         $('#selected-verses').empty();
+        selectedVerses = [];
+        $('#comment-box').slideUp();
+        $('#comment-text').val('');
     });
 
     // Mostrar el panel de comentarios

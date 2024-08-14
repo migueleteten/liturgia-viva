@@ -1,60 +1,62 @@
 <header>
-  <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
-      <a class="navbar-brand" href="/">
-          <img class="logo-simple-fondo-oscuro" src="/images/logo-simple-fondo-oscuro.svg" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <!-- Menú para no logueados -->
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/login">Login</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/register">Register</a>
-              </li>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-simple-fondo-oscuro" src="/images/logo-simple-fondo-oscuro.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
 
-              <!-- Menú para feligreses -->
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/events">Eventos</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/biblia/1/1">Biblia</a>
-              </li>
-              <!-- Menú para usuarios secundarios -->
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/prayers">Oraciones</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/music">Cancionero</a>
-              </li>
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
 
-              <!-- Menú para administradores -->
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/manage">Gestionar Eventos</a>
-              </li>
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/antiguo-testamento">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/nuevo-testamento">Nuevo Testamento</a>
+                    </div>
+                </li>
 
-              <!-- Menú para superadministradores -->
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/content">Gestión de Contenidos</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="/create-song">Crear Canción</a>
-              </li>
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
 
-              <!-- Menú común (Logout, Perfil) -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Usuario
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="/profile">Perfil</a>
-                      <a class="dropdown-item" href="/logout">Logout</a>
-                  </div>
-              </li>
-          </ul>
-      </div>
-  </nav>
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>

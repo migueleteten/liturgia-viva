@@ -20,3 +20,65 @@ main {
   padding: 0;
   margin: 0;
 }
+
+/* General */
+.navbar-brand img {
+  height: 40px !important;
+}
+
+li.nav-item {
+  padding-right: 0.8rem;
+}
+
+input#buscador-menu {
+  width: 300px;
+  font-size: smaller;
+  height: 35px;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .form-inline .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+/* Dropdown Menus */
+.navbar-nav .dropdown-menu {
+  background-color: #138275;
+  border: none;
+}
+
+.navbar-nav .dropdown-item {
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #0f655b;
+}
+
+/* Login / Mi Cuenta */
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+      margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      text-align: center;
+  }
+}
