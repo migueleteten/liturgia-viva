@@ -15,29 +15,25 @@ body {
 #chapter-header {
   display: flex;
   justify-content: space-between;
+  background-color: white;
   align-items: center;
   position: fixed;
   z-index: 900;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%; /* Ajustar el ancho según prefieras */
-  max-width: 1250px; /* Limitar el ancho máximo para pantallas grandes */
-  box-shadow: 0 2px rgb(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  top: 65px;
+  width: 100%;
+  left: 0;
+  padding: 10px 20px;
   box-shadow: 0 2px rgb(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
-#chapter-header.scrolled {
-  padding: 5px 0;
-  background-color: white;
+.switch label {
+  display: inline-block;
+  margin-bottom: 0;
 }
 
-#chapter-header.scrolled h1 {
-  font-size: 2rem;
-  padding: 5px 0;
-  margin: 5px 0;
+#toggleVersiculos {
+  display: inline-block !important;
 }
 
 #chapter-text {
@@ -176,34 +172,35 @@ body {
   font-size: 0.9em;
 }
 
+#prev-chapter, #next-chapter {
+  background-color: #138275;
+  border-color: #138275;
+}
+
 @media (max-width: 768px) {
   #chapter-content {
       justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
   }
 
   #chapter-header {
-    padding: 0;
+    padding: 0 3px;
     margin: 0;
   }
 
   #chapter-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 7px;
     margin: 7px;
   }
 
-  #chapter-header.scrolled {
-    padding: 5px 0;
-    background-color: white;
+  input#buscador-menu {
+    width: 250px !important;
+    margin-right: 10px;
+    margin-top: 10px;
   }
   
-  #chapter-header.scrolled h1 {
-    font-size: 2rem;
-    padding: 5px 0;
-    margin: 5px 0;
-  }
-
   #chapter-text {
     padding-top: 80px;
   }
+
 }
