@@ -95,7 +95,7 @@ $(document).ready(function() {
     // Añadir versículo al panel
     function addVerseToPanel(verseNumber, verseText) {
         const verseCard = `<div class="verse-card" data-verse="${verseNumber}">
-                            <strong>${verseNumber}</strong>. ${verseText.length > 65 ? verseText.substring(0, 65) + '...' : verseText}
+                            <strong>${verseNumber}</strong>. ${verseText.length > 100 ? verseText.substring(0, 100) + '...' : verseText}
                           </div>`;
         $('#selected-verses').append(verseCard);
         // Mostrar el panel de comentarios si no está visible

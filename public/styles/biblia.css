@@ -86,7 +86,7 @@ body {
 #chapter-content {
   flex: 1;
   padding-right: 15px;
-  transition: margin-right 0.3s ease-in-out;
+  transition: margin-right 0.3s, margin-bottom 0.3s ease-in-out;
 }
 
 /* Estilos para el panel de comentarios */
@@ -158,10 +158,6 @@ body {
   cursor: not-allowed;
 }
 
-#comment-box {
-  margin-top: 20px;
-}
-
 #comment-status {
   display: block;
   margin-top: 10px;
@@ -179,14 +175,17 @@ body {
   }
 
   #chapter-header {
-    padding: 0 3px;
+    padding: 0 12px 0 5px;
     margin: 0;
+    top: 60px;
+    width: 100%;
   }
 
   #chapter-header h1 {
     font-size: 1.5rem;
     padding: 7px;
     margin: 7px;
+    transform: translateY(3.5px);
   }
 
   input#buscador-menu {
@@ -196,7 +195,38 @@ body {
   }
   
   #chapter-text {
-    padding-top: 80px;
+    padding-top: 40px;
+  }
+
+  .comment-panel {
+    bottom: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+    height: auto;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+  }
+
+  #content-comments-container.comment-panel-active #chapter-content {
+    margin-bottom: 300px; /* El margen debe ser igual al ancho del panel de comentarios */
+    margin-right: auto;
+  }
+
+  #content-comments-container.comment-panel-active #comment-panel {
+    visibility: visible; /* Mostrar el panel de comentarios */
+    opacity: 1; /* Aplicar opacidad completa */
+  }
+
+  .switch label {
+    transform: translateY(7px);
   }
 
 }
