@@ -88,7 +88,11 @@ input#buscador-menu {
       margin-bottom: 10px;
   }
 
+  .navbar-nav {
+    align-items: self-start;
+  }
+
   .navbar-nav .nav-item .nav-link {
-      text-align: center;
+    text-align: left !important;
   }
 }
