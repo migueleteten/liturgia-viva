@@ -18,30 +18,20 @@ body {
   align-items: center;
   position: fixed;
   z-index: 900;
-  top: 60px;
+  top: 65px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%; /* Ajustar el ancho según prefieras */
   max-width: 1250px; /* Limitar el ancho máximo para pantallas grandes */
   box-shadow: 0 2px rgb(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  box-shadow: 0 2px rgb(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-#chapter-header.scrolled {
-  padding: 5px 0;
   background-color: white;
-}
-
-#chapter-header.scrolled h1 {
-  font-size: 2rem;
-  padding: 5px 0;
-  margin: 5px 0;
+  padding: 6px;
+  padding-top: 14px;
 }
 
 #chapter-text {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 #chapter-text span {
@@ -82,6 +72,7 @@ body {
 
 #toggleVersiculos {
   margin-left: 10px;
+  display: inline;
 }
 
 #content-comments-container {

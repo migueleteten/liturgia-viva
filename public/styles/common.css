@@ -26,6 +26,16 @@ main {
   height: 40px !important;
 }
 
+.btn-primary {
+  background-color: #138275;
+  border-color: #138275;
+}
+
+.btn-primary:hover {
+  background-color: lightseagreen;
+  border-color: lightseagreen;
+}
+
 li.nav-item {
   padding-right: 0.8rem;
 }

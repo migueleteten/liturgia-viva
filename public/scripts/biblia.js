@@ -26,16 +26,6 @@ $(document).ready(function() {
 
         if (header.length > 0) {
             console.log("Elemento #chapter-header encontrado.");
-            
-            $(window).on('scroll', function() {
-                var scrollPosition = $(window).scrollTop();
-                
-                if (scrollPosition > scrollThreshold) {
-                    header.addClass('scrolled');
-                } else {
-                    header.removeClass('scrolled');
-                }
-            });
         } else {
             console.log("Elemento #chapter-header no encontrado.");
         }

@@ -33,8 +33,12 @@
                 </div>
                 <div id="parroquiaInfo" class="mt-4" style="display: none;">
                     <h4>Información del Templo</h4>
-                    <input type="number" id="parroquiaNombre" name="parroquiaNombre" class="form-control" placeholder="Código postal">
-                    <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Nombre del templo">
+                    <input type="text" id="codigoPostal" list="codigoPostalOptions" name="codigoPostal" class="form-control" placeholder="Código postal">
+                    <datalist id="codigoPostalOptions"></datalist>
+
+                    <input type="text" id="parroquiaNombre" list="parroquiaOptions" name="parroquiaNombre" class="form-control" placeholder="Nombre del templo">
+                    <input type="hidden" id="temploId" name="temploId"> <!-- Campo oculto para el ID -->
+                    <datalist id="parroquiaOptions"></datalist>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
             </form>

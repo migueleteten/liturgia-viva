@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const authRoutes = require('./routes/authRoutes');
-const parroquiaRoutes = require('./routes/parroquiaRoutes');
+const templeRoutes = require('./routes/templeRoutes');
 const songRoutes = require('./routes/songRoutes'); // Importar rutas de canciones
 const authorRoutes = require('./routes/authorRoutes'); // Importar rutas de autores
 const bibliaRoutes = require('./routes/bibliaRoutes');
@@ -21,7 +21,7 @@ app.get('/biblia/:libro/:capitulo', (req, res) => {
 
 // Rutas
 app.use('/api/auth', authRoutes);
-app.use('/api/parroquia', parroquiaRoutes);
+app.use('/api/templos', templeRoutes);
 app.use('/api/songs', songRoutes); // Usar rutas de canciones
 app.use('/api/authors', authorRoutes); // Usar rutas de autores
 app.use('/api/biblia', bibliaRoutes);
