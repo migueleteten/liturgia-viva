@@ -1,0 +1,191 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Ester - Capítulo 9</title>
+                    <meta name="description" content="Ester, capítulo 9.">
+                    <meta name="keywords" content="Biblia, Ester, Capítulo 9, Ester">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Ester - Capítulo 9">
+                    <meta property="og:description" content="Ester, capítulo 9.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/ester-9.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/ester-9.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Ester - Capítulo 9">
+                    <meta name="twitter:description" content="Ester, capítulo 9.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/ester-9.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Ester, 9: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">El día trece del mes duodécimo, o sea, el mes de marzo, cuando debía ejecutarse el decreto del rey, el día en que los enemigos de los judíos esperaban apoderarse de ellos, se produjo un cambio de situación, y fueron los judíos quienes se apoderaron de sus enemigos.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Los judíos se concentraron en sus ciudades, en todas las provincias del rey Asuero, para atacar a los que habían intentado destruirlos. Nadie les opuso resistencia, porque el temor a los judíos se había apoderado de todos los pueblos.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Los jefes de las provincias, las autoridades, los gobernadores y funcionarios reales apoyaron a los judíos por miedo a Mardoqueo,</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">porque Mardoqueo tenía un alto cargo en palacio y su fama se extendía por todas las provincias: Mardoqueo iba aumentando su poder.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Los judíos pasaron a cuchillo a sus enemigos, matándolos y exterminándolos; hicieron de ellos lo que quisieron.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">En la fortaleza de Susa exterminaron a quinientos hombres,</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">y también a Parsandatá, Dalfón, Aspatá,</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Poratá, Adalía, Aridatá,</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Parmastá, Arisay, Ariday y Vaizatá,</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">los diez hijos de Amán, de Hamdatá, enemigo de los judíos. Pero no obtuvieron botín.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Cuando aquel mismo día comunicaron al rey el número de víctimas en la fortaleza de Susa,</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">dijo a la reina Ester: —Sólo en la fortaleza de Susa los judíos han exterminado a quinientos hombres y a los diez hijos de Amán. ¿Qué habrán hecho en las demás provincias del imperio? Pide lo que quieras, y te lo daré; si deseas algo más, se hará.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Ester respondió: —Si al rey le agrada, que los judíos de Susa puedan prorrogar hasta mañana el cumplimiento del decreto. Y que cuelguen a los diez hijos de Amán.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">El rey ordenó que se hiciese así: se prorrogó el decreto en Susa y colgaron a los diez hijos de Amán.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Así, los judíos de Susa se concentraron también el día catorce del mes de marzo. Mataron a otros trescientos hombres, pero no recogieron ningún botín.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Los demás judíos en las provincias del imperio se concentraron para defenderse, eliminando a sus enemigos; mataron a setenta y cinco mil adversarios, pero no tomaron botín.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Eso fue el día trece del mes de marzo, y el día catorce descansaron, declarándolo día festivo.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">En cambio, los judíos de Susa se reunieron los días trece y catorce; el día quince descansaron, declarándolo día festivo.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Por eso los judíos del campo, los que viven en las aldeas, celebran como gran día festivo el catorce del mes de marzo, y se hacen regalos.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Mardoqueo puso todo esto por escrito, y mandó cartas a todos los judíos de todas las provincias del rey Asuero, próximos y lejanos,</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">encargándoles celebrar anualmente los días catorce y quince del mes de marzo,</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">por ser los días en los cuales los judíos quedaron libres de sus enemigos y el mes en que se les cambió la tristeza en alegría y el luto en fiesta. Que los declararan días festivos, que se hicieran regalos y dieran también a los pobres.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Los judíos, que ya habían empezado a hacerlo, aceptaron lo que les escribió Mardoqueo.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Porque Amán, hijo de Hamdatá, descendiente de Agag, el enemigo de los judíos, había hecho el sorteo, llamado pur, para eliminarlos y destruirlos;</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">pero cuando Ester se presentó al rey, el rey escribió un documento volviendo contra Amán el plan perverso que había tramado contra los judíos, y lo colgaron en la horca, a él y a sus hijos.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Por eso, esos días se llaman purim, de la palabra pur. Según el texto de aquella carta, y lo que habían presenciado o las noticias que les habían llegado,</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">los judíos ratificaron y se comprometieron de forma irrevocable, ellos, sus descendientes y los prosélitos, a celebrar esos dos días anualmente, según aquel documento y en aquellas fechas.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Esos días, recordados y celebrados de generación en generación, en cada familia y provincia y ciudad, esos días de purim no desaparecerán de entre los judíos, ni su recuerdo perecerá entre sus descendientes.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">La reina Ester, hija de Abijail, y el judío Mardoqueo escribieron urgiendo el cumplimiento de la segunda carta sobre los días de purim,</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">y enviaron cartas a todos los judíos de las ciento veintisiete provincias del imperio de Asuero, saludándolos sinceramente</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">y ratificando la celebración de esos días de purim tal como les habían ordenado el judío Mardoqueo y la reina Ester, y tal como se habían comprometido ellos mismos y sus descendientes, con algunas cláusulas sobre ayunos y lamentaciones.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Así, el edicto de Ester fijó las normas para celebrar los días de purim, y quedó consignado por escrito.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-8.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-16.html'">16</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ester-10.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

@@ -1,0 +1,201 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Judit - Capítulo 12</title>
+                    <meta name="description" content="Judit, capítulo 12.">
+                    <meta name="keywords" content="Biblia, Judit, Capítulo 12, Judit">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Judit - Capítulo 12">
+                    <meta property="og:description" content="Judit, capítulo 12.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/judit-12.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/judit-12.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Judit - Capítulo 12">
+                    <meta name="twitter:description" content="Judit, capítulo 12.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/judit-12.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Judit, 12: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Luego ordenó que la llevaran a donde tenía su vajilla de plata, y mandó que le sirvieran de su misma comida y de su mismo vino.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Pero Judit dijo: 
+—No los probaré, para no caer en pecado. Yo me he traído mis provisiones.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Holofernes le preguntó: 
+—Y si se te acaba lo que tienes, ¿de dónde sacamos una comida igual? Entre nosotros no hay nadie de tu raza.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Judit le respondió: 
+—¡Por tu vida, alteza! No acabaré lo que he traído antes de que el Señor haya realizado por mi medio su plan.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Los oficiales de Holofernes la llevaron a su tienda. Judit durmió hasta la medianoche, se levantó antes del relevo del amanecer</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">y mandó este recado a Holofernes: 
+—Señor, ordena que me permitan salir a orar.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Holofernes ordenó a los soldados de su guardia personal que la dejaran salir. 
+Así pasó Judit tres días en el campamento, todas las noches se dirigía al barranco de Betulia y se lavaba en el manantial donde se encontraba el puesto de avanzada.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Volvía y suplicaba al Señor, Dios de Israel, que dirigiera su plan para exaltación de su pueblo.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Luego, purificada, volvía a su tienda y allí se quedaba hasta que, a eso del atardecer, le llevaban la comida.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">El cuarto día, Holofernes ofreció un banquete exclusivamente para su personal de servicio, sin invitar a ningún oficial,</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">y dijo al eunuco Bagoas, que era su mayordomo: 
+—Trata de convencer a esa hebrea que tienes a tu cargo para que venga a comer y beber con nosotros.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Porque sería una vergüenza no aprovechar la ocasión de acostarme con esa mujer. Si no me la gano, se va a reír de mí.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Bagoas salió de la presencia de Holofernes, entró donde estaba Judit y le dijo: 
+—No tenga miedo esta niña bonita de presentarse a mi señor como huésped de honor, para beber y alegrarse con nosotros, pasando el día como una mujer asiria de las que viven en el palacio de Nabucodonosor.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Judit respondió: 
+—¿Quién soy yo para contradecir a mi señor? Haré enseguida lo que le agrade; será para mí un recuerdo feliz hasta el día de mi muerte.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Se levantó para arreglarse. Se vistió y se puso todas sus joyas de mujer. Su doncella entró delante y le extendió en el suelo, ante Holofernes, el vellón de lana que le había dado Bagoas para que se recostase allí a diario mientras comía.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Judit entró y se sentó. Al verla, Holofernes se turbó, y la pasión lo agitó con un deseo violento de unirse a ella, porque desde la primera vez que la vio esperaba la ocasión de seducirla,</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">y le dijo: 
+—¡Bebe; alégrate con nosotros!</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Judit respondió: 
+—Claro que beberé, señor. Hoy es el día más grande de toda mi vida.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Y comió y bebió ante Holofernes, tomando de lo que le había preparado su doncella.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Holofernes, entusiasmado con ella, bebió muchísimo vino, como no había bebido en toda su vida.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-11.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-16.html'">16</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/judit-13.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

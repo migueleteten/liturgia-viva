@@ -1,0 +1,218 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Josué - Capítulo 10</title>
+                    <meta name="description" content="Josué, capítulo 10.">
+                    <meta name="keywords" content="Biblia, Josué, Capítulo 10, Josué">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Josué - Capítulo 10">
+                    <meta property="og:description" content="Josué, capítulo 10.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/josue-10.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/josue-10.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Josué - Capítulo 10">
+                    <meta name="twitter:description" content="Josué, capítulo 10.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/josue-10.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Josué, 10: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Cuando Adoni-Sedec, rey de Jerusalén, oyó que Josué había tomado Ay y la había arrasado –con Ay y su rey hizo lo mismo que con Jericó y su rey– y que los de Gabaón habían hecho las paces con Israel y vivían con los israelitas,</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">se asustó enormemente –porque Gabaón era toda una ciudad, como una de las capitales reales, mayor que Ay, y todos sus hombres eran valientes–.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Entonces envió este mensaje a Ohán, rey de Hebrón; a Pirán, rey de Yarmut; a Yafía, rey de Laquis, y a Debir, rey de Eglón:</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">—Venid con refuerzos para derrotar a Gabaón, que ha hecho las paces con Josué y los israelitas.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Entonces se aliaron los cinco reyes amorreos –el de Jerusalén, el de Hebrón, el de Yarmut, el de Laquis y el de Eglón– subieron con sus ejércitos, acamparon frente a Gabaón y la atacaron.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Los de Gabaón despacharon emisarios a Josué, al campamento de Guilgal, con este ruego: 
+—No dejes de la mano a tus vasallos. Ven enseguida a salvarnos. Ayúdanos, porque se han aliado contra nosotros los reyes amorreos de la montaña.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Entonces Josué subió desde Guilgal con todo su ejército, todos sus guerreros,</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">y el Señor le dijo: 
+—No les tengas miedo, que yo te los entrego; ni uno de ellos podrá resistirte.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Josué caminó toda la noche desde Guilgal y cayó sobre ellos de repente;</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">el Señor los desbarató ante Israel, que les infligió una gran derrota junto a Gabaón, y los persiguió por la Cuesta de Bet-Jorón, destrozándolos hasta Azecá y Maqueda.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Y cuando iban huyendo de los israelitas por la cuesta de Bet-Jorón, el Señor les lanzó desde el cielo un pedrisco fuerte y mortífero en el camino hasta Azecá; murieron más por la granizada que por la espada de los israelitas.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Cuando el Señor puso en manos de los israelitas a los amorreos, Josué habló al Señor y gritó en presencia de Israel 
+—¡Sol, quieto en Gabaón! ¡Y tú, luna, en el valle de Ayalón!</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Y el sol quedó quieto y la luna inmóvil, hasta que se vengó el pueblo de sus enemigos. 
+Así consta en el libro de Yasar: 
+El sol se detuvo en medio del cielo y tardó un día entero en ponerse.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Ni antes ni después ha habido un día como aquél, cuando el Señor obedeció a la voz de un hombre, porque el Señor luchaba por Israel.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Josué y los israelitas se volvieron al campamento de Guilgal.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Los cinco reyes lograron huir y se escondieron en la cueva de Maqueda.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Avisaron a Josué: 
+—Los cinco reyes están escondidos en la cueva de Maqueda.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Josué ordenó: 
+—Rodad piedras grandes a la entrada de la cueva y apostad allí centinelas.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Vosotros no dejéis de perseguir al enemigo, atacadles la retaguardia; no los dejéis llegar a sus poblados, porque el Señor, vuestro Dios, os los entrega.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Cuando Josué y los israelitas los derrotaron hasta acabar con ellos –fue una gran derrota–, los que lograron salvarse huyendo se refugiaron en las ciudades fortificadas.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Todo el ejército volvió victorioso al campamento de Josué, en Maqueda. Nadie soltó la lengua contra los israelitas.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Josué ordenó: 
+—Destapad la entrada de la cueva y sacadme a esos cinco reyes.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Cumpliendo sus órdenes, sacaron de la cueva a los cinco reyes: el de Jerusalén, el de Hebrón, el de Yarmut, el de Laquis y el de Eglón.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Cuando se los presentaron, Josué convocó a todos los israelitas y dijo a sus oficiales: 
+—Acercaos a pisarles el cuello a esos reyes. 
+Ellos se acercaron y pusieron el pie en el cuello de los reyes.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Josué les dijo: 
+—No temáis ni os acobardéis. ¡Ánimo, sed valientes!, que así tratará el Señor a todos los enemigos con los que vais a luchar.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Dicho esto, los ajustició y los colgó de cinco árboles; allí estuvieron colgados hasta la tarde.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">A la puesta del sol mandó bajarlos de los árboles y tirarlos a la cueva donde se habían escondido; después colocaron grandes piedras a la entrada de la cueva, y allí están todavía hoy.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Aquel día Josué tomó Maqueda. La pasó a cuchillo, consagrando al exterminio a su rey y a todos sus habitantes. No quedó un superviviente; trató al rey de Maqueda como al de Jericó.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Desde Maqueda Josué y los israelitas pasaron a Libna y la atacaron.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">El Señor les entregó también Libna y a su rey, y pasaron a cuchillo a todos los habitantes. No quedó en ella un superviviente; a su rey lo trató Josué como al de Jericó.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Desde Libna Josué y los israelitas pasaron a Laquis, acamparon frente a ella y la atacaron.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">El Señor se la entregó: tomaron Laquis al segundo día y pasaron a cuchillo a todos los habitantes, lo mismo que habían hecho en Libna.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Horán, rey de Guézer, subió en auxilio de Laquis, pero Josué lo derrotó a él y a su ejército, sin dejarle un superviviente.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Desde Laquis Josué y los israelitas pasaron a Eglón; acamparon frente a ella y la atacaron.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">La tomaron aquel mismo día y la pasaron a cuchillo, consagrando al exterminio a todos sus habitantes, lo mismo que habían hecho con Laquis.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Desde Eglón, Josué y los israelitas con él, pasaron a Hebrón y la atacaron.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">La tomaron y pasaron a cuchillo a su rey y a toda la población. No quedó un superviviente, lo mismo que habían hecho en Eglón; la consagraron al exterminio con todos sus habitantes.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Después Josué y los israelitas con él se volvieron contra Debir y la atacaron.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Se apoderaron de ella, del rey y sus poblados y los pasaron a cuchillo, consagrando al exterminio a todos sus habitantes. No quedó un superviviente; trataron a Debir y a su rey lo mismo que a Hebrón y a su rey, a Libna y a su rey.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Así fue cómo conquistó Josué toda la montaña, el Negueb y la Sefela y las estribaciones de la sierra, con sus reyes. No quedó un superviviente. Consagraron al exterminio a todo ser viviente, como había mandado el Señor, Dios de Israel.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Josué conquistó desde Cades Barne hasta Gaza, y todo el país de Gosén hasta Gabaón.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">En una sola ofensiva se apoderó de todos aquellos reyes y sus tierras, porque el Señor, Dios de Israel, combatía por Israel.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Josué y los israelitas que iban con él se volvieron después al campamento de Guilgal.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-9.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-24.html'">24</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-11.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

@@ -4,7 +4,7 @@ const authRoutes = require('./routes/authRoutes');
 const templeRoutes = require('./routes/templeRoutes');
 const songRoutes = require('./routes/songRoutes'); // Importar rutas de canciones
 const authorRoutes = require('./routes/authorRoutes'); // Importar rutas de autores
-const bibliaRoutes = require('./routes/bibliaRoutes');
+//const bibliaRoutes = require('./routes/bibliaRoutes');
 const bibleCommentsRoutes = require('./routes/bibleCommentsRoutes');
 const app = express();
 
@@ -12,19 +12,19 @@ const app = express();
 app.use(express.json());
 
 // Servir la biblia en verso
-app.get('/biblia/:libro/:capitulo', (req, res) => {
+/*app.get('/biblia/:libro/:capitulo', (req, res) => {
   const { libro, capitulo } = req.params;
   console.log(`Serving page for /biblia/${req.params.libro}/${req.params.capitulo}`);
   // Llamar a la función del controlador para obtener el capítulo
   res.sendFile(path.join(__dirname, 'views', 'pages', 'biblia.html'));
-});
+});*/
 
 // Rutas
 app.use('/api/auth', authRoutes);
 app.use('/api/templos', templeRoutes);
 app.use('/api/songs', songRoutes); // Usar rutas de canciones
 app.use('/api/authors', authorRoutes); // Usar rutas de autores
-app.use('/api/biblia', bibliaRoutes);
+//app.use('/api/biblia', bibliaRoutes);
 app.use('/api/biblia', bibleCommentsRoutes); // Rutas para comentarios de la Biblia
 
 // Servir archivos estáticos desde la carpeta public
@@ -37,6 +37,9 @@ app.use('/templates', express.static(path.join(__dirname, 'views/templates')));
 app.get('/create-song', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'createSong.html'));
 });
+
+// Servir archivos HTML generados
+app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/biblia/capitulos')));
 
 // Ruta para servir la página de login
 app.get('/login', (req, res) => {

@@ -1,0 +1,215 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Levítico - Capítulo 8</title>
+                    <meta name="description" content="Levítico, capítulo 8.">
+                    <meta name="keywords" content="Biblia, Levítico, Capítulo 8, Levítico">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Levítico - Capítulo 8">
+                    <meta property="og:description" content="Levítico, capítulo 8.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/levitico-8.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/levitico-8.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Levítico - Capítulo 8">
+                    <meta name="twitter:description" content="Levítico, capítulo 8.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/levitico-8.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Levítico, 8: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">El Señor habló a Moisés:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Toma a Aarón y a sus hijos, los vestidos, el aceite de la unción, el novillo del sacrificio expiatorio, los dos carneros y el cestillo de panes ázimos,</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">y convoca a toda la asamblea a la entrada de la tienda del encuentro.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Moisés cumplió el mandato del Señor, y la asamblea se congregó a la entrada de la tienda del encuentro.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Moisés dijo a la asamblea: 
+—Esto es lo que manda hacer el Señor.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Después hizo acercarse a Aarón y a sus hijos y los hizo bañarse.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Le vistió la túnica y le ciñó la banda, le puso el manto y encima le colocó el efod, sujetándolo con el cinturón.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Le impuso el pectoral con los urim y tumim.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Le puso un turbante en la cabeza, y en el lado frontal del mismo le impuso la flor de oro, la diadema santa, como el Señor se lo había mandado.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Moisés, tomando después el aceite de la unción, ungió la morada y cuanto en ella había. Y los consagró.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Salpicó con el aceite siete veces sobre el altar y ungió el altar con todos sus utensilios, el barreño y su peana, para consagrarlos.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Luego derramó aceite sobre la cabeza de Aarón, y lo ungió para consagrarlo.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Después Moisés hizo acercarse a los hijos de Aarón, les vistió la túnica, les ciñó la banda y les puso sobre la cabeza las birretas, como el Señor se lo había ordenado.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Hizo traer el novillo del sacrificio expiatorio. Aarón y sus hijos pusieron sus manos sobre la cabeza de la víctima.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Moisés la degolló, y tomando sangre untó con el dedo los salientes del altar por todos los lados: así purificó el altar. Derramó la sangre al pie del altar, y así lo consagró para expiar en él.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Tomó toda la grasa que envuelve las vísceras, el lóbulo del hígado, los dos riñones con su grasa y lo dejó quemarse sobre el altar.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">El resto del novillo, la piel, carne e intestinos, lo quemó fuera del campamento, como el Señor se lo había ordenado.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Hizo traer el carnero del holocausto. Aarón y sus hijos pusieron sus manos sobre la cabeza de la víctima.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Moisés lo degolló y roció con la sangre el altar por todos los lados.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Descuartizó el carnero y dejó quemarse la cabeza, los trozos y la grasa.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Lavó vísceras y patas y dejó quemarse todo el carnero sobre el altar, como el Señor se lo había ordenado. Fue un holocausto: oblación de aroma que aplaca al Señor.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Hizo traer el segundo carnero, el de la consagración. Aarón y sus hijos pusieron sus manos sobre la cabeza de la víctima.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Moisés la degolló, y tomando sangre, untó con ella el lóbulo de la oreja derecha de Aarón y los pulgares de su mano y pie derechos.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Hizo acercarse a los hijos de Aarón y untó con sangre los lóbulos de sus orejas derechas y los pulgares de sus manos y pies derechos, y roció con la sangre el altar por todos sus lados.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Tomó la grasa y la cola, toda la grasa que envuelve las vísceras, el lóbulo del hígado, los dos riñones con su grasa y la pierna derecha.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Del cestillo de los panes ázimos, puesto en presencia del Señor, tomó una rosca ázima, una rosca de pan amasada con aceite y una oblea, y las colocó sobre la grasa y la pierna derecha.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Puso todo ello en manos de Aarón y sus hijos, y éste lo agitó ritualmente en presencia del Señor.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Luego Moisés lo recibió de sus manos y lo dejó quemarse sobre el altar del holocausto. Fue un sacrificio de consagración: oblación de aroma que aplaca al Señor.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Después tomó el pecho y lo agitó ritualmente en presencia del Señor. Era la ración del carnero de consagración que le pertenecía a Moisés, como se lo había ordenado el Señor.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Moisés tomó el aceite de la unción y sangre del altar y salpicó sobre Aarón y sus vestidos, sobre los hijos de Aarón y sus vestidos, y así los consagró.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Moisés dijo a Aarón y a sus hijos: 
+—Coced la carne a la entrada de la tienda del encuentro y allí la comeréis con el pan que hay en el cestillo del sacrificio de consagración; así se me ordenó: Lo comerán Aarón y sus hijos.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Las sobras de carne y pan las quemaréis.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Durante siete días no saldréis por la puerta de la tienda del encuentro, hasta que concluya el tiempo de vuestra consagración. Porque vuestra consagración ha de durar siete días.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Lo que se ha hecho hoy ha mandado el Señor que se haga para obtener vuestra expiación.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Permaneceréis siete días y siete noches a la entrada de la tienda del encuentro y respetaréis las prohibiciones del Señor. Así no moriréis. Así se me ha ordenado.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Y Aarón y sus hijos cumplieron todo lo que el Señor había mandado por medio de Moisés.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-7.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-27.html'">27</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-9.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

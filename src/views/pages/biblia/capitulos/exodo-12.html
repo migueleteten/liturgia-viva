@@ -1,0 +1,245 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Éxodo - Capítulo 12</title>
+                    <meta name="description" content="Éxodo, capítulo 12.">
+                    <meta name="keywords" content="Biblia, Éxodo, Capítulo 12, Éxodo">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Éxodo - Capítulo 12">
+                    <meta property="og:description" content="Éxodo, capítulo 12.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/exodo-12.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/exodo-12.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Éxodo - Capítulo 12">
+                    <meta name="twitter:description" content="Éxodo, capítulo 12.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/exodo-12.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Éxodo, 12: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">En aquellos días, el Señor dijo a Moisés y a Aarón en Egipto:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Este mes será para vosotros el principal, será para vosotros el primer mes del año.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Decid a toda la asamblea de Israel: 
+El diez de este mes cada uno se procurará una res para su familia, una por casa.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Si la familia es demasiado pequeña para terminarla, que se junte con el vecino de casa; según el número de comensales y lo que coma cada uno, se repartirá la res.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Será un animal sin defecto, macho, añal, cordero o cabrito.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Lo guardaréis hasta el día catorce del mes, y entonces toda la asamblea de Israel lo matará al atardecer.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Con algo de la sangre rociaréis las dos jambas y el dintel de la casa donde lo hayáis comido.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Esa noche comeréis la carne, asada a fuego, acompañada de pan sin fermentar y verduras amargas.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">No comeréis de ella nada crudo ni cocido en agua, sino asado a fuego: con cabeza, patas y entrañas.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">No dejaréis restos para la mañana siguiente, y si sobra algo, lo quemaréis.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Y lo comeréis así: la cintura ceñida, las sandalias en los pies, un bastón en la mano; y os lo comeréis a toda prisa, porque es la Pascua del Señor.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Esa noche atravesaré todo el territorio egipcio dando muerte a todos sus primogénitos, de hombres y de animales; y daré un justo escarmiento a todos los dioses de Egipto. Yo soy el Señor.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">La sangre será vuestra contraseña en las casas donde estéis: cuando vea la sangre, pasaré de largo; no os tocará la plaga exterminadora cuando yo pase hiriendo a Egipto.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Este día será para vosotros memorable, en él celebraréis la fiesta al Señor. Ley perpetua para todas las generaciones.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">—Durante siete días comeréis panes ázimos. 
+El día primero haréis desaparecer de vuestras casas toda levadura, pues el que coma algo fermentado será excluido de Israel. Así del primero al séptimo día.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">El día primero hay asamblea litúrgica y lo mismo el día séptimo: no trabajaréis en ellos; solamente prepararéis lo que haga falta a cada uno para comer.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Observaréis la ley de los Ázimos, porque en tal día sacó el Señor a sus escuadrones de Egipto. 
+Haréis fiesta ese día: es ley perpetua para todas vuestras generaciones.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Desde la tarde del día catorce del mes primero a la tarde del día veintiuno comeréis panes ázimos;</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">durante siete días no habrá levadura en vuestras casas, pues quien coma algo fermentado será excluido de la asamblea de Israel, sea forastero o nativo.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">No comáis nada fermentado, sino comed panes ázimos en todos vuestros poblados.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Moisés llamó a todas las autoridades de Israel y les dijo: 
+—Escogeos una res por familia y degollad la víctima de pascua.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Tomad un manojo de hisopo, mojadlo en la sangre del plato y untad de sangre el dintel y las dos jambas, y ninguno de vosotros salga por la puerta de casa hasta la mañana siguiente.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">El Señor va a pasar hiriendo a Egipto, y cuando vea la sangre en el dintel y las jambas, el Señor pasará de largo y no permitirá al exterminador entrar en vuestras casas para herir.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Cumplid este mandato del Señor: es ley perpetua para vosotros y vuestros hijos.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Y cuando entréis en la tierra que el Señor os va a dar, según lo prometido, observaréis este rito.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Y cuando vuestros hijos os pregunten qué significa este rito,</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">les responderéis: es el sacrificio de la Pascua del Señor. Él pasó en Egipto, junto a las casas de los israelitas, hiriendo a los egipcios y protegiendo nuestras casas.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">El pueblo se inclinó y se prosternó. Y los israelitas fueron y pusieron por obra lo que el Señor había mandado a Moisés y a Aarón.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">A medianoche, el Señor hirió de muerte a todos los primogénitos de Egipto: desde el primogénito del faraón que se sienta en el trono hasta el primogénito del preso encerrado en el calabozo, y los primogénitos de los animales.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Aún de noche, se levantó el faraón y su corte y todos los egipcios, y se oyó un clamor inmenso en todo Egipto, pues no había casa en que no hubiera un muerto.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">El faraón llamó a Moisés y a Aarón de noche, y les dijo: 
+—Levantaos, salid de en medio de mi pueblo, vosotros con todos los israelitas, id a ofrecer culto al Señor como habéis pedido;</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">llevaos también las ovejas y las vacas como decíais, despedíos de mí y salid.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Los egipcios urgían al pueblo para que saliese cuanto antes del país, pues temían morir todos.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">El pueblo sacó de las artesas la masa sin fermentar, la envolvió en mantas y se la cargó al hombro.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Además, los israelitas hicieron lo que Moisés les había mandado: pidieron a los egipcios utensilios de plata y oro y ropa;</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">el Señor hizo que se ganaran el favor de los egipcios, que les dieron lo que pedían. Así despojaron a Egipto.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Los israelitas marcharon de Ramsés hacia Sucot: eran seiscientos mil hombres de a pie, sin contar los niños;</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">y les seguía una turba inmensa, con ovejas y vacas y enorme cantidad de ganado.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Tuvieron que cocer la masa, que habían sacado de Egipto, haciendo hogazas de pan ázimo pues no había fermentado, ya que los egipcios los echaban y no podían detenerse ni tampoco hacerse con provisiones.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">La estancia de los israelitas en Egipto duró cuatrocientos treinta años.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Cumplidos los cuatrocientos treinta años, el mismo día, salieron de Egipto los escuadrones del Señor.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Noche en que veló el Señor veló para sacarlos de Egipto: noche de vela para los israelitas por todas las generaciones.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">El Señor dijo a Moisés y a Aarón: 
+—Éste es el rito de la Pascua. Ningún extranjero la comerá.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Los esclavos que te hayas comprado, circuncídalos y sólo entonces podrán comerla.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Ni el criado ni el jornalero la comerán.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Cada cordero se ha de comer dentro de una casa sin sacar afuera nada de la carne, y no le romperéis ningún hueso.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">La comunidad entera de Israel la celebrará.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Y si el inmigrante que vive contigo quiere celebrar la Pascua del Señor, hará circuncidar a todos los varones, y sólo entonces podrá tomar parte en ella: será como un nativo. Pero ningún incircunciso la comerá.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">La misma ley vale para el nativo y para el inmigrante que vive con vosotros.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Así lo hicieron los israelitas: todo lo que el Señor había ordenado a Moisés y a Aarón lo cumplieron.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Y aquel mismo día el Señor sacó de Egipto a los israelitas, por escuadrones.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-11.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-40.html'">40</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/exodo-13.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

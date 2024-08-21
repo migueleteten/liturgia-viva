@@ -1,0 +1,213 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Josué - Capítulo 15</title>
+                    <meta name="description" content="Josué, capítulo 15.">
+                    <meta name="keywords" content="Biblia, Josué, Capítulo 15, Josué">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Josué - Capítulo 15">
+                    <meta property="og:description" content="Josué, capítulo 15.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/josue-15.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/josue-15.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Josué - Capítulo 15">
+                    <meta name="twitter:description" content="Josué, capítulo 15.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/josue-15.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Josué, 15: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Suerte de la tribu de Judá por clanes. Quedaba hacia la frontera de Edom, al sur del desierto de Sin, en el extremo meridional.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Su límite sur partía de la punta del Mar Muerto, desde el cabo que mira hacia el sur;</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">salía luego frente a Maale Acrabbim, pasaba por Sin, subía al sur de Cades Barne, pasaba Jesrón, subía a Adar, rodeaba Carcá,</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">pasaba después por Asmón y venía a salir al río de Egipto, para acabar en el mar: Ésa será vuestra frontera meridional.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Su límite oriental era el Mar Muerto, hasta la desembocadura del Jordán. 
+Su límite norte iba desde el cabo que hay en la desembocadura del Jordán,</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">subía a Bet-Joglá, pasaba por encima de Bet-Arabá, subía por la Piedra de Bohán, hijo de Rubén,</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">hasta Debir, por el Valle de Acor, dirigiéndose luego hacia Guilgal, frente a Maale Adumim, que queda al sur de la vaguada; pasaba junto al arroyo de En-Semes, para acabar en En-Roguel;</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">después subía por el valle de Ben-Hinón, por la vertiente sur de los jebuseos –o sea, Jerusalén–; subía a la cima del monte que hay sobre el valle Hinnón a oeste y que llega por el norte al extremo del valle de Refaín;</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">luego torcía desde la cima del monte hacia la fuente del arroyo Neftoj y venía a salir a los pueblos del monte Efrón, torcía por Baalá –o sea, Quiriat Yearim–,</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">rodeaba desde Baalá por el oeste hacia los montes de Seír, y pasando la vertiente norte de Har Yearim –o sea, Quislón–, bajaba a Bet-Semes, pasaba Timná,</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">la frontera salía a la vertiente norte de Ecrón, giraba hacia Sicrín, cruzaba el monte Baalá, salía a Yabneel y terminaba en el mar.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">El Mar Mediterráneo era el límite. Esos eran los límites del territorio de los hijos de Judá, por clanes.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Josué, siguiendo la orden del Señor, asignó a Caleb, hijo de Jefoné, un lote en medio de Judá: Quiriat Arbá –el padre de Anac–, o sea, Hebrón.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Caleb expulsó de allí a los tres hijos de Anac: Sesay, Ajimán y Talmay, descendientes de Anaq.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Desde allí subió contra los de Debir, llamada antiguamente Quiriat Sefer,</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">y prometió: 
+—Al que tome al asalto Quiriat Sefer le doy por esposa a mi hija Acsá.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Otoniel, hijo de Quenaz, pariente de Caleb, tomó la ciudad, y Caleb le dio por esposa a su hija Acsá.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Cuando ella llegó –Otoniel la instigó a pedirle un terreno a su padre–, se bajó del burro, y Caleb le preguntó: 
+—¿Qué te pasa?</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Contestó: 
+—Hazme un regalo. La tierra que me has dado es de secano, dame alguna alberca. 
+Caleb le dio la alberca de Arriba y la de Abajo.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Ésa fue la heredad de la tribu de Judá, por clanes.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Poblaciones de la tribu de Judá: 
+En la frontera del sur, junto a Edom: Cabseel, Eder, Yagur,</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Quina, Dimón, Adadá,</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Cades, Jasor, Yitnán,</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Zif, Telán, Baalot,</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Jasor Jadatá, Quiriat Jesrón –o sea Jasor–,</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Amán, Semá, Moladá,</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Jasar Gadda, Jesmón, Bet-Pelet,</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Jasar Sual, el municipio de Berseba, Biziotía,</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Baalá, Iyim, Esen,</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Eltolad, Quesil, Jorma,</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Sicelag, Madmaná, Sansaná,</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Lebaot, Siljim, En-Rimón. Veintinueve pueblos con sus alquerías.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">En la Sefela: Estaol, Sorá, Asená,</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Zanoj, En-Gannim, Tapuj y Enán,</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Yarmut, Adulán, Socó y Azecá,</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Saaraym, Aditaym, Guedera, Gederotaym. Catorce pueblos con sus alquerías.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Sanán, Jadasá, Migdal Gad,</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Dileán, Hammispé, Yoctael,</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Laquis, Boscat, Eglón,</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Cabón, Lajmás, Quitlis,</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Gederot, Bet-Dagón, Naamá, Maqueda. Dieciséis pueblos con sus alquerías.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Libna, Eter, Asán,</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Yiptaj, Esná, Nasib,</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Queilá, Aczib, Maresa. Nueve pueblos con sus alquerías.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">El municipio de Ecrón con sus alquerías.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Y desde Ecrón hasta el mar todas las poblaciones que quedan al lado de Asdod, con sus alquerías.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">El municipio de Asdod con sus alquerías, el municipio de Gaza y sus alquerías hasta el río de Egipto. El Mediterráneo era el límite.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">En la montaña: Samir, Yatir, Socó,</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Daná, Quiriat Saná –o sea, Debir–,</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Anab, Estemó, Anim,</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Gosén, Jalón, Guiló. Once pueblos con sus alquerías.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Arab, Rumá, Eseán,</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">Yanim, Bet-Tapuj, Afec,</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Jumtá, Quiriat Arbá –o sea, Hebrón– y Sior. Nueve pueblos con sus alquerías.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Maón, Carmel, Zif, Yutá,</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">Yezrael, Yocdeán, Zanoj,</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">Caín, Guibeá, Timná. Diez pueblos con sus alquerías.</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Jaljul, Bet-Sur, Guedor,</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">Maarat, Bet-Anot, Eltecón. Seis pueblos con sus alquerías. Tecua, Efrata –o sea, Belén–, Fegor, Etam, Quilón, Tatam, Sores, Querem, Galim, Beter, Manoc. Once pueblos con sus alquerías.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">Quiriat-Baal –o sea, Quiriat Yearim–, Rabá. Dos pueblos con sus alquerías.</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">En el páramo: Bet-Arabá, Medín, Secacá,</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">Nibsán, Ir Hammélaj, Engadí. Seis pueblos con sus alquerías.</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">Pero la tribu de Judá no pudo expulsar a los jebuseos que habitaban en Jerusalén; por eso han seguido viviendo en Jerusalén, en medio de Judá, hasta hoy.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-14.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-24.html'">24</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/josue-16.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

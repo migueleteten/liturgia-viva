@@ -1,57 +1,132 @@
-$(document).ready(function() {
-  const libro = window.location.pathname.split('/')[2];
-  console.log(libro)
-  const capitulo = window.location.pathname.split('/')[3];
-  console.log(capitulo)
+$(document).ready(function () {
+    /*const libro = window.location.pathname.split('/')[2];
+    console.log(libro)
+    const capitulo = window.location.pathname.split('/')[3];
+    console.log(capitulo)
 
-  console.log(`Loading chapter: libro = ${libro}, capitulo = ${capitulo}`);
+    console.log(`Loading chapter: libro = ${libro}, capitulo = ${capitulo}`);
 
-  // Obtener y mostrar el capítulo
-  $.ajax({
-      url: `/api/biblia/${libro}/${capitulo}`,
-      type: 'GET',
-      success: function(response) {
-          $('#chapter-title').text(`Libro ${libro}, Capítulo ${capitulo}`);
-          $('#chapter-content').html(response.capituloHtml);
-          initializeChapterHeader();
-      },
-      error: function() {
-          $('#chapter-content').text('Error al cargar el capítulo.');
-      }
-  });
-
-  function initializeChapterHeader() {
-        var header = $('#chapter-header');
-        var scrollThreshold = 50; // Umbral de 50px
-
-        if (header.length > 0) {
-            console.log("Elemento #chapter-header encontrado.");
-        } else {
-            console.log("Elemento #chapter-header no encontrado.");
+    // Obtener y mostrar el capítulo
+    $.ajax({
+        url: `/api/biblia/${libro}/${capitulo}`,
+        type: 'GET',
+        success: function(response) {
+            $('#chapter-title').text(`Libro ${libro}, Capítulo ${capitulo}`);
+            $('#chapter-content').html(response.capituloHtml);
+            initializeChapterHeader();
+        },
+        error: function() {
+            $('#chapter-content').text('Error al cargar el capítulo.');
         }
-    }
+    });
+  
+    function initializeChapterHeader() {
+          var header = $('#chapter-header');
+          var scrollThreshold = 50; // Umbral de 50px
+  
+          if (header.length > 0) {
+              console.log("Elemento #chapter-header encontrado.");
+          } else {
+              console.log("Elemento #chapter-header no encontrado.");
+          }
+      }*/
 
-  // Mostrar/Ocultar versículos
-  $(document).on('change', '#toggleVersiculos', function() {
-      if ($(this).is(':checked')) {
-          $('.num-versiculo').hide();
-      } else {
-          $('.num-versiculo').show();
-      }
-  });
+    $(document).ready(function () {
+        const prevChapterButton = $('#prev-chapter');
+        const nextChapterButton = $('#next-chapter');
+        const chapterNavigationDiv = $('.chapter-navigation');
 
-  // Navegación entre capítulos
-  $('#prev-chapter').on('click', function() {
-      if (capitulo > 1) {
-          window.location.href = `/biblia/${libro}/${parseInt(capitulo) - 1}`;
-      }
-  });
+        // Función para comprobar si el texto del botón es más largo que "<" o ">"
+        function shouldHideChapterNavigation() {
+            const prevText = prevChapterButton.text().trim();
+            const nextText = nextChapterButton.text().trim();
+            
+            // Comprueba si alguno de los botones tiene un texto más largo que "<" o ">"
+            return prevText.length > 1 || nextText.length > 1;
+        }
 
-  $('#next-chapter').on('click', function() {
-      window.location.href = `/biblia/${libro}/${parseInt(capitulo) + 1}`;
-  });  
+        // Oculta el div.chapter-navigation si el texto del botón es más largo que "<" o ">"
+        if (shouldHideChapterNavigation()) {
+            chapterNavigationDiv.hide();
+        }
+    });
+        
+    $(document).ready(function () {
+        const chapterButtons = $('.chapter-navigation button');
+        const currentUrl = window.location.pathname;
+    
+        // Cambiar color del botón del capítulo actual
+        chapterButtons.each(function () {
+            const buttonHref = $(this).attr('onclick').match(/location\.href='([^']+)'/)[1];
+            if (currentUrl.includes(buttonHref)) {
+                $(this).addClass('current-chapter'); // Añadir clase especial al botón actual
+            }
+        });
+    
+        // Centrar el scroll en el botón del capítulo actual
+        const currentButton = $('.current-chapter');
+        if (currentButton.length) {
+            const container = $('.chapter-navigation');
+            
+            // Calcular la posición del botón para centrarlo en el contenedor
+            const buttonOffset = currentButton.offset().left; // Posición del botón en relación al documento
+            const containerOffset = container.offset().left; // Posición del contenedor en relación al documento
+            const containerScrollLeft = container.scrollLeft(); // Desplazamiento actual del scroll
+            const offset = buttonOffset - containerOffset; // Diferencia de posición entre el botón y el contenedor
+            const scrollLeft = offset + containerScrollLeft - (container.width() / 2) + (currentButton.width() / 2);
 
-  let selectedVerses = [];
+            // Desplazar el contenedor
+            container.scrollLeft(scrollLeft);
+        }
+    });
+
+    $(document).ready(function () {
+        const mensajeComentarios = $('#mensaje-comentarios');
+        const mensajeKey = 'mensajeComentariosVisto';
+    
+        // Comprobar si el mensaje ya ha sido visto
+        if (!localStorage.getItem(mensajeKey)) {
+            // Mostrar el mensaje después de 60 segundos
+            setTimeout(function () {
+                mensajeComentarios.fadeIn(500);
+            }, 30000); // 30000 ms = 30 segundos
+        }
+    
+        // Ocultar el mensaje y marcarlo como visto
+        mensajeComentarios.on('click', function () {
+            $(this).fadeOut(500);
+            localStorage.setItem(mensajeKey, 'true'); // Marcar como visto en localStorage
+        });
+    });
+    
+    // Mostrar/Ocultar versículos
+    $(document).on('change', '#toggleVersiculos', function () {
+        if ($(this).is(':checked')) {
+            $('.num-versiculo').hide();
+        } else {
+            $('.num-versiculo').show();
+        }
+    });
+
+    // Saltos de línea para caracteres de diálogo
+    document.querySelectorAll('span.versiculo').forEach(span => {
+        if (span.textContent.includes('—')) {
+            span.innerHTML = span.innerHTML.replace(/—/g, '<br>—'); /* Reemplaza "—" por un salto de línea */
+        }
+    });
+
+    /* Navegación entre capítulos
+    $('#prev-chapter').on('click', function() {
+        if (capitulo > 1) {
+            window.location.href = `/biblia/${libro}/${parseInt(capitulo) - 1}`;
+        }
+    });
+  
+    $('#next-chapter').on('click', function() {
+        window.location.href = `/biblia/${libro}/${parseInt(capitulo) + 1}`;
+    });*/
+
+    let selectedVerses = [];
 
     // Evento al hacer clic en un versículo
     $(document).on('click', '.versiculo', function () {

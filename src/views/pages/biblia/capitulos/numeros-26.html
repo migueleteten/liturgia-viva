@@ -1,0 +1,231 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Números - Capítulo 26</title>
+                    <meta name="description" content="Números, capítulo 26.">
+                    <meta name="keywords" content="Biblia, Números, Capítulo 26, Números">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Números - Capítulo 26">
+                    <meta property="og:description" content="Números, capítulo 26.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/numeros-26.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/numeros-26.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Números - Capítulo 26">
+                    <meta name="twitter:description" content="Números, capítulo 26.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/numeros-26.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Números, 26: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">el Señor habló a Moisés y al sacerdote Eleazar, hijo de Aarón:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Haced el censo de la comunidad, registrando por familias a todos los israelitas mayores de veinte años, aptos para el servicio.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Moisés con el sacerdote Eleazar hicieron en la estepa de Moab, junto al Jordán, a la altura de Jericó, el censo de los mayores de veinte años</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">como lo había ordenado el Señor a Moisés. Registro de los israelitas que salieron de Egipto:</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Rubén, el primogénito de Israel. Hijos de Rubén: Henoc y la familia de los henoquitas, Falú y la familia de los faluitas.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Jesrón y la familia de los jesronitas, Carmí y la familia de los carmitas.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Éstas son las familias rubenitas: el total de los registrados fue de cuarenta y tres mil setecientos treinta.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Hijo de Falú, Eliab.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Hijos de Eliab: Nemuel, Datán y Abirán. Datán y Abirán, miembros del Consejo, son los que se rebelaron contra Moisés, junto con la banda de Córaj, que se rebeló contra el Señor.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">La tierra se abrió y los tragó, junto con Córaj. Así murió toda la banda y el fuego devoró a doscientos cincuenta hombres para escarmiento del pueblo.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Pero los hijos de Córaj no murieron.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Hijos de Simeón por familias: Nemuel y la familia de los nemuelitas, Yamín y la familia de los yaminitas, Yaquín y la familia de los yaquinitas,</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Zéraj y la familia de los zerajitas, Saúl y la familia de los saulitas.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Éstas son las familias simeonitas: veintidós mil doscientos registrados.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Hijos de Gad por familias: Safón y la familia de los safonitas, Jaguí y la familia de los jaguitas, Suní y la familia de los sunitas,</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Ozní y la familia de los oznitas, Erí y la familia de los eritas,</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Arod y la familia de los aroditas, Arelí y la familia de los arelitas.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Éstas son las familias gaditas: cuarenta mil quinientos registrados.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Hijos de Judá: Er y Onán, que murieron en Canaán.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Hijos de Judá por familias: Selá y la familia de los selaítas.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Fares y la familia de los faresitas, Zéraj y la familia de los zerajitas. Hijos de Fares: Jesrón y la familia de los jesronitas, Jamul y la familia de los jamulitas.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Éstas son las familias de Judá: setenta y seis mil quinientos registrados.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Hijos de Isacar por familias: Tolá y la familia de los tolaítas, Puvá y la familia de los puvaítas.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Yasub y la familia de los yasubitas, Simrón y la familia de los simronitas.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Éstas son las familias de Isacar: sesenta y cuatro mil trescientos registrados.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Hijos de Zabulón por familias: Séred y la familia de los sereditas, Elón y la familia de los elonitas, Yajleel y la familia de los yajleelitas.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Éstas son las familias de Zabulón: sesenta mil quinientos registrados.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Hijos de José por familias: Manasés y Efraín.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Hijos de Manasés: Maquir y la familia de los maquiritas. Maquir engendró a Galaad. De Galaad se formó la familia de los galaaditas.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Hijos de Galaad: Yézer y la familia de los yezeritas, Jélec y la familia de los jelequitas.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Asriel y la familia de los asrielitas, Siquén y la familia de los siquenitas,</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Semidá y la familia de los semiditas, Jéfer y la familia de los jeferitas;</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Salfajad, hijo de Jéfer, no tuvo hijos varones, sino solamente hijas, que se llamaban Majlá, Noá, Joglá, Milcá y Tirsá.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Éstas son las familias de Manasés: cincuenta y dos mil setecientos registrados.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Hijos de Efraín por familias: Sutálaj y la familia de los sutalajitas, Béquer y la familia de los bequeritas, Tajan y la familia de los tajanitas.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Hijos de Sutálaj: Erán y la familia de los eranitas.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Éstas son las familias de Efraín: treinta y dos mil quinientos registrados. Éstos son los hijos de José por familias.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Hijos de Benjamín por familias: Bela y la familia de los belaítas, Asbel y la familia de los asbelitas, Ajirán y la familia de los ajiranitas,</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Sufán y la familia de los sufanitas, Jufán y la familia de los jufanitas.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Hijos de Bela: Arad y Naamán con las familias de araditas y naamanitas.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Éstos son los hijos de Benjamín por familias: cuarenta y cinco mil seiscientos registrados.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Hijos de Dan por familias: Suján y la familia de los sujanitas.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Éstas son las familias de Dan: sesenta y cuatro mil cuatrocientos registrados.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Hijos de Aser por familias: Yimná y la familia de los yimnaítas, Yisví y la familia de los yisvitas, Beriá y la familia de los beriaítas.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Hijos de Beriá: Héber y la familia de los heberitas, Malquiel y la familia de los malquielitas.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">La hija de Aser se llamaba Séraj.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">Éstas son las familias de los hijos de Aser: cincuenta y tres mil cuatrocientos registrados.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Hijos de Neftalí por familias: Yajseel y la familia de los yajseelitas, Guní y la familia de los gunitas.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Yéser y la familia de los yeseritas, Silén y la familia de los silenitas.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Éstas son las familias de Neftalí: cuarenta y cinco mil cuatrocientos registrados.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Número total de israelitas registrados: seiscientos un mil setecientos treinta.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">El Señor habló a Moisés:</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">—Entre todos éstos repartirás la tierra en herencia, en proporción al número de hombres.</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Cada uno recibirá una heredad proporcional al número de registrados.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Pero la distribución de las tierras se hará a suertes: se asignará la heredad a las diversas familias patriarcales,</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">y se distribuirá entre los más numerosos y los menos numerosos por sorteo.</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">Censo de los levitas por familias: Guersón y la familia de los guersonitas, Quehat y la familia de los quehatitas, Merarí y la familia de los meraritas.</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Éstas son las familias de los levitas: la familia de los libnitas, la familia de los hebronitas, la familia de los majlitas, la familia de los musitas, la familia de los corajitas. Quehat engendró a Amrán,</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">cuya mujer se llamaba Yoquébed, hija de Leví, que le nació a Leví en Egipto. Ella le dio a Amrán tres hijos: Aarón, Moisés y María, su hermana.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">De Aarón nacieron Nadab y Abihú, Eleazar e Itamar.</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">Nadab y Abihú murieron mientras ofrecían al Señor fuego profano.</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">El total de los registrados fue de veintitrés mil varones mayores de un mes. No fueron registrados con los demás israelitas porque no habían de repartirse la heredad con ellos.</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">Éste es el censo de israelitas que hicieron Moisés y el sacerdote Eleazar en la estepa de Moab, junto al Jordán, a la altura de Jericó.</span> <span id="num_versiculo_64" class="num-versiculo">64</span><span id="versiculo_64" class="versiculo">Entre los registrados no había ninguno de los registrados en el censo que Moisés y el sacerdote Aarón habían hecho en el desierto de Sinaí.</span> <span id="num_versiculo_65" class="num-versiculo">65</span><span id="versiculo_65" class="versiculo">El Señor lo había dicho: Morirán todos en el desierto, y no quedó ninguno vivo, más que Caleb, hijo de Jefoné, y Josué, hijo de Nun.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-25.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-36.html'">36</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/numeros-27.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

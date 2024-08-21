@@ -1,0 +1,215 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Levítico - Capítulo 14</title>
+                    <meta name="description" content="Levítico, capítulo 14.">
+                    <meta name="keywords" content="Biblia, Levítico, Capítulo 14, Levítico">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Levítico - Capítulo 14">
+                    <meta property="og:description" content="Levítico, capítulo 14.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/levitico-14.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/levitico-14.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Levítico - Capítulo 14">
+                    <meta name="twitter:description" content="Levítico, capítulo 14.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/levitico-14.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Levítico, 14: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">El Señor dijo a Moisés:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Rito de purificación de las afecciones cutáneas: El día en que el enfermo se presente al sacerdote,</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">el sacerdote saldrá fuera del campamento y comprobará que el enfermo se ha sanado de su afección cutánea.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Después mandará traer para el purificando dos aves puras, vivas, ramas de cedro, púrpura escarlata e hisopo.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">El sacerdote mandará degollar una de las aves en una vasija de loza sobre agua corriente.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Después tomará el ave viva, las ramas de cedro, la púrpura escarlata y el hisopo, y los mojará, también el ave viva, en la sangre del ave degollada sobre agua corriente.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Salpicará siete veces al que se está purificando de la afección, y lo declarará puro. El ave viva la soltará después en el campo.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">El purificando lavará sus vestidos, se afeitará completamente, se bañará y quedará puro. Después de esto podrá entrar en el campamento. Pero durante siete días se quedará fuera de su tienda.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">El séptimo día se rapará la cabeza, se afeitará la barba, las cejas y todo el pelo, lavará sus vestidos, se bañará y quedará puro.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">»El octavo día tomará dos corderos sin defecto, una cordera añal sin defecto, doce litros de flor de harina de ofrenda, amasada con aceite, y un cuarto de litro de aceite.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">El sacerdote que oficie la purificación presentará todo esto, junto con el purificando, ante el Señor, a la entrada de la tienda del encuentro.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">El sacerdote tomará uno de los corderos y lo ofrecerá en sacrificio penitencial, junto con el cuarto de litro de aceite; los agitará ritualmente ante el Señor.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Después degollará el cordero en el matadero de las víctimas expiatorias y holocaustos en lugar santo, porque la víctima penitencial, igual que las víctimas expiatorias, pertenece al sacerdote: son porción sagrada.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">El sacerdote tomará sangre de la víctima penitencial y untará con ella el lóbulo de la oreja derecha, el pulgar de la mano derecha y el pulgar del pie derecho del purificando.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Después echará un poco del aceite en su mano izquierda,</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">y untando en él el índice de su mano derecha, salpicará siete veces ante el Señor.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Con el aceite que le queda en la mano untará el lóbulo de la oreja derecha, el pulgar de la mano derecha y el pulgar del pie derecho del purificando, donde había untado la sangre de la víctima penitencial.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">El resto del aceite que le queda en la mano lo derramará sobre la cabeza del purificando, y así expiará por él ante el Señor.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Después el sacerdote ofrecerá el sacrificio expiatorio y hará la expiación por el que se está purificando. 
+Después degollará la víctima del holocausto,</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">y la ofrecerá junto con la ofrenda sobre el altar. Así expía por el purificando, y éste queda puro.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">»Si es pobre y no tiene recursos, tomará sólo un cordero, víctima penitencial, para la agitación ritual y para la expiación, cuatro litros de flor de harina amasada con aceite para la ofrenda y un cuarto de litro de aceite</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">y dos tórtolas o dos pichones, según sus recursos, uno para el sacrificio expiatorio y otro para el holocausto.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">El octavo día los presentará al sacerdote, a la entrada de la tienda del encuentro, en presencia del Señor, para su purificación.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">El sacerdote tomará el cordero penitencial y el cuarto de litro de aceite y los agitará ritualmente ante el Señor.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Después degollará el cordero penitencial. El sacerdote tomará sangre de la víctima y untará con ella el lóbulo de la oreja derecha, el pulgar de la mano derecha y el pulgar del pie derecho del purificando.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Después echará un poco de aceite en su mano izquierda,</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">y con el índice de la mano derecha salpicará siete veces ante el Señor con el aceite que tiene en la izquierda.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Con el aceite que tiene en la mano, el sacerdote untará el lóbulo de la oreja derecha, el pulgar de la mano derecha y el pulgar del pie derecho del purificando, donde había untado la sangre de la víctima.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">El resto del aceite que le quede en la mano lo derramará sobre la cabeza del purificando, para expiar por él ante el Señor.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Después ofrecerá una de las tórtolas o pichones, según sus recursos:</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">una en sacrificio expiatorio y otra en holocausto, junto a la ofrenda. El sacerdote expía así por el purificando en presencia del Señor.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Éste es el rito para la purificación del que padece de afección cutánea y no dispone de medios.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">El Señor dijo a Moisés y a Aarón:</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">—Cuando hayáis entrado en la tierra de Canaán, que voy a darles en posesión, y yo permita que una casa de vuestra tierra quede infectada,</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">el dueño de la casa se presentará al sacerdote a informarle: Ha aparecido una mancha en mi casa.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">El sacerdote, sin esperar hasta el examen de la mancha, mandará desalojar la casa, para que no se contamine lo que hay en ella.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Después el sacerdote entrará a examinar la casa. El sacerdote examinará la mancha; si observa el mal en las paredes, cavidades verduscas o rojizas un poco hundidas en la pared,</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">saldrá a la puerta de la casa y la mandará cerrar durante siete días.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Al séptimo día volverá; si la mancha se ha extendido por la pared,</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">el sacerdote mandará quitar las piedras manchadas y echarlas a un lugar impuro fuera de la ciudad.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Mandará raspar toda la casa por dentro, y el polvo que salga de rasparla lo echarán a un lugar impuro, fuera de la ciudad.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Tomarán otras piedras y las pondrán en el lugar de las primeras. Y con nueva cal revocarán la casa.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Si después de quitadas las piedras y después de haber raspado y revocado la casa, reaparece la mancha,</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">el sacerdote volverá a examinar la casa; si observa que se ha extendido el mal por la casa, se trata de un morbo corrosivo de la casa: es impura.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Hará derribar la casa, piedras, maderamen y toda la cal, y lo sacará todo a un lugar impuro fuera de la ciudad.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">El que entre en la casa mientras está cerrada, quedará impuro hasta la tarde.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">El que duerma en la casa, lavará sus vestidos. El que coma en la casa, lavará sus vestidos.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Pero si el sacerdote entra, y al examinar la casa observa que no se ha extendido el mal después de haberla revocado, declarará pura la casa, porque el mal se ha sanado.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Entonces tomará dos aves, ramas de cedro, púrpura escarlata e hisopo para expiar por la casa.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Degollará una de las aves en una vasija de loza sobre agua corriente.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Después tomará la rama de cedro, el hisopo, la púrpura escarlata y el ave viva, y los mojará en la sangre del ave degollada sobre agua corriente, y salpicará la casa siete veces.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Así expía por la casa con la sangre del ave, con el agua corriente, con el ave viva, con la rama de cedro, con el hisopo y con la púrpura escarlata.</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">El ave viva la soltará en el campo, fuera de la ciudad. Así expía por la casa, y ésta queda pura.</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Ésta es la ley sobre infecciones y sarnas,</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">sobre manchas de vestidos y casas;</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">sobre inflamaciones, erupciones y manchas,</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">según la cual se declaran los casos de pureza e impureza. 
+Ésta es la ley sobre infecciones.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-13.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-27.html'">27</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/levitico-15.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

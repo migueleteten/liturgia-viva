@@ -1,0 +1,459 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Salmos - Capítulo 78</title>
+                    <meta name="description" content="Salmos, capítulo 78.">
+                    <meta name="keywords" content="Biblia, Salmos, Capítulo 78, Salmos">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Salmos - Capítulo 78">
+                    <meta property="og:description" content="Salmos, capítulo 78.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/salmos-78.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/salmos-78.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Salmos - Capítulo 78">
+                    <meta name="twitter:description" content="Salmos, capítulo 78.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/salmos-78.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Salmos, 78: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Escucha, pueblo mío, mi instrucción, prestad oído a las palabras de mi boca:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">que voy a abrir la boca a una parábola, haré brotar enigmas del pasado.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Lo que oímos y aprendimos, y nos contaron nuestros padres</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">no lo encubriremos a sus hijos, lo contaremos a la siguiente generación: las glorias del Señor y su poder y las maravillas que realizó.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Pues él hizo un pacto con Jacob y dio una instrucción a Israel: él mandó a nuestros padres que lo hicieran saber a sus hijos,</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">de modo que lo conociera la generación siguiente, los hijos que habían de nacer; que ellos sucedieran y se lo contaran a sus hijos,</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">para que pusieran en Dios su esperanza no olvidaran las hazañas de Dios y cumplieran sus mandatos.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Para que no imitaran a sus antepasados: generación rebelde y contumaz, generación de corazón inconstante, de espíritu desconfiado de Dios.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Los arqueros de la tribu de Efraín volvieron la espalda en la batalla.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">No guardaron la alianza de Dios y rehusaron seguir sus instrucciones,</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">echando en olvido sus acciones, las maravillas que les había mostrado.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">A vista de sus padres hizo portentos, en territorio egipcio, en la campiña de Soán.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Hendió el mar para abrirles paso, sujetando las aguas como un dique.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Los guiaba de día con la nube, de noche con el resplandor del fuego.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Hendió la roca en el desierto y les dio a beber raudales de agua.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Sacó arroyos de la peña e hizo bajar el agua como ríos.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Pero ellos volvieron a pecar contra él rebelándose en el yermo contra el Altísimo.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Tentaron a Dios en el corazón pidiendo una comida para su apetito.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Hablaron contra Dios, dijeron: ¿podrá Dios poner la mesa en el desierto?</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Es verdad, golpeó la roca, brotó agua y se desbordó en torrentes; ¿podrá también darnos pan y proveer de carne a su pueblo?</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Lo oyó el Señor y se indignó, un incendio estalló contra Jacob hervía su cólera contra Israel,</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">porque no se fiaban de Dios ni confiaban en su auxilio.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Dio orden arriba a las nubes y abrió las compuertas del cielo;</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">hizo que les lloviese maná para comer y les sirvió un trigo celeste.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Un pan de héroes comió el hombre, les mandó provisiones hasta la hartura.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Transportó por el cielo el viento de levante y guió el viento sur con su fuerza.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Hizo que les lloviese carne como una polvareda, y volátiles como arena de la playa.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Los hizo caer en medio del campamento, alrededor de sus moradas.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Comieron hasta hartarse y les satisfizo su avidez.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Con la avidez apenas saciada, con la comida aún en la boca,</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">la ira de Dios hirvió contra ellos: dio muerte a los más robustos y doblegó la flor de Israel.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Y con todo, volvieron a pecar y no se fiaron de sus milagros.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Consumió sus días en un soplo, sus años en un momento.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Cuando los mataba, lo buscaban y madrugaban para volverse a Dios;</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">se acordaban de que Dios era su Roca, el Dios Altísimo, su Redentor.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Lo adulaban con la boca, le mentían con la lengua;</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">su corazón no era constante con él ni eran fieles a su alianza.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Él, en cambio, era compasivo: perdonaba la culpa y no los destruía; muchas veces reprimió la cólera y no excitaba todo su furor,</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">recordando que eran carne, un aliento fugaz que no torna.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">¡Cómo se rebelaron en el desierto enojando a Dios en la estepa!</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Volvían a tentar a Dios, irritando al Santo de Israel,</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">sin acordarse de aquella mano que un día los libró de la opresión,</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">cuando hizo señales en Egipto y portentos en la campiña de Soán.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Convirtió sus canales en sangre y sus arroyos, para que no bebieran;</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">les mandó tábanos que los picasen y las ranas que los destruyesen;</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">entregó a la langosta su cosecha, a saltamontes el fruto de sus fatigas;</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">mató con granizo sus viñedos y con aguacero sus moreras;</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">entregó al pedrisco sus ganados, a las centellas sus rebaños;</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">lanzó contra ellos su ira ardiente, su cólera, su furor, su indignación: despachando unos siniestros mensajeros,</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">dio libre curso a su ira; no salvó su vida de la muerte, entregó sus vidas a la peste.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Hirió a los primogénitos en Egipto, a las primicias del vigor en las tiendas de Cam.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Sacó como un rebaño a su pueblo, los guió como un hato por el desierto;</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">los condujo seguros, sin alarmas, mientras el mar cubría a sus enemigos.</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Los hizo entrar por la santa frontera, al monte que su diestra había adquirido.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Les quitó de delante los pueblos, les asignó por suerte su heredad, instaló en sus tiendas a las tribus de Israel.</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">Pero ellos tentaron al Dios Altísimo, se rebelaron y no guardaron sus preceptos;</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">desertaron, lo traicionaron como sus padres, fallaron como un arco engañoso:</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">lo irritaban con sus altozanos, con sus ídolos le daban celos.</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">Lo oyó Dios y se indignó y rechazó gravemente a Israel.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">Arrancó la morada de Siló, la tienda que había instalado entre los hombres.</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">Abandonó sus valientes al cautiverio, su orgullo a la mano enemiga;</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">entregó su pueblo a la espada, indignado con su heredad.</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">A los jóvenes los devoraba el fuego, para las doncellas no había requiebros;</span> <span id="num_versiculo_64" class="num-versiculo">64</span><span id="versiculo_64" class="versiculo">sus sacerdotes caían a espada y las viudas no los lloraban.</span> <span id="num_versiculo_65" class="num-versiculo">65</span><span id="versiculo_65" class="versiculo">Se despertó como de un sueño el Señor, como soldado aturdido por el vino,</span> <span id="num_versiculo_66" class="num-versiculo">66</span><span id="versiculo_66" class="versiculo">hirió al enemigo por la espalda infligiéndole una derrota definitiva.</span> <span id="num_versiculo_67" class="num-versiculo">67</span><span id="versiculo_67" class="versiculo">Rechazó la tienda de José y no eligió a la tribu de Efraín;</span> <span id="num_versiculo_68" class="num-versiculo">68</span><span id="versiculo_68" class="versiculo">eligió a la tribu de Judá y el monte Sión, su preferido.</span> <span id="num_versiculo_69" class="num-versiculo">69</span><span id="versiculo_69" class="versiculo">Se construyó un santuario como el cielo, como la tierra que cimentó para siempre.</span> <span id="num_versiculo_70" class="num-versiculo">70</span><span id="versiculo_70" class="versiculo">Eligió a David, su siervo, sacándolo de los apriscos del rebaño;</span> <span id="num_versiculo_71" class="num-versiculo">71</span><span id="versiculo_71" class="versiculo">de andar tras las ovejas lo llevó a pastorear a Jacob, su pueblo, a Israel, su heredad.</span> <span id="num_versiculo_72" class="num-versiculo">72</span><span id="versiculo_72" class="versiculo">Los pastoreaba con corazón íntegro, los guió con mano experta.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-77.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-48.html'">48</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-49.html'">49</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-50.html'">50</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-51.html'">51</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-52.html'">52</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-53.html'">53</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-54.html'">54</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-55.html'">55</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-56.html'">56</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-57.html'">57</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-58.html'">58</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-59.html'">59</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-60.html'">60</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-61.html'">61</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-62.html'">62</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-63.html'">63</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-64.html'">64</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-65.html'">65</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-66.html'">66</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-67.html'">67</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-68.html'">68</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-69.html'">69</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-70.html'">70</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-71.html'">71</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-72.html'">72</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-73.html'">73</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-74.html'">74</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-75.html'">75</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-76.html'">76</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-77.html'">77</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-78.html'">78</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-79.html'">79</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-80.html'">80</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-81.html'">81</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-82.html'">82</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-83.html'">83</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-84.html'">84</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-85.html'">85</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-86.html'">86</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-87.html'">87</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-88.html'">88</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-89.html'">89</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-90.html'">90</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-91.html'">91</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-92.html'">92</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-93.html'">93</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-94.html'">94</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-95.html'">95</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-96.html'">96</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-97.html'">97</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-98.html'">98</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-99.html'">99</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-100.html'">100</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-101.html'">101</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-102.html'">102</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-103.html'">103</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-104.html'">104</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-105.html'">105</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-106.html'">106</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-107.html'">107</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-108.html'">108</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-109.html'">109</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-110.html'">110</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-111.html'">111</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-112.html'">112</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-113.html'">113</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-114.html'">114</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-115.html'">115</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-116.html'">116</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-117.html'">117</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-118.html'">118</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-119.html'">119</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-120.html'">120</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-121.html'">121</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-122.html'">122</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-123.html'">123</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-124.html'">124</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-125.html'">125</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-126.html'">126</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-127.html'">127</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-128.html'">128</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-129.html'">129</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-130.html'">130</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-131.html'">131</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-132.html'">132</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-133.html'">133</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-134.html'">134</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-135.html'">135</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-136.html'">136</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-137.html'">137</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-138.html'">138</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-139.html'">139</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-140.html'">140</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-141.html'">141</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-142.html'">142</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-143.html'">143</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-144.html'">144</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-145.html'">145</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-146.html'">146</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-147.html'">147</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-148.html'">148</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-149.html'">149</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-150.html'">150</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-79.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

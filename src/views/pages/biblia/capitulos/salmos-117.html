@@ -1,0 +1,459 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Salmos - Capítulo 117</title>
+                    <meta name="description" content="Salmos, capítulo 117.">
+                    <meta name="keywords" content="Biblia, Salmos, Capítulo 117, Salmos">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Salmos - Capítulo 117">
+                    <meta property="og:description" content="Salmos, capítulo 117.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/salmos-117.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/salmos-117.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Salmos - Capítulo 117">
+                    <meta name="twitter:description" content="Salmos, capítulo 117.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/salmos-117.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Salmos, 117: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Alabad al Señor, todas las naciones, aclamadlo, todos los pueblos.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Porque la lealtad del Señor puede más que nosotros y la fidelidad del Señor es perpetua.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-116.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-48.html'">48</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-49.html'">49</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-50.html'">50</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-51.html'">51</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-52.html'">52</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-53.html'">53</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-54.html'">54</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-55.html'">55</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-56.html'">56</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-57.html'">57</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-58.html'">58</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-59.html'">59</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-60.html'">60</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-61.html'">61</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-62.html'">62</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-63.html'">63</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-64.html'">64</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-65.html'">65</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-66.html'">66</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-67.html'">67</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-68.html'">68</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-69.html'">69</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-70.html'">70</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-71.html'">71</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-72.html'">72</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-73.html'">73</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-74.html'">74</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-75.html'">75</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-76.html'">76</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-77.html'">77</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-78.html'">78</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-79.html'">79</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-80.html'">80</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-81.html'">81</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-82.html'">82</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-83.html'">83</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-84.html'">84</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-85.html'">85</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-86.html'">86</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-87.html'">87</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-88.html'">88</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-89.html'">89</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-90.html'">90</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-91.html'">91</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-92.html'">92</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-93.html'">93</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-94.html'">94</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-95.html'">95</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-96.html'">96</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-97.html'">97</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-98.html'">98</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-99.html'">99</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-100.html'">100</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-101.html'">101</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-102.html'">102</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-103.html'">103</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-104.html'">104</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-105.html'">105</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-106.html'">106</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-107.html'">107</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-108.html'">108</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-109.html'">109</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-110.html'">110</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-111.html'">111</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-112.html'">112</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-113.html'">113</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-114.html'">114</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-115.html'">115</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-116.html'">116</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-117.html'">117</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-118.html'">118</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-119.html'">119</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-120.html'">120</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-121.html'">121</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-122.html'">122</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-123.html'">123</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-124.html'">124</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-125.html'">125</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-126.html'">126</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-127.html'">127</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-128.html'">128</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-129.html'">129</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-130.html'">130</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-131.html'">131</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-132.html'">132</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-133.html'">133</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-134.html'">134</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-135.html'">135</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-136.html'">136</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-137.html'">137</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-138.html'">138</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-139.html'">139</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-140.html'">140</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-141.html'">141</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-142.html'">142</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-143.html'">143</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-144.html'">144</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-145.html'">145</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-146.html'">146</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-147.html'">147</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-148.html'">148</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-149.html'">149</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-150.html'">150</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-118.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

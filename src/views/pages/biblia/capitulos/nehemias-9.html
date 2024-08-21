@@ -1,0 +1,350 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Nehemías - Capítulo 9</title>
+                    <meta name="description" content="Nehemías, capítulo 9.">
+                    <meta name="keywords" content="Biblia, Nehemías, Capítulo 9, Nehemías">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Nehemías - Capítulo 9">
+                    <meta property="og:description" content="Nehemías, capítulo 9.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/nehemias-9.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/nehemias-9.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Nehemías - Capítulo 9">
+                    <meta name="twitter:description" content="Nehemías, capítulo 9.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/nehemias-9.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Nehemías, 9: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">El día veinticuatro de este mismo mes se reunieron los israelitas para ayunar, vestidos de sayales y cubiertos de polvo.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">La estirpe de Israel se separó de todos los extranjeros, y puestos en pie confesaron sus pecados y las culpas de sus padres.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Permanecieron en sus puestos una cuarta parte del día, mientras se leía el libro de la ley del Señor, su Dios, y otra cuarta parte la pasaron confesando y rindiendo homenaje al Señor, su Dios.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Josué, Baní, Cadmiel, Sebanías, Buní, Serebías, Baní y Quenaní subieron a la tribuna de los levitas e invocaron en alta voz al Señor, su Dios.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Y los levitas Josué, Cadmiel, Baní, Jasabnías, Serebías, Hodiyas, Sebanías y Petajías dijeron: 
+—Levantaos, bendecid al Señor, vuestro Dios, desde siempre y por siempre; bendecid su Nombre glorioso, que supera toda bendición y alabanza.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Y Esdras rezó: 
+Tú, Señor, eres el único Dios. 
+Tú hiciste los cielos, 
+lo más alto de los cielos 
+y todos sus ejércitos; 
+la tierra y cuantos la habitan, 
+los mares y cuanto contienen. 
+A todos les das vida, 
+y los ejércitos celestes 
+te rinden homenaje.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Tú, Señor, eres el Dios 
+que elegiste a Abrán, 
+lo sacaste de Ur de los caldeos 
+y le pusiste por nombre Abrahán.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Viste que su corazón te era fiel 
+e hiciste con él un pacto 
+para darle la tierra de los cananeos, 
+hititas, amorreos, fereceos, 
+jebuseos y guirgaseos, 
+a él y a su descendencia. 
+Y cumpliste la palabra 
+porque eres leal.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Viste luego la aflicción 
+de nuestros padres en Egipto, 
+escuchaste sus clamores 
+junto al Mar Rojo.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Realizaste signos y prodigios 
+contra el faraón, 
+contra sus ministros 
+y toda la gente del país 
+–pues sabías que eran 
+altivos con ellos– 
+y te creaste una fama 
+que perdura hasta hoy.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Hendiste ante ellos el mar, 
+y cruzaron el mar a pie enjuto. 
+Arrojaste al abismo 
+a sus perseguidores, 
+como una piedra en aguas turbulentas.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Con columna de nube 
+los guiaste de día, 
+con columna de fuego, de noche, 
+para iluminarles el camino 
+que debían recorrer.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Bajaste al monte Sinaí, 
+hablaste con ellos desde el cielo. 
+Les diste normas justas, leyes válidas, 
+mandatos y preceptos excelentes.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Les diste a conocer tu santo sábado, 
+les diste preceptos, mandatos y leyes 
+por medio de tu siervo Moisés.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Les enviaste pan desde el cielo 
+cuando tenían hambre, 
+hiciste brotar agua de la roca 
+cuando tenían sed. 
+Y les ordenaste tomar posesión 
+de la tierra que, con mano en alto, 
+habías jurado darles.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Pero ellos, nuestros padres, 
+se mostraron altivos; 
+poniéndose tercos 
+desoyeron tus mandatos.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">No quisieron oír ni recordar 
+los prodigios que hiciste en su favor. 
+Tercamente se empeñaron 
+en volver a la esclavitud de Egipto. 
+Pero tú, Dios del perdón, 
+clemente y compasivo, 
+paciente y misericordioso, 
+no los abandonaste,</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">ni siquiera cuando hicieron 
+un becerro fundido y proclamaron: 
+Éste es tu dios, que te sacó de Egipto, 
+cometiendo una ofensa terrible.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Pero tú, por tu gran compasión, 
+no los abandonaste en el desierto. 
+No se alejó de ellos la columna de nube 
+que los guiaba por el camino de día, 
+ni la columna de fuego 
+que de noche les iluminaba 
+el camino que debían recorrer.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Les diste tu buen espíritu 
+para instruirlos, 
+no les quitaste de la boca tu maná, 
+les diste agua en los momentos de sed.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Cuarenta años 
+los sustentaste en el desierto 
+y nada les faltó; 
+ni sus vestidos se gastaron 
+ni se hincharon sus pies.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Les entregaste reinos y pueblos, 
+repartiste a cada uno su región. 
+Se apoderaron del país de Sijón, 
+rey de Jesbón, 
+de la tierra de Og, rey de Basán.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Multiplicaste sus hijos 
+omo las estrellas del cielo, 
+los introdujiste en la tierra 
+que habías prometido a sus padres 
+en posesión.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Entraron los hijos para ocuparla 
+y derrotaste ante ellos 
+a sus habitantes, los cananeos. 
+Los pusiste en sus manos, 
+igual que a los reyes 
+y a los pueblos del país, 
+para que dispusieran de ellos a placer.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Conquistaron fortalezas 
+y una tierra fértil; 
+poseyeron casas 
+rebosantes de riquezas, 
+pozos excavados, viñas y olivares, 
+y abundantes árboles frutales; 
+comieron hasta hartarse y engordaron 
+y disfrutaron de tus dones generosos.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Pero, indóciles, se rebelaron contra ti, 
+se echaron tu ley a las espaldas 
+y asesinaron a tus profetas, 
+que los amonestaban a volver a ti, 
+cometiendo gravísimas ofensas.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Los entregaste 
+en manos de sus enemigos, 
+que los oprimieron. 
+Pero en su angustia clamaron a ti, 
+y tú los escuchaste desde el cielo; 
+y por tu gran compasión 
+les enviaste salvadores 
+que los salvaron de sus enemigos.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Pero al sentirse tranquilos 
+hacían otra vez lo que repruebas; 
+los abandonabas 
+en manos de sus enemigos 
+que los oprimían; 
+clamaban de nuevo a ti, 
+y tú los escuchabas desde el cielo, 
+librándolos muchas veces 
+por tu gran compasión.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Los amonestaste 
+para reducirlos a tu ley, 
+pero ellos, altivos, 
+no obedecieron tus preceptos 
+y pecaron contra tus normas, 
+que dan vida al hombre si las cumple. 
+Volvieron la espalda con rebeldía; 
+tercamente, no quisieron escuchar.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Fuiste paciente con ellos 
+durante muchos años, 
+tu Espíritu los amonestó 
+por tus profetas, 
+pero no prestaron atención 
+y los entregaste 
+en manos de pueblos paganos.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Sin embargo, por tu gran compasión 
+no los aniquilaste ni abandonaste, 
+porque eres 
+un Dios clemente y compasivo.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Ahora, Dios nuestro, 
+Dios grande, valiente y terrible, 
+fiel a la alianza y leal, 
+no menosprecies las aflicciones 
+que les han sobrevenido 
+a nuestros reyes, príncipes, 
+sacerdotes y profetas, 
+a nuestros padres y a todo tu pueblo 
+desde el tiempo de los reyes asirios 
+hasta hoy.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Eres inocente 
+en todo lo que nos ha ocurrido, 
+porque tú obraste con lealtad, 
+y nosotros somos culpables.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Ciertamente, nuestros reyes, 
+príncipes, sacerdotes y padres 
+no cumplieron tu ley 
+ni prestaron atención 
+a los preceptos y avisos 
+con que los amonestabas.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Durante su reinado, 
+a pesar de los grandes bienes 
+que les concediste 
+y de la tierra espaciosa y fértil 
+que les entregaste, 
+no te sirvieron ni se convirtieron 
+de sus malas acciones.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Por eso estamos ahora esclavizados, 
+esclavos en la tierra 
+que diste a nuestros padres 
+para que comiesen 
+sus frutos excelentes.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Y sus abundantes productos 
+son para los reyes 
+a los que nos sometiste 
+por nuestros pecados, 
+y que ejercen 
+su dominio a su arbitrio 
+sobre nuestras personas y ganados. 
+Somos unos desgraciados.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-8.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-13.html'">13</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/nehemias-10.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

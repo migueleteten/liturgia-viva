@@ -13,7 +13,7 @@ main {
   position: sticky;
   color: white;
   top: 0;
-  z-index: 1000; /* Mantener el header encima de otros elementos */
+  z-index: 1500; /* Mantener el header encima de otros elementos */
   background-color: #138275;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -34,6 +34,13 @@ main {
 .btn-primary:hover {
   background-color: lightseagreen;
   border-color: lightseagreen;
+}
+
+.btn-primary:focus {
+  color: white;
+  background-color: lightseagreen;
+  border-color: lightseagreen;
+  box-shadow: none;
 }
 
 .btn-success {

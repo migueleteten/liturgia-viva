@@ -1,0 +1,259 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Génesis - Capítulo 27</title>
+                    <meta name="description" content="Génesis, capítulo 27.">
+                    <meta name="keywords" content="Biblia, Génesis, Capítulo 27, Génesis">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Génesis - Capítulo 27">
+                    <meta property="og:description" content="Génesis, capítulo 27.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/genesis-27.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/genesis-27.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Génesis - Capítulo 27">
+                    <meta name="twitter:description" content="Génesis, capítulo 27.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/genesis-27.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Génesis, 27: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Cuando Isaac se hizo viejo y perdió la vista, llamó a Esaú, su hijo mayor, y le dijo: —¡Hijo mío! Le contestó: —Aquí estoy.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Le dijo: —Mira, ya estoy viejo y no sé cuándo voy a morir.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Así que toma tus aparejos, arco y aljaba, y sal a descampado a cazarme alguna pieza.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Después me la guisas como a mí me gusta y me la traes para que la coma. Pues quiero darte mi bendición antes de morir.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Rebeca escuchaba lo que Isaac decía a su hijo Esaú. Esaú salió a descampado para cazar y traer alguna pieza.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Rebeca dijo a su hijo Jacob: —He oído a tu padre que decía a Esaú tu hermano:</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Tráeme una pieza y guísamela, que la coma; pues quiero bendecirte en presencia del Señor antes de morir.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Ahora, hijo mío, obedece mis instrucciones:</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Vete al rebaño, selecciona dos cabritos hermosos y yo se los guisaré a tu padre como a él le gusta.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Tú se lo llevarás a tu padre para que coma; y así te bendecirá antes de morir.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Replicó Jacob a Rebeca su madre: —Sabes que Esaú mi hermano es peludo y yo soy lampiño.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Si mi padre me palpa y quedo ante él como embustero, me acarrearé maldición en vez de bendición.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Su madre le dijo: —Yo cargo con la maldición, hijo mío. Tú obedece, ve y tráemelos.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Él fue, los escogió y se los trajo a su madre; y su madre los guisó como le gustaba a su padre.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Rebeca tomó el traje de su hijo mayor Esaú, el traje de fiesta que guardaba en el arcón, y se lo vistió a Jacob, su hijo menor.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Con la piel de los cabritos le cubrió las manos y la parte lisa del cuello.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Después puso en manos de su hijo Jacob el guiso que había preparado con el pan.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Él entró adonde estaba su padre y le dijo: —Padre mío. Le contestó: —Aquí estoy. ¿Quién eres tú, hijo mío?</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Jacob respondió a su padre: —Yo soy Esaú, tu primogénito. He hecho lo que me mandaste. Incorpórate, siéntate y come de la caza; y después me bendecirás.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Isaac dijo a su hijo: —¡Qué prisa te has dado para encontrarla, hijo mío! Le contestó: —Es que el Señor tu Dios me la puso al alcance.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Isaac dijo a Jacob: —Acércate que te palpe, hijo mío, a ver si eres tú mi hijo Esaú o no.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Se acercó Jacob a Isaac, su padre, el cual palpándolo dijo: —La voz es la voz de Jacob, las manos son las manos de Esaú.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">No le reconoció porque sus manos estaban peludas como las de su hermano Esaú. Y se dispuso a bendecirlo.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Dijo, pues: —¿Eres tú mi hijo Esaú? Contestó: —Lo soy.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Le dijo: —Hijo mío, acércame la caza, que coma; y después te bendeciré. Se la acercó y comió, luego le sirvió vino, y bebió.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">saac, su padre, le dijo: —Acércate y bésame, hijo mío.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Se acercó y lo besó. Y al oler el aroma del traje, lo bendijo diciendo: —Mira, el aroma de mi hijo como aroma de un campo que ha bendecido el Señor.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Que Dios te conceda rocío del cielo, feracidad de la tierra, abundancia de grano y mosto;</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">te sirvan pueblos y te rindan vasallaje las naciones. Sé señor de tus hermanos, que te rindan vasallaje los hijos de tu madre. ¡Maldito quien te maldiga, bendito quien te bendiga!</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Apenas terminó Isaac de bendecir a Jacob, mientras salía Jacob de donde estaba su padre, Esaú volvía de cazar.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">También él hizo un guiso, se lo llevó a su padre y dijo a su padre: —Incorpórese, padre, y coma de la caza de su hijo; y así me bendecirá.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Su padre Isaac le preguntó: —¿Quién eres? Contestó: —Soy tu primogénito, Esaú.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Isaac fue presa de un terror espantoso y dijo: —Entonces, ¿quién es el que fue a cazar y me lo trajo y comí de todo antes de que tú llegaras? Lo he bendecido y será bendecido.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Al oír Esaú las palabras de su padre, dio un grito atroz, lleno de amargura y pidió a su padre: —Bendíceme a mí también, padre mío.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Le contestó: —Ha venido tu hermano con trampas y se ha llevado tu bendición.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Comentó Esaú: —Con razón se llama Jacob, ya me ha hecho trampa dos veces; se llevó mis derechos de primogénito y ahora se ha llevado mi bendición. Y añadió: —¿No te queda otra bendición para mí?</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Respondió Isaac a Esaú: —Mira, lo he nombrado señor tuyo, he declarado siervos suyos a sus hermanos, le he asegurado el grano y el mosto; ¿qué puedo hacer ya por ti, hijo mío?</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Esaú dijo a su padre: —¿Es que sólo tienes una bendición, padre mío? Bendíceme también a mí, padre mío. Y Esaú se echó a llorar ruidosamente.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Entonces su padre Isaac le dijo: Sin feracidad de la tierra, sin rocío del cielo será tu morada.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Vivirás de la espada, sometido a tu hermano. Pero cuando te rebeles, sacudirás el yugo del cuello.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Esaú guardaba rencor a Jacob por la bendición con que lo había bendecido su padre. Esaú se decía: —Cuando llegue el luto por mi padre, mataré a Jacob mi hermano.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Le contaron a Rebeca lo que decía su hijo mayor Esaú; mandó llamar a Jacob, el hijo menor, y le dijo: —Mira, Esaú tu hermano piensa vengarse matándote.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Por tanto, hijo mío, anda, huye a Jarán, a casa de mi hermano Labán.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Quédate con él una temporada, hasta que se le pase la cólera a tu hermano,</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">hasta que se le pase la ira a tu hermano y se olvide de lo que has hecho; entonces te mandaré llamar. Que no quiero perder a mis dos hijos el mismo día.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Rebeca dijo a Isaac: —Estas mujeres hititas me hacen la vida imposible. Si también Jacob toma mujeres hititas del país, como éstas, ¿de qué me sirve vivir?</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-26.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-48.html'">48</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-49.html'">49</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-50.html'">50</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/genesis-28.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

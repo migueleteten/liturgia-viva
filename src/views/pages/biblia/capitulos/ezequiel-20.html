@@ -1,0 +1,261 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Ezequiel - Capítulo 20</title>
+                    <meta name="description" content="Ezequiel, capítulo 20.">
+                    <meta name="keywords" content="Biblia, Ezequiel, Capítulo 20, Ezequiel">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Ezequiel - Capítulo 20">
+                    <meta property="og:description" content="Ezequiel, capítulo 20.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/ezequiel-20.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/ezequiel-20.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Ezequiel - Capítulo 20">
+                    <meta name="twitter:description" content="Ezequiel, capítulo 20.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/ezequiel-20.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Ezequiel, 20: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">El año séptimo, el día décimo del quinto mes, vinieron algunos concejales de Israel a consultar al Señor y se sentaron frente a mí.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Entonces me dirigió la palabra el Señor:</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">—Hijo de Adán, habla así a los concejales de Israel: 
+Esto dice el Señor: 
+¿Conque venís a consultarme? Por mi vida juro que no me dejaré consultar por vosotros –oráculo del Señor–.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">¡Júzgalos tú, júzgalos tú, Hijo de Adán! Denúnciales las abominaciones de sus padres,</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">diciéndoles: Esto dice el Señor: 
+Cuando elegí a Israel, juré con la mano en alto al linaje de la casa de Jacob; cuando me manifesté a ellos en Egipto les dije con la mano en alto: Yo soy el Señor, vuestro Dios.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Aquel día les juré con la mano en alto sacarlos de Egipto y llevarlos a una tierra que yo mismo les había explorado: manaba leche y miel, era la perla de las naciones.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Y les dije: Arrojad los fetiches que os encandilan y no os contaminéis con los ídolos de Egipto. Yo soy el Señor, vuestro Dios.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Pero se rebelaron contra mí y no quisieron obedecerme; ninguno arrojó los fetiches que lo encadilaban ni se deshizo de los ídolos de Egipto. Entonces pensé derramar mi cólera sobre ellos para agotar en ellos mi ira en territorio egipcio.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Pero actué por respeto a mi Nombre, para que no fuera profanado ante los paganos con los que vivían, y en cuya presencia me manifesté a ellos para sacarlos de Egipto.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Los saqué de Egipto y los llevé al desierto.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Les di mis preceptos y les enseñé mis mandamientos, que dan la vida al que los cumple.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Les di también mis sábados como señal recíproca, para que se supiera que yo soy el Señor que los santifico.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Pero se rebeló contra mí la Casa de Israel en el desierto: no caminaron según mis preceptos, rechazaron mis mandamientos, que dan la vida al que los cumple, y profanaron gravemente mis sábados. Entonces pensé derramar mi cólera sobre ellos, en el desierto, para exterminarlos.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Pero actué por respeto a mi Nombre, para que no fuera profanado ante los paganos, en cuya presencia los había sacado.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">No obstante, juré en el desierto, con la mano en alto, no llevarlos a la tierra que les había asignado, que manaba leche y miel y era la perla de las naciones,</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">por haber rechazado mis mandamientos, por no haber caminado según mis preceptos, por haber profanado mis sábados, porque se les iba el corazón tras sus ídolos.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Pero, compadecido de ellos, no los aniquilé ni acabé con ellos en el desierto.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">A sus hijos les dije en el desierto: No caminéis según los preceptos de vuestros padres, ni guardéis sus mandamientos, ni os contaminéis con sus ídolos.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Yo soy el Señor, vuestro Dios: caminad según mis preceptos, guardad mis mandamientos y cumplidlos;</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">santificad mis sábados: serán señal recíproca para que se sepa que soy el Señor, vuestro Dios.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Pero sus hijos se rebelaron contra mí: no caminaron según mis preceptos, ni guardaron ni cumplieron mis mandamientos, que dan la vida al que los cumple, y profanaron mis sábados. Entonces pensé derramar mi cólera sobre ellos para agotar en ellos mi ira en el desierto.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Pero retraje mi mano y actué por respeto a mi Nombre, para que no fuera profanado ante los paganos, en cuya presencia los había sacado.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Con todo, juré en el desierto, con la mano en alto, dispersarlos por las naciones y esparcirlos por los países,</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">por no haber cumplido mis mandamientos, por haber rechazado mis preceptos y haber profanado mis sábados, por habérseles ido los ojos tras los ídolos de sus padres.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">¿Acaso les di yo preceptos no buenos, mandamientos que no les darían la vida?</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">¿Los contaminé con las ofrendas que hacían inmolando a sus primogénitos? ¿Los horroricé para que así supieran que yo soy el Señor?</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Por tanto, Hijo de Adán, habla así a la Casa de Israel: Esto dice el Señor: 
+Vuestros padres encima me ofendieron cometiendo esta traición:</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Cuando los introduje en la tierra que con la mano en alto había jurado darles, al ver un collado alto, al ver un árbol copudo, allí hacían sus sacrificios, allí depositaban su irritante ofrenda, allí ponían sus oblaciones de aroma que aplaca, allí vertían sus libaciones.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Entonces les pregunté: ¿Qué hay en ese altozano que frecuentáis? Y se quedó con el nombre de Altozano hasta el día de hoy.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Por tanto, dile a la Casa de Israel: Esto dice el Señor: 
+Os contamináis igual que vuestros padres, fornicáis con sus fetiches,</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">ofrecéis a vuestros hijos pasándolos por el fuego, os seguís contaminando con vuestros ídolos, ¿y voy a dejarme consultar por vosotros, Casa de Israel? Por mi vida –oráculo del Señor–, juro que no me dejaré consultar.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Jamás se realizarán los planes que estáis pensando: Seremos como los demás pueblos, como las razas de otros países, sirviendo al leño y a la piedra.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">¡Por mi vida! –oráculo del Señor–, juro que con mano poderosa, con brazo extendido, con cólera incontenible, reinaré sobre vosotros</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">y os sacaré de los países y os reuniré de entre las naciones por las que andáis dispersos, con mano poderosa, con brazo extendido, con cólera incontenible.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Y os llevaré al desierto de los pueblos para pleitear allí con vosotros cara a cara.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Igual que pleiteé con vuestros padres en el desierto de Egipto, así pleitearé con vosotros –oráculo del Señor–.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Os haré pasar bajo el cayado y os haré entrar uno a uno por el aro de la alianza,</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">y excluiré a los rebeldes que se sublevan contra mí; los sacaré del país de su destierro, pero no entrarán en la tierra de Israel. Y sabréis que yo soy el Señor.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">A vosotros, Casa de Israel, esto os dice el Señor: 
+Cada uno que vaya a servir a sus ídolos si no quiere obedecerme, pero que no siga profanando mi santo Nombre con sus ofrendas idolátricas.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Porque en mi Monte Santo, en el más alto monte de Israel –oráculo del Señor–, allí en la tierra, me servirá la Casa de Israel toda entera. Allí los aceptaré, allí os pediré vuestros tributos, vuestras primicias y vuestros dones sagrados.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Como aroma que aplaca os aceptaré cuando os saque de los países y os reúna de entre las naciones en las que estáis dispersos y muestre en vosotros mi santidad a la vista de los paganos.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Y sabréis que yo soy el Señor cuando os lleve a la tierra de Israel, al país que con la mano en alto juré dar a vuestros padres.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Allí, cuando os acordéis de vuestra conducta y de las malas obras con que os contaminasteis sentiréis asco de vosotros mismos por las maldades que cometisteis.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Y sabréis que yo soy el Señor cuando os trate como exige mi Nombre, no según vuestra mala conducta y vuestras obras perversas, Casa de Israel –oráculo del Señor–.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-19.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-48.html'">48</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-21.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

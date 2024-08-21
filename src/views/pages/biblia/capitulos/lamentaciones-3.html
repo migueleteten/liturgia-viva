@@ -1,0 +1,169 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Lamentaciones - Capítulo 3</title>
+                    <meta name="description" content="Lamentaciones, capítulo 3.">
+                    <meta name="keywords" content="Biblia, Lamentaciones, Capítulo 3, Lamentaciones">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Lamentaciones - Capítulo 3">
+                    <meta property="og:description" content="Lamentaciones, capítulo 3.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/lamentaciones-3.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/lamentaciones-3.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Lamentaciones - Capítulo 3">
+                    <meta name="twitter:description" content="Lamentaciones, capítulo 3.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/lamentaciones-3.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Lamentaciones, 3: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Yo soy un hombre que ha probado el dolor bajo la vara de su cólera,</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">porque me ha llevado y conducido a las tinieblas y no a la luz;</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">todo el día está volviendo su mano contra mí.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Me ha consumido la piel y la carne y me ha roto los huesos;</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">en torno mío ha levantado un cerco de veneno y amargura</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">y me ha encerrado en las tinieblas, como a los muertos de antaño.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Me ha tapiado sin salida cargándome de cadenas;</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">por más que grito: Socorro, se hace sordo a mi súplica;</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">me ha cerrado el paso con sillares, y ha retorcido mis sendas.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Me está acechando como un oso o como un león escondido;</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">me ha cerrado el camino para despedazarme y me ha dejado inerte;</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">tensa el arco y me hace blanco de sus flechas.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Me ha clavado en las entrañas las flechas de su aljaba:</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">la gente se burla de mí, me saca coplas todo el día;</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">me ha saciado de hieles abrevándome con ajenjo.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Mis dientes rechinan mordiendo guijas, y me revuelco en el polvo;</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">me han arrancado la paz, y ni me acuerdo de la dicha;</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">me digo: Se me acabaron las fuerzas y mi esperanza en el Señor.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Fíjate en mi aflicción y en mi amargura, en la hiel que me envenena;</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">no hago más que pensar en ello, y estoy abatido.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Pero hay algo que traigo a la memoria y me da esperanza:</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">que la misericordia del Señor no termina y no se acaba su compasión;</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">antes bien, se renuevan cada mañana: ¡qué grande es tu fidelidad!</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Y me digo: El Señor es mi lote, y espero en él.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">El Señor es bueno para los que esperan en él y lo buscan;</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">es bueno esperar en silencio la salvación del Señor;</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">le irá bien al hombre si carga con el yugo desde joven.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Que se esté solo y callado cuando la desgracia descarga sobre él;</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">que pegue la boca al polvo, quizá quede esperanza;</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">que entregue la mejilla al que lo hiere y se sacie de oprobios.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Porque el Señor no rechaza para siempre;</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">aunque aflige, se compadece con gran misericordia,</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">porque no goza afligiendo o apenando a los hombres.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Aplastar bajo los pies a todos los prisioneros de la tierra,</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">negar su derecho al pobre, en presencia del Altísimo,</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">defraudar a alguien en un proceso: eso no lo aprueba el Señor.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">¿Quién mandó que sucediera algo si no fue el Señor?,</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">¿no es el Señor quien dispone que suceda el bien y el mal?,</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">¿por qué se ha de quejar de su desgracia el hombre mientras vive?</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Examinemos y revisemos nuestra conducta y volvamos al Señor,</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">levantemos con las manos el corazón al Dios del cielo:</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">nosotros nos hemos rebelado pecando, y tú no nos has perdonado;</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">envuelto en tu enojo nos has perseguido y matado sin piedad,</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">te has envuelto en nubes para que no te alcancen las plegarias;</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">nos has hecho el desprecio y el desecho de las gentes.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Todos nuestros enemigos se ríen de nosotros;</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">nos asaltan terrores y espantos, desgracias y fracasos,</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">lloramos arroyos de lágrimas por la ruina de la capital.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Mis ojos lloran sin cesar y sin descanso,</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">hasta que el Señor desde el cielo se asome y me vea;</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">me duelen los ojos de llorar por las jóvenes de la ciudad.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Los que me odian sin razón me han dado caza, como a un pájaro;</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">me han echado vivo al pozo y me han arrojado piedras;</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">se cierran las aguas sobre mi cabeza, y pienso: Estoy perdido.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Invoqué tu Nombre, Señor, de lo profundo de la fosa:</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">oye mi voz, no cierres el oído a mis gritos de auxilio;</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">tú te acercaste cuando te llamé y me dijiste: No temas.</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Te encargaste de defender mi causa y de salvar mi vida,</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">has visto que padezco injusticia, juzga mi causa;</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">has visto la venganza que traman contra mí;</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">has oído, Señor, cómo me insultan y traman mi desgracia,</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">lo que dicen y piensan contra mí continuamente;</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">vigila todos sus movimientos: soy el objeto de sus sátiras.</span> <span id="num_versiculo_64" class="num-versiculo">64</span><span id="versiculo_64" class="versiculo">Tú les pagarás, Señor, como merecen sus obras,</span> <span id="num_versiculo_65" class="num-versiculo">65</span><span id="versiculo_65" class="versiculo">les darás una mente obcecada y los maldecirás;</span> <span id="num_versiculo_66" class="num-versiculo">66</span><span id="versiculo_66" class="versiculo">los perseguirás con ira hasta aniquilarlos bajo el cielo, Señor.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-2.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-5.html'">5</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/lamentaciones-4.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

@@ -1,0 +1,239 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Primer libro de los Reyes - Capítulo 2</title>
+                    <meta name="description" content="Primer libro de los Reyes, capítulo 2.">
+                    <meta name="keywords" content="Biblia, Primer libro de los Reyes, Capítulo 2, Primer libro de los Reyes">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Primer libro de los Reyes - Capítulo 2">
+                    <meta property="og:description" content="Primer libro de los Reyes, capítulo 2.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/primer-libro-de-los-reyes-2.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/primer-libro-de-los-reyes-2.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Primer libro de los Reyes - Capítulo 2">
+                    <meta name="twitter:description" content="Primer libro de los Reyes, capítulo 2.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/primer-libro-de-los-reyes-2.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Primer libro de los Reyes, 2: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Estando ya próximo a morir, David hizo estas recomendaciones a su hijo Salomón:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Yo emprendo el viaje de todos. ¡Ánimo, sé un hombre!</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Guarda las consignas del Señor, tu Dios, caminando por sus sendas, guardando sus preceptos, mandatos, decretos y normas, como están escritos en la Ley de Moisés; para que tengas éxito en todas tus empresas, adondequiera que vayas;</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">para que el Señor cumpla la promesa que me hizo: Si tus hijos saben comportarse, procediendo sinceramente de acuerdo conmigo, con todo el corazón y con toda el alma, no te faltará un descendiente en el trono de Israel.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Ya sabes lo que me hizo Joab, hijo de Seruyá: lo que hizo a los dos generales israelitas, Abner, hijo de Ner, y Amasá, hijo de Yéter; cómo los asesinó vengando en plena paz sangre vertida en la guerra, una sangre que manchó mi uniforme y mis sandalias.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Haz lo que te dicte tu prudencia: no dejes que sus canas vayan en paz al otro mundo.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">En cambio, perdona la vida a los hijos de Barzilay, el galaadita. Cuéntalos entre tus comensales, porque también ellos me atendieron cuando yo huía de tu hermano Absalón.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Tienes también a Semeí, hijo de Guerá, benjaminita, de Bajurín. Me maldijo cruelmente cuando me dirigía a Majnaym; después bajó al Jordán a recibirme, y yo le juré por el Señor que no lo mataría a espada.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Pero ahora no lo dejes impune. Eres inteligente y sabes lo que has de hacer con él para que sus canas vayan al otro mundo manchadas de sangre.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">David fue a reunirse con sus antepasados y lo enterraron en la Ciudad de David.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Reinó en Israel cuarenta años: siete en Hebrón y treinta y tres en Jerusalén.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Salomón le sucedió en el trono, y su reino se consolidó.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Adonías, hijo de Jaguit, fue a ver a Betsabé, madre de Salomón. Ella le preguntó: 
+—¿Vienes como amigo? 
+Respondió: 
+—Sí.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Y añadió: 
+—Tengo que decirte una cosa. 
+Betsabé contestó: 
+—Dila.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Entonces Adonías dijo: 
+—Tú sabes que la corona me correspondía a mí, y todo Israel esperaba verme rey; pero la corona se me ha escapado y ha ido a parar a mi hermano, porque el Señor se la había destinado.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Ahora voy a pedirte un favor, no me lo niegues. 
+Ella le dijo: 
+—Habla.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Adonías pidió: 
+—Por favor, dile al rey Salomón –espero que no te lo niegue– que me dé por esposa a la sunamita Abisag.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Betsabé contestó: 
+—Bien. Yo le hablaré al rey de tu asunto.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Betsabé fue al rey Salomón a hablarle de Adonías. El rey se levantó para recibirla y le hizo una inclinación; luego se sentó en el trono, mandó poner un trono para su madre, y Betsabé se sentó a su derecha.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Betsabé le habló: 
+—Voy a pedirte un pequeño favor, no me lo niegues. 
+El rey le contestó: 
+—Madre, pide, no te lo negaré.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Ella siguió: 
+—Dale a Abisag, la sunamita, como esposa a tu hermano Adonías.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Pero el rey Salomón respondió: 
+—¿Y por qué pides a la sunamita Abisag para Adonías? ¡Podías pedir para él la corona! Porque es mi hermano, mayor que yo, y tiene de su parte al sacerdote Abiatar y a Joab, hijo de Seruyá.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Luego juró por el Señor: 
+—¡Que Dios me castigue si, al pedir eso, no ha atentado Adonías contra su propia vida!</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">¡Por el Señor, que me ha asentado firmemente en el trono de mi padre, David, y que me ha dado una dinastía como lo había prometido, juro que hoy morirá Adonías!</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">El rey dio una orden, y Benayas, hijo de Yehoyadá, mató a Adonías.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Al sacerdote Abiatar el rey le dijo: 
+—Vete a Anatot, a tus tierras. Mereces la muerte, pero hoy no voy a matarte, porque llevaste el arca del Señor ante mi padre, David, y lo acompañaste en sus tribulaciones.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Así destituyó Salomón a Abiatar de su cargo sacerdotal, cumpliendo la profecía del Señor contra la familia de Elí, en Siló.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">La noticia llegó a oídos de Joab, y como él se había pasado al partido de Adonías, aunque no había sido de Absalón, huyó a refugiarse en el santuario del Señor, y se agarró a los salientes del altar.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Pero cuando avisaron al rey Salomón que Joab se había refugiado en el santuario del Señor y que estaba junto al altar, Salomón le envió este mensaje: 
+—¿Qué te pasa que te refugias junto al altar? 
+Joab respondió: 
+—Tuve miedo y he buscado asilo junto al Señor. 
+Entonces Salomón ordenó a Benayas, hijo de Yehoyadá: 
+—¡Vete a matarlo!</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Benayas entró en el santuario del Señor y dijo a Joab: 
+—El rey manda que salgas. 
+Joab contestó: 
+—No. Quiero morir aquí. 
+Benayas llevó al rey la respuesta de Joab,</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">y el rey le ordenó: 
+—Haz lo que dice. Mátalo y entiérralo. Así nos quitarás de encima a mí y a mi familia la sangre inocente que vertió Joab.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">¡Que el Señor haga recaer su sangre sobre su cabeza por haber matado a dos hombres más honrados y mejores que él, asesinándolos sin que lo supiera mi padre, David: Abner, hijo de Ner, general israelita, y Amasá, hijo de Yéter, general judío!</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">¡Que la sangre de estos hombres caiga sobre Joab y su descendencia para siempre! ¡Y que la paz del Señor esté siempre con David, con sus descendientes, su casa y su trono!</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Benayas, hijo de Yehoyadá, fue y mató a Joab; luego lo enterró en sus posesiones, en la estepa.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">El rey puso a Benayas, hijo de Yehoyadá, al frente del ejército, en sustitución de Joab; al sacerdote Sadoc le dio el puesto de Abiatar.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">El rey mandó llamar a Semeí, y le dijo: 
+—Constrúyete una casa en Jerusalén y quédate allí sin salir a ninguna parte.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">El día que salgas y cruces el torrente Cedrón, sábete bien que morirás sin remedio, y tú serás responsable.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Semeí respondió: 
+—Está bien. Este servidor hará lo que ordene vuestra majestad. 
+Semeí vivió en Jerusalén mucho tiempo.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Pero a los tres años se le escaparon dos esclavos y se pasaron a Aquís, hijo de Maacá, rey de Gat. 
+Avisaron a Semeí: 
+—Tus esclavos están en Gat.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Entonces Semeí aparejó el burro y marchó a Gat, donde Aquís, en busca de los esclavos. Así que fue a Gat y se los trajo de allí.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Pero comunicaron a Salomón que Semeí había ido a Gat y había vuelto.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">El rey lo mandó llamar, y le dijo: 
+—¿No te hice jurar por el Señor, advirtiéndote de que el día que salieras y marcharas a cualquier parte podías estar seguro de que morirías sin remedio? Y tú me dijiste que te parecía bien.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">¿Por qué no has cumplido lo que juraste por el Señor y la orden que te di?</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Luego añadió: 
+—Tú sabes todo el daño que hiciste a mi padre David. ¡Que el Señor haga recaer tu maldad sobre ti!</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Pero, ¡bendito el rey Salomón, y el trono de David permanezca ante el Señor por siempre!</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Entonces el rey dio una orden a Benayas, hijo de Yehoyadá, que se adelantó y mató a Semeí. 
+Así se consolidó el reino en manos de Salomón.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-1.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-22.html'">22</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/primer-libro-de-los-reyes-3.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

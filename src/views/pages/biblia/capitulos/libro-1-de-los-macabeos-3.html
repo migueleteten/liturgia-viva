@@ -1,0 +1,220 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Libro 1º de los Macabeos - Capítulo 3</title>
+                    <meta name="description" content="Libro 1º de los Macabeos, capítulo 3.">
+                    <meta name="keywords" content="Biblia, Libro 1º de los Macabeos, Capítulo 3, Libro 1º de los Macabeos">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Libro 1º de los Macabeos - Capítulo 3">
+                    <meta property="og:description" content="Libro 1º de los Macabeos, capítulo 3.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/libro-1-de-los-macabeos-3.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/libro-1-de-los-macabeos-3.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Libro 1º de los Macabeos - Capítulo 3">
+                    <meta name="twitter:description" content="Libro 1º de los Macabeos, capítulo 3.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/libro-1-de-los-macabeos-3.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Libro 1º de los Macabeos, 3: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Le sucedió su hijo Judas, apodado Macabeo.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Todos sus hermanos y los partidarios de su padre le prestaron apoyo y combatieron con entusiasmo por Israel.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Judas extendió 
+la fama de su pueblo; 
+vistió la coraza como un héroe, 
+ciñó sus armas 
+y entabló combates 
+protegiendo sus campamentos 
+con la espada.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Fue un león en sus hazañas, 
+un cachorro que ruge por la presa;</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">rastreó y persiguió a los apóstatas, 
+quemó a los agitadores del pueblo.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Por miedo a Judas 
+los apóstatas se acobardaron, 
+los malhechores se estremecieron; 
+por su mano triunfó la liberación.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Hizo sufrir a muchos reyes, 
+alegró a Jacob con sus hazañas, 
+su recuerdo será siempre bendito.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Recorrió las ciudades de Judá 
+exterminando en ella a los impíos; 
+apartó de Israel la cólera divina.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Su renombre llenó la tierra, 
+porque reunió a un pueblo que moría.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Apolonio reunió un ejército extranjero y un gran contingente de Samaría para luchar contra Israel.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Cuando lo supo Judas, salió a hacerle frente, lo derrotó y lo mató. 
+Los paganos tuvieron muchas bajas, y los supervivientes huyeron.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Al recoger el botín, Judas se quedó con la espada de Apolonio, y desde entonces siempre combatió con ella.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Cuando Serón, general en jefe del ejército sirio, se enteró de que Judas había reunido en torno a sí una tropa numerosa de fieles seguidores suyos dispuestos a pelear,</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">se dijo: Voy a ganar fama y renombre en el imperio luchando contra Judas y los suyos, ésos que desprecian la orden del rey.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Se le sumó un fuerte ejército de gente impía, que subieron con él para ayudarle a vengarse de los israelitas.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Cuando llegaba cerca de la cuesta de Bet-Jorón, Judas le salió al encuentro con un puñado de hombres;</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">pero al ver el ejército que venía de frente dijeron a Judas: 
+—¿Cómo vamos a luchar contra esa multitud bien armada, siendo nosotros tan pocos? Y además estamos agotados, porque no hemos comido en todo el día.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Judas respondió: 
+—No es difícil que unos pocos envuelvan a muchos, pues a Dios le da lo mismo salvar con muchos que con pocos,</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">porque la victoria no depende del número de soldados, sino de la fuerza que llega del cielo.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Ellos vienen a atacarnos llenos de insolencia e impiedad, para aniquilarnos y saquearnos a nosotros, a nuestras mujeres y a nuestros hijos,</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">mientras que nosotros luchamos por nuestra vida y nuestra religión.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">El Señor los aplastará ante nosotros. No los temáis.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Nada más terminar de hablar, se lanzó contra ellos de repente. Derrotaron a Serón y su ejército,</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">lo persiguieron por la bajada de Bet-Jorón hasta la llanura. Serón tuvo unas ochocientas bajas, y los demás huyeron al territorio filisteo.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Judas y sus hermanos empezaron a ser temidos, y una ola de pánico cayó sobre las naciones vecinas.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Su fama llegó a oídos del rey, porque todos comentaban las batallas de Judas.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Cuando el rey Antíoco se enteró, se enfureció y ordenó concentrar todas las fuerzas de su imperio, un ejército poderosísimo.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Abrió el tesoro y repartió a las tropas el sueldo de un año, ordenándoles estar preparados para cualquier eventualidad.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Pero cuando vio que las arcas se le vaciaban y que los tributos de la región disminuían por las discordias y la miseria que había desencadenado en el país al suprimir las leyes antiguas,</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">tuvo miedo de que, como le había ocurrido más de una vez, no le llegara para los gastos y regalos que solía hacer superando a los reyes anteriores.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Viéndose muy apurado, proyectó marchar a Persia, para recoger los tributos de aquellas provincias y reunir una gran suma de dinero.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">A Lisias, miembro distinguido de la familia real, lo dejó al frente del gobierno, desde el Éufrates hasta los confines de Egipto,</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">y le encomendó el cuidado de su hijo Antíoco, hasta su vuelta.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Le dejó la mitad de las tropas y de los elefantes, y le comunicó todas sus decisiones, en particular las referentes a la población de Judá y Jerusalén:</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">que enviara contra ellos un ejército para aplastar y aniquilar al ejército de Israel y a los que quedaban en Jerusalén; que borrara su nombre de aquel sitio</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">y estableciera extranjeros por todo el territorio.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">El rey, por su parte, marchó de Antioquía, capital de su imperio, el año ciento cuarenta y siete, llevándose la otra mitad de las tropas. Después de pasar el Éufrates fue recorriendo las provincias del norte.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Lisias escogió a Tolomeo hijo de Dorimeno, a Nicanor y a Gorgias, hombres poderosos y grandes del reino,</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">y envió con ellos cuarenta mil soldados de infantería y siete mil jinetes, para que invadieran y devastaran Judá, conforme a la orden del rey.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Partieron con todo su ejército, y fueron a acampar junto a Emaús, en la llanura.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Cuando los traficantes de aquella zona oyeron la noticia, acudieron al campamento con muchísima plata, oro y con cadenas, para comprar israelitas como esclavos. El ejército se vio reforzado además con tropas sirias y filisteas.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Judas y sus hermanos vieron que se agravaba la situación –los ejércitos acampaban en su territorio, y conocían la orden del rey que mandaba destruir y exterminar al pueblo–,</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">y comentaron: 
+—¡Reparemos la ruina de nuestro pueblo! ¡Luchemos por nuestro pueblo y por el templo!</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">La asamblea se reunió para prepararse a la guerra y para rezar pidiendo misericordia y compasión.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Jerusalén estaba despoblada 
+como un desierto, 
+ninguno de sus hijos entraba o salía. 
+El santuario, pisoteado; 
+los extranjeros ocupaban la fortaleza, 
+convertida en albergue de los paganos. 
+Jacob había perdido la alegría, 
+ya no sonaban la cítara y la flauta.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Se reunieron y fueron a Mispá, frente a Jerusalén, porque antiguamente Israel había tenido allí un lugar de oración.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">Aquel día ayunaron, se ciñeron un sayal, se echaron ceniza en la cabeza y se rasgaron las vestiduras.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Desenrollaron el volumen de la ley, para consultar lo mismo que los paganos consultaban a sus ídolos.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Llevaron los ornamentos sacerdotales, las primicias y los diezmos; hicieron ir a los nazireos que habían terminado de cumplir su voto,</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">y levantaron su voz al cielo diciendo: 
+—¿Qué podemos hacer con estos hombres? ¿Adónde los llevaremos,</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">si su templo está pisoteado y tus sacerdotes tristes y humillados?</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Ya ves, los paganos se han reunido para exterminarnos. Tú conoces sus planes contra nosotros.</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">¿Cómo podremos resistirles si tú no nos auxilias?</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Tocaron las cornetas y lanzaron grandes alaridos.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Después Judas nombró jefes militares: comandantes, capitanes y suboficiales.</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">A los que estaban edificando una casa, a los que iban a casarse, a los que acababan de plantar una viña y a los miedosos les dijo que se volvieran a sus casas, como manda la ley.</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">El ejército se puso en marcha, y acamparon al sur de Emaús.</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Judas ordenó: 
+—¡Preparaos! Sed valientes, estad prontos de madrugada, para dar batalla a esos paganos que se han reunido contra nosotros para exterminarnos, a nosotros y nuestro templo.</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">Más vale morir en la batalla que ver las desgracias de nuestra nación y del templo.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">Pero hágase la voluntad de Dios.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-2.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-16.html'">16</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/libro-1-de-los-macabeos-4.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

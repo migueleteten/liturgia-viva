@@ -1,0 +1,227 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Tobías - Capítulo 5</title>
+                    <meta name="description" content="Tobías, capítulo 5.">
+                    <meta name="keywords" content="Biblia, Tobías, Capítulo 5, Tobías">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Tobías - Capítulo 5">
+                    <meta property="og:description" content="Tobías, capítulo 5.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/tobias-5.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/tobias-5.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Tobías - Capítulo 5">
+                    <meta name="twitter:description" content="Tobías, capítulo 5.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/tobias-5.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Tobías, 5: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Tobías respondió a su padre, Tobit: 
+—Padre, haré lo que me has dicho.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Pero, ¿cómo podré recuperar ese dinero de Gabael, si ni él me conoce ni yo a él? ¿Qué contraseña puedo darle para que me reconozca y se fíe de mí y me dé el dinero? Además, no conozco el camino de Media.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Tobit le dijo: 
+—Gabael me dio un recibo, y yo le di el mío; firmamos los dos el contrato, después lo rompí por la mitad y tomamos cada uno una parte, de modo que una quedó con el dinero. ¡Ya hace veinte años que dejé en depósito ese dinero! Bien, hijo, búscate un hombre de confianza que pueda acompañarte, y le pagaremos por todo lo que dure el viaje. Vete a recuperar ese dinero.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Tobías salió a buscar un guía experto que lo acompañase a Media. Cuando salió se encontró con el ángel Rafael, parado; pero no sabía que era un ángel de Dios.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Le preguntó: 
+—¿De dónde eres, buen hombre? 
+Respondió: 
+—Soy un israelita compatriota tuyo y he venido aquí buscando trabajo. 
+Tobías le preguntó: 
+—¿Sabes por dónde se va a Media?</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Rafael le dijo: 
+—Sí. He estado allí muchas veces y conozco muy bien todos los caminos. He ido a Media con frecuencia, parando en casa de Gabael, uno de nuestros hermanos que vive en Ragués de Media. Ragués está a dos días enteros de camino desde Ecbatana, porque queda en la montaña.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Entonces Tobías le dijo: 
+—Espérame aquí, buen hombre, mientras voy a decírselo a mi padre. Porque necesito que me acompañes; ya te lo pagaré.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">El otro respondió: 
+—Bueno, espero aquí, pero no tardes.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Tobías fue a informar a su padre, Tobit: 
+—Mira, he encontrado a un israelita compatriota nuestro. 
+Tobit le dijo: 
+—Llámamelo, que yo me entere de qué familia y de qué tribu es, y a ver si es de confianza para acompañarte, hijo.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Tobías salió a llamarlo: 
+—Buen hombre, mi padre te llama. 
+Cuando entró, Tobit se adelantó a saludarlo. El ángel le respondió: 
+—¡Que tengas salud! 
+Pero Tobit comentó: 
+—¿Qué salud puedo tener? Soy un ciego que no ve la luz del día. Vivo en la oscuridad, como los muertos, que ya no ven la luz. Estoy muerto en vida: oigo hablar a la gente, pero no la veo. 
+El ángel le dijo: 
+—Ánimo, Dios te sanará pronto; ánimo. 
+Entonces Tobit le preguntó: 
+—Mi hijo Tobías quiere ir a Media. ¿Podrías acompañarlo como guía? Yo te lo pagaré, amigo. 
+Él respondió: 
+—Sí. Conozco todos los caminos. He ido a Media muchas veces, he atravesado sus llanuras y sus montañas; sé todos los caminos.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Tobit le preguntó: 
+—Amigo, ¿de qué familia y de qué tribu eres? Dímelo.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Rafael respondió: 
+—¿Qué falta te hace saber mi tribu? 
+Tobit dijo: 
+—Amigo, quiero saber exactamente tu nombre y apellido.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Rafael respondió: 
+—Soy Azarías, hijo del ilustre Ananías, compatriota tuyo.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Entonces Tobit le dijo: 
+—¡Bienvenido seas, amigo! No te me enfades si he querido saber exactamente de qué familia eres. Ahora resulta que tú eres pariente nuestro, y de muy buena familia. Yo conozco a Ananías y a Natán, los dos hijos del ilustre Semeyas. Iban conmigo a adorar a Dios en Jerusalén, y no se han apartado del buen camino. Los tuyos son buena gente. Bienvenido, hombre; eres de una familia excelente.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Y añadió: 
+—Te daré como paga una dracma diaria y tendrás todo lo que necesites, lo mismo que mi hijo.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Acompáñale, y ya añadiré algo a la paga.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Rafael respondió: 
+—Lo acompañaré. No tengas miedo: sanos marchamos y sanos volveremos; el camino es seguro. 
+Tobit le dijo: 
+—Amigo, Dios te lo pague. 
+Luego llamó a Tobías y le habló así: 
+—Hijo, prepara el viaje y vete con tu pariente. Que el Dios del cielo los proteja allá y los traiga de nuevo sanos y salvos. Que su ángel los acompañe con su protección, hijo. 
+Tobías besó a su padre y a su madre y emprendió la marcha, mientras Tobit le decía: 
+—¡Buen viaje!</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Pero la madre se echó a llorar, y dijo a Tobit: 
+—¿Por qué has mandado a mi hijo? ¡Él, que era nuestro apoyo, que lo teníamos siempre cerca!</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">El dinero no es más que dinero, es basura en comparación con nuestro hijo.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">¡Nos bastaba vivir con lo que Dios nos daba!</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Tobit le dijo: 
+—No te preocupes. Nuestro hijo ha marchado sano y salvo, y sano y salvo volverá. Lo verás con tus ojos el día que regrese sano y salvo.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">No te preocupes ni temas por ellos, mujer, que un ángel bueno lo acompañará, le dará un viaje feliz y lo traerá sano y salvo.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Y ella dejó de llorar.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-4.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-14.html'">14</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/tobias-6.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

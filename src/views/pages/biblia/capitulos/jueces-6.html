@@ -1,0 +1,219 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Jueces - Capítulo 6</title>
+                    <meta name="description" content="Jueces, capítulo 6.">
+                    <meta name="keywords" content="Biblia, Jueces, Capítulo 6, Jueces">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Jueces - Capítulo 6">
+                    <meta property="og:description" content="Jueces, capítulo 6.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/jueces-6.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/jueces-6.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Jueces - Capítulo 6">
+                    <meta name="twitter:description" content="Jueces, capítulo 6.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/jueces-6.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Jueces, 6: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Los israelitas hicieron lo que el Señor reprueba, y el Señor los entregó a Madián por siete años.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">El régimen de Madián fue tiránico. Para librarse de él, los israelitas tuvieron que valerse de las cuevas de los montes, las cavernas y los refugios.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Cuando los israelitas sembraban, los madianitas, los amalecitas y los orientales venían a hostigarlos;</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">acampaban frente a ellos y destruían todos los sembrados, hasta la entrada de Gaza. No dejaban nada con vida en Israel, ni oveja, ni buey, ni asno;</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">porque venían con sus rebaños y sus tiendas, numerosos como langostas, hombres y camellos sin número, e invadían la comarca asolándola.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Con esto Israel iba empobreciéndose por culpa de Madián.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Entonces los israelitas gritaron al Señor. Y cuando los israelitas gritaron al Señor por causa de Madián,</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">el Señor les envió un profeta a decirles: 
+—Así dice el Señor, Dios de Israel: Yo os hice subir de Egipto, os saqué de la esclavitud,</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">os libré de los egipcios y de todos vuestros opresores, los expulsé ante vosotros para entregaros sus tierras, y os dije:</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Yo soy el Señor, Dios vuestro; no adoréis a los dioses de los amorreos, en cuyo país vais a vivir. Pero no me habéis obedecido.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">El ángel del Señor vino y se sentó bajo la Encina de Ofrá, propiedad de Joás, de Abi-Ezer, mientras su hijo, Gedeón, estaba trillando trigo al látigo en el lagar, para esconderse de los madianitas.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">El ángel del Señor se le apareció y le dijo: 
+—El Señor está contigo, valiente.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Gedeón respondió: 
+—Perdón; si el Señor está con nosotros, ¿por qué nos ha venido encima todo esto? ¿Dónde han quedado aquellos prodigios que nos contaban nuestros padres: De Egipto nos sacó el Señor? La verdad es que ahora el Señor nos ha desamparado y nos ha entregado a los madianitas.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">El Señor se volvió a él y le dijo: 
+—Vete, y con tus propias fuerzas salva a Israel de los madianitas. Yo te envío.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Gedeón replicó: 
+—Perdón, ¿cómo puedo yo librar a Israel? Precisamente mi familia es la menor de Manasés, y yo soy el más pequeño en la casa de mi padre.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">El Señor contestó: 
+—Yo estaré contigo, y derrotarás a los madianitas como a un solo hombre.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Gedeón insistió: 
+—Si he alcanzado tu favor, dame una señal de que eres tú quien habla conmigo.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">No te vayas de aquí hasta que yo vuelva con una ofrenda y te la presente. 
+El Señor dijo: 
+—Aquí me quedaré hasta que vuelvas.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Gedeón marchó a preparar un cabrito y unos panes ázimos con media fanega de harina; colocó luego la carne en la cesta y echó el caldo en el puchero; se lo llevó al Señor y se lo ofreció bajo la encina.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">El ángel de Dios le dijo: 
+—Toma la carne y los panes ázimos, colócalos sobre esta roca y derrama el caldo. 
+Así lo hizo.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Entonces el ángel del Señor alargó la punta del cayado que llevaba, tocó la carne y los panes, y se levantó de la roca una llamarada que los consumió. Y el ángel del Señor desapareció.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Cuando Gedeón vio que se trataba del ángel del Señor, exclamó: 
+—¡Ay, Dios mío, que he visto al ángel del Señor cara a cara!</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Pero el Señor le dijo: 
+—¡Paz, no temas, no morirás!</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Entonces Gedeón levantó allí un altar al Señor y le puso el nombre de Señor de la Paz. Hasta hoy se encuentra en Ofrá de Abi-Ezer.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Aquella noche habló el Señor a Gedeón: 
+—Toma el buey de siete años que tiene tu padre, derriba el altar de tu padre dedicado a Baal y corta el árbol sagrado que está junto a él;</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">levanta luego un altar al Señor, tu Dios, en la cima del barranco, con las piedras bien puestas; toma el buey y ofrécelo en sacrificio aprovechando la leña del árbol ya cortado.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Gedeón escogió a diez de sus criados e hizo lo que le había mandado el Señor; pero por temor a sus familiares y a la gente del pueblo, en lugar de hacerlo de día, lo hizo durante la noche.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Cuando los vecinos se levantaron temprano, se encontraron derruido el altar de Baal, cortado el árbol sagrado junto a él y sacrificado el buey sobre el altar recién construido.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Se preguntaban: ¿Quién habrá sido? Indagaron, averiguaron y llegaron a la conclusión: Ha sido Gedeón, hijo de Joás.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Entonces le dijeron a Joás: 
+—Sácanos a tu hijo, que muera; porque ha derribado el altar de Baal y cortado el árbol sagrado que había junto a él.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Joás respondió a todos los que lo amenazaban: 
+—¿Qué tenéis vosotros que defender a Baal? ¿Como si vosotros fuerais a salvarlo? El que lo defienda, muera antes de que salga el sol. Si Baal es Dios que se defienda a sí mismo, ya que han derribado su altar</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">–por eso aquel día pusieron a Gedeón el apodo de Yerubaal, comentando: ¡Que Baal se defienda de él, ya que él derribó su altar!–.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Los madianitas, los amalecitas y los orientales se aliaron, cruzaron el río y acamparon en la llanura de Yezrael.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">El Espíritu del Señor se apoderó de Gedeón, que tocó a rebato, y Abiezer corrió a unírsele.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Envió mensajeros a Manasés, y se le unió; luego a Aser, Zabulón y Neftalí, y también se le unieron.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Gedeón dijo a Dios: 
+—Si realmente vas a salvar a Israel por mi medio, como aseguraste,</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">mira, voy a extender en la era esta zalea: si cae el rocío sobre la lana mientras todo el suelo queda seco, me convenceré de que vas a salvar a Israel por mi medio, como aseguraste.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Así sucedió. Al día siguiente Gedeón madrugó, retorció la lana, exprimiéndole el rocío, y llenó una cazuela de agua.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Entonces Gedeón dijo a Dios: 
+—No te enfades conmigo si te hago otra propuesta; haré sólo otra vez la prueba con la zalea: que sólo ella quede seca, y, en cambio, caiga rocío sobre el suelo.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Así lo hizo Dios aquella noche: sólo la zalea quedó seca, mientras que cayó rocío en todo el suelo.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-5.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-21.html'">21</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-7.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

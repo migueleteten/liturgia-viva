@@ -1,0 +1,259 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Ezequiel - Capítulo 16</title>
+                    <meta name="description" content="Ezequiel, capítulo 16.">
+                    <meta name="keywords" content="Biblia, Ezequiel, Capítulo 16, Ezequiel">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Ezequiel - Capítulo 16">
+                    <meta property="og:description" content="Ezequiel, capítulo 16.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/ezequiel-16.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/ezequiel-16.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Ezequiel - Capítulo 16">
+                    <meta name="twitter:description" content="Ezequiel, capítulo 16.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/ezequiel-16.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Ezequiel, 16: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Me dirigió la palabra el Señor:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Hijo de Adán, denuncia a Jerusalén sus abominaciones,</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">diciendo: 
+Esto dice el Señor: 
+¡Jerusalén, eres cananea de casta y de cuna: tu padre era amorreo y tu madre era hitita!</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Fue así tu alumbramiento: el día en que naciste no te cortaron el ombligo, no te bañaron ni frotaron con sal, ni te envolvieron en pañales.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Nadie se apiadó de ti haciéndote uno de estos menesteres, por compasión, sino que te arrojaron a campo abierto, asqueados de ti, el día que naciste.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Pasando yo a tu lado, te vi chapoteando en tu propia sangre, y te dije mientras yacías en tu sangre: Sigue viviendo y crece como brote campestre.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Creciste y te hiciste moza, llegaste a la sazón; tus senos se afirmaron y el vello te brotó, pero estabas desnuda y en cueros.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Pasando de nuevo a tu lado, te vi en la edad del amor; extendí sobre ti mi manto para cubrir tu desnudez; me comprometí con juramento, hice alianza contigo –oráculo del Señor– y fuiste mía.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Te bañé, te limpié la sangre y te ungí con aceite.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Te vestí de bordado, te calcé de marsopa; te ceñí de lino, te revestí de seda.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Te engalané con joyas: te puse pulseras en los brazos y un collar al cuello.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Te puse un anillo en la nariz, pendientes en las orejas y diadema de lujo en la cabeza.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Lucías joyas de oro y plata y vestidos de lino, seda y bordado; comías flor de harina, miel y aceite; estabas guapísima y prosperaste más que una reina.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Cundió entre los pueblos la fama de tu belleza, completa con las galas, con lo que te atavié –oráculo del Señor–.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Te sentiste segura de tu belleza y, amparada en tu fama, fornicaste y te prostituiste con el primero que pasaba.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Tomaste tus vestidos y sobre ellos fornicabas, y te hiciste capillos de colores.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Tomaste tus alhajas, el oro y la plata que yo te regalé, y te hiciste estatuas de varones con las que fornicabas.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Tomaste tus vestidos bordados y las revestiste con ellos, y les ofrecías mi perfume y mi incienso.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">El alimento que yo te daba –flor de harina, miel y aceite te daba de comer– también se lo ofreciste como oblata de aroma que aplaca –oráculo del Señor–.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Tomaste a tus hijos y a tus hijas, los que diste a luz para mí, y se los inmolaste para que comieran. No bastándote tus fornicaciones,</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">degollaste a mis hijos pasándolos por el fuego en su honor.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Con tus abominables fornicaciones, no te acordaste de tu niñez, cuando estabas desnuda y en cueros chapoteando en tu propia sangre.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Y encima de tanta maldad, ¡ay de ti, ay de ti! –oráculo del Señor–,</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">te edificabas alcobas y te levantabas puestos en todas las calles.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">En las encrucijadas instalabas tus puestos y envilecías tu hermosura; te abrías de piernas al primero que pasaba, continuamente te prostituías.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Fornicaste con los egipcios, tus vecinos de grandes miembros, y a fuerza de prostituirte me encolerizaste.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Entonces extendí mi brazo contra ti, te mengüé la ración, te entregué a la avidez de tus rivales, las hijas de los filisteos, que se sonrojaban de tu conducta infame.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Fornicaste con los asirios sin saciarte, volvías a fornicar con ellos y todavía no te saciabas.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Sin cesar fornicaste en Caldea, tierra de mercaderes, y ni con eso te saciaste.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">¡Cómo me enfurecí contra ti –oráculo del Señor– cuando hacías todo eso, lo que hace una ramera empedernida!</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Cuando instalabas tus alcobas en las encrucijadas y levantabas tus puestos en todas las calles, no cobrabas el precio como hacen las prostitutas.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">¡Oh hembra adúltera, que teniendo marido acoge a extraños!</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">A las prostitutas les hacen regalos; tú, en cambio, diste tu regalo de boda a tus amantes; los sobornabas para que acudieran de todas partes a fornicar contigo.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Tú hacías lo contrario que las otras hembras: a ti nadie te solicitaba, eras tú la que pagabas y a ti no te pagaban, y obrabas al revés.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Por eso, prostituta, escucha la Palabra del Señor.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Esto dice el Señor: 
+Por haber prodigado tus encantos y desnudado tus vergüenzas, prostituyéndote con tus amantes, con tus abominables ídolos, por haberles ofrecido la sangre de tus hijos;</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">por eso aquí me tienes: voy a reunir a todos tus amantes a los que complaciste, a todos los que amabas y a los que aborrecías. Los reuniré de todas partes contra ti, te dejaré desnuda delante de ellos, para que miren tus vergüenzas.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Te aplicaré las penas de las adúlteras y de las homicidas, descargando sobre ti mi furor y mi rabia.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Te entregaré en sus manos: derribarán tus alcobas, demolerán tus puestos; te quitarán los vestidos, te arrebatarán las alhajas, dejándote desnuda y en cueros.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Traerán un tropel contra ti que te apedreará y te descuartizará a cuchilladas.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Prenderán fuego a tus casas y ejecutarán en ti la sentencia en presencia de muchas mujeres.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Aplacaré mi ira contra ti y apartaré de ti mi cólera; me serenaré y no volveré a irritarme.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">Por no haberte acordado de tu juventud, por haberme provocado con todas estas cosas, también yo te pagaré según tu conducta –oráculo del Señor–. ¿No has añadido la infamia a todas sus abominaciones?</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Mira, todos se burlan diciéndote el refrán: De tal madre, tal hija.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Hija eres de tu madre, que aborreció marido e hijos; hermana eres de tus hermanas, que aborrecieron maridos e hijos. Vuestra madre era hitita y vuestro padre amorreo.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Tu hermana la mayor es Samaría con sus villas, situada a tu izquierda; tu hermana la pequeña, situada a tu derecha, es Sodoma con sus villas.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">No sólo seguiste sus caminos e imitaste sus abominaciones, sino que te pareció poco y las ganaste en conducta depravada.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Juro por mi vida –oráculo del Señor– que Sodoma, tu hermana, y sus poblados no han obrado como habéis obrado tú y tus villas.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Mira, ése fue el delito de Sodoma, tu hermana: soberbia, hartura de pan y bienestar apacible tuvieron ella y sus villas, pero no dio una mano al desgraciado y al pobre.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Se engrieron frente a mí, cometieron abominaciones, y las quité de en medio en cuanto lo vi.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Y Samaría no pecó ni la mitad que tú; tú has cometido más abominaciones que ellas, y con las abominaciones cometidas, has hecho buenas a tus hermanas.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Pues carga, tú también, con tu vergüenza, porque con tus pecados dejaste en buen lugar a tus hermanas; te envileciste más que ellas, ellas son inocentes a tu lado. Sonrójate también y carga con tu vergüenza, porque has hecho buenas a tus hermanas.</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">Cambiaré su suerte, la suerte de Sodoma y sus villas, la suerte de Samaría y sus villas –también cambiaré tu suerte junto con las de ellas–,</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">para que cargues con tu vergüenza y te avergüences de cuanto hiciste sirviéndoles a ellas de consuelo.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Y tu hermana Sodoma y sus villas volverán a su estado antiguo; Samaría y sus villas volverán a su estado antiguo también tú y tus villas volveréis a vuestro estado antiguo.</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">¿No mentabas a Sodoma, tu hermana, difamándola en tu época arrogante,</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">antes de descubrirse tus vergüenzas? ¡Ahora eres el oprobio de las edomitas y de sus vecinas las filisteas, que te zahieren por todas partes!</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Ahora cargas con tu infamia y tus abominaciones –oráculo del Señor–.</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">Pues así dice el Señor: 
+Actuaré contigo conforme a tus acciones, pues menospreciaste el juramento y quebrantaste la alianza.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">Pero yo me acordaré de la alianza que hice contigo cuando eras moza y haré contigo una alianza eterna.</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">Tú te acordarás de tu conducta y te sonrojarás, al acoger a tus hermanas, las mayores y las más pequeñas; pues yo te las daré como hijas, mas no en virtud de tu alianza.</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">Yo mismo haré alianza contigo y sabrás que yo soy el Señor,</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">para que te acuerdes y te sonrojes y no vuelvas a abrir la boca de vergüenza, cuando yo te perdone todo lo que hiciste –oráculo del Señor–.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-15.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-48.html'">48</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/ezequiel-17.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

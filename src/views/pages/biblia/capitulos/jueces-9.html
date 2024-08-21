@@ -1,0 +1,213 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Jueces - Capítulo 9</title>
+                    <meta name="description" content="Jueces, capítulo 9.">
+                    <meta name="keywords" content="Biblia, Jueces, Capítulo 9, Jueces">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Jueces - Capítulo 9">
+                    <meta property="og:description" content="Jueces, capítulo 9.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/jueces-9.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/jueces-9.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Jueces - Capítulo 9">
+                    <meta name="twitter:description" content="Jueces, capítulo 9.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/jueces-9.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Jueces, 9: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Abimelec, hijo de Yerubaal, fue a Siquén, a casa de sus tíos maternos, y propuso a ellos y a todos los parientes de su abuelo materno lo siguiente:</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">—Decid a los siquemitas: ¿Qué os conviene más, que os gobiernen setenta, es decir, todos los hijos de Yerubaal, o que os gobierne uno solo? Y no olvidéis que yo soy de vuestra sangre.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Sus tíos maternos lo comunicaron a los siquemitas, y éstos se pusieron de parte de Abimelec, pensando: 
+—¡Es pariente nuestro!</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Le dieron setecientos gramos de plata del templo de Baal-Berit, y con ese dinero Abimelec asalarió a unos cuantos desocupados y aventureros que se pusieron a sus órdenes.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Luego fue a casa de su padre, a Ofrá, y asesinó a sus hermanos, los hijos de Yerubaal, a setenta hombres en la misma piedra. Sólo quedó Yotán, el hijo menor de Yerubaal, que se había escondido.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Los de Siquén y todos los de Bet-Miló se reunieron para proclamar rey a Abimelec, junto a la encina de Siquén.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">En cuanto se enteró Yotán, fue, y en pie sobre la cumbre del monte Garizín, les gritó a voz en cuello: 
+—¡Oídme, vecinos de Siquén, así Dios os escuche!</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">Una vez fueron los árboles a elegirse rey, y dijeron al olivo: Sé nuestro rey.</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">Pero el olivo dijo: ¿Y voy a dejar mi aceite, con el que se honra a dioses y hombres, para ir a mecerme sobre los árboles?</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Entonces dijeron a la higuera: Ven a ser nuestro rey.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Pero la higuera dijo: ¿Y voy a dejar mi dulce fruto sabroso para ir a mecerme sobre los árboles?</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">Entonces dijeron a la vid: Ven a ser nuestro rey.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Pero la vid dijo: ¿Y voy a dejar mi mosto, que alegra a dioses y hombres, para ir a mecerme sobre los árboles?</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">Entonces dijeron todos a la zarza: Ven a ser nuestro rey.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Y les dijo la zarza: Si de veras queréis ungirme vuestro rey, venid a cobijaros bajo mi sombra, y si no, salga fuego de la zarza y devore a los cedros del Líbano.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Pues bien, ¿habéis procedido sincera y lealmente proclamando rey a Abimelec? ¿Os habéis portado bien con Yerubaal y su familia? ¿Os habéis portado con él como merecían los favores que os hizo?</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">–Mi padre luchó por vosotros exponiéndose a la muerte y los libró del poder de Madián–.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Al contrario, os habéis sublevado hoy contra la familia de mi padre, asesinando a sus hijos, setenta hombres, en la misma piedra, y habéis nombrado rey de los siquemitas a Abimelec, hijo de una criada de mi padre, con el pretexto de que es pariente vuestro.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Si os habéis portado hoy sincera y lealmente con Yerubaal y su familia, celebradlo con Abimelec y que él lo celebre con vosotros;</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">pero si no es así, ¡salga fuego de Abimelec que devore a los de Siquén y a los de Bet-Miló, salga fuego de los de Siquén y de los de Bet-Miló que devore a Abimelec!</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Luego Yotán emprendió la huida y marchó a Beer; allí se quedó por miedo a su hermano Abimelec.</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Abimelec gobernó a Israel tres años.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Dios enconó las relaciones entre Abimelec y los siquemitas, que lo traicionaron.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">Así, el asesinato de los setenta hijos de Yerubaal, la sangre de sus hermanos, recayó sobre Abimelec, que los había asesinado, y sobre los de Siquén, cómplices del asesinato.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Los de Siquén le pusieron emboscadas en los puertos de la sierra y despojaban a los caminantes que pasaban por allí. Abimelec se enteró.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Gaal, hijo de Obed, vino a Siquén con sus hermanos y se ganó la confianza de los siquemitas.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Salieron al campo, a la vendimia, pisaron la uva y celebraron la fiesta; fueron al templo de su dios y comieron y bebieron entre maldiciones a Abimelec.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Gaal, hijo de Obed, les dijo: 
+—¿Quién es Abimelec y qué es Siquén para que seamos sus esclavos? ¡Un hijo de Yerubaal, y Zebul, su gobernador, que sirvieron en casa de Jamor, padre de Siquén! ¿Por qué vamos a ser sus esclavos?</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">¡Ah, si yo tuviera poder sobre este pueblo! Quitaría de en medio a Abimelec. Le diría: Refuerza tu ejército y sal.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">Zebul, gobernador de la ciudad, oyó el discurso de Gaal, hijo de Obed, y se encolerizó,</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">y mandó emisarios a Abimelec, avisándole: 
+—Mira, Gaal, hijo de Obed, ha venido con sus parientes a Siquén y están soliviantando la ciudad contra ti.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Ven de noche con tu gente y pon emboscadas en el campo;</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">por la mañana madrugas al salir el sol y atacas la ciudad. Gaal y los suyos saldrán a presentarte batalla; entonces actúa, que es tu ocasión.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Abimelec se puso en marcha de noche con su gente y se emboscaron frente a Siquén, divididos en cuatro cuerpos.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Gaal, hijo de Obed, salió y se detuvo a las puertas de la ciudad, y Abimelec con su gente surgió de la emboscada.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Cuando Gaal los vio, dijo a Zebul: 
+—Mira, baja gente de las cumbres de los montes. 
+Zebul contestó: 
+—Las sombras de los montes se te antojan hombres.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Pero Gaal insistió: 
+—Baja gente de Tabbur Haares, y un grupo avanza por el camino de Elón Meonenim.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Entonces Zebul le dijo: 
+—¿Dónde está esa boca que decía: Quién es Abimelec para que seamos sus esclavos? ¡Ésos son los que despreciabas! Sal ahora y lucha contra ellos.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Gaal salió al frente de los siquemitas y entabló batalla con Abimelec.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Abimelec lo persiguió. Gaal emprendió la huida y muchos cayeron muertos cuando huían hacia las puertas de la ciudad.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Abimelec se volvió a Arumá, y Zebul desterró de Siquén a Gaal y sus parientes.</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">Al día siguiente, los de Siquén se pusieron en campaña, y Abimelec se enteró;</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">tomó a su gente, la dividió en tres cuerpos y se emboscó en el campo. Cuando los vio salir de la ciudad, se lanzó al ataque y los destrozó.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Abimelec y los de su grupo se abalanzaron contra la ciudad y tomaron posiciones en las puertas, mientras los otros dos grupos atacaban y derrotaban a los del campo.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Todo aquel día estuvo Abimelec atacando la ciudad; al fin la conquistó, pasó a cuchillo a todos sus habitantes, la arrasó y la sembró de sal.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Al saberlo los de Torre Siquén, se refugiaron en la cripta del templo de Baal-Berit.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">Abimelec se enteró de que estaban reunidos los de Torre Siquén;</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">subió al Monte Salmón con toda su gente, empuñó un hacha, cortó una rama de un árbol y se la echó al hombro, mientras decía a los suyos: 
+—¡Aprisa, haced lo que me veis hacer!</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Cada uno cortó una rama y siguieron a Abimelec. Apoyaron las ramas sobre la cripta y prendieron fuego al techo. Murieron todos los de Torre Siquén, unos mil entre hombres y mujeres.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Después Abimelec fue a Tebes, la sitió y la conquistó.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">En medio de la villa había una torre fortificada, y allí se refugiaron todos los hombres y mujeres de la población, aseguraron por dentro los cerrojos y se subieron a la azotea.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Abimelec llegó junto a la torre, intentando asaltarla, se aproximó a la puerta para prenderle fuego,</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">pero una mujer le dejó caer sobre la cabeza una piedra de moler y le partió el cráneo.</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Abimelec llamó enseguida a su escudero y le dijo: 
+—Saca la espada y remátame, para que no se diga que lo mató una mujer. 
+Su escudero lo atravesó, y murió.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">Al ver los israelitas que Abimelec había muerto, cada cual regresó a su casa.</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">Así pagó Dios a Abimelec lo mal que se portó con su padre, asesinando a sus setenta hermanos.</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">Y todo el mal que hicieron los de Siquén, Dios lo hizo recaer sobre ellos. Sobre ellos cayó la maldición de Yotán, hijo de Yerubaal.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-8.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-21.html'">21</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/jueces-10.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                

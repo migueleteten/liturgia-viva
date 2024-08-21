@@ -1,0 +1,459 @@
+
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Salmos - Capítulo 119</title>
+                    <meta name="description" content="Salmos, capítulo 119.">
+                    <meta name="keywords" content="Biblia, Salmos, Capítulo 119, Salmos">
+                    <meta name="author" content="Liturgia Viva">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="article">
+                    <meta property="og:title" content="Salmos - Capítulo 119">
+                    <meta property="og:description" content="Salmos, capítulo 119.">
+                    <meta property="og:image" content="https://www.liturgiaviva.org/images/salmos-119.jpg">
+                    <meta property="og:url" content="https://www.liturgiaviva.org/biblia/capitulos/salmos-119.html">
+
+                    <!-- Twitter -->
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:title" content="Salmos - Capítulo 119">
+                    <meta name="twitter:description" content="Salmos, capítulo 119.">
+                    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/salmos-119.jpg">
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                    <link rel="stylesheet" href="/styles/biblia.css">
+                    <link rel="stylesheet" href="/styles/common.css">
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <!-- Header Común -->
+                    <div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div>
+
+                    <!-- Mensaje de sugerencia para añadir comentarios -->
+                    <div id="mensaje-comentarios">
+                        <p class="text-left">¿Sabías que puedes añadir comentarios a los versículos?</p>
+                        <p class="text-left">Haz clic en cualquier versículo y haz tuya esta Biblia.</p>
+                        <br>
+                        <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
+                    </div>
+
+                    <!-- Contenido del capítulo -->
+                    <div class="container">
+                        <div id="content-comments-container">
+                            <div id="chapter-content">
+                                <div id="chapter-header" class="col-md-12"><h1 class="book-chapter-indicator">Salmos, 119: </h1><div class="switch">
+            <label>
+                <input type="checkbox" data-toggle="switchbutton" data-onlabel="" data-offlabel="" data-onstyle="secondary" id="toggleVersiculos">
+                <span class="lever">
+                </span>
+                Ocultar nº de versículos
+            </label>
+        </div></div><div id="chapter-text"><span id="num_versiculo_1" class="num-versiculo">1</span><span id="versiculo_1" class="versiculo">Dichosos los de conducta intachable, que siguen la voluntad del Señor.</span> <span id="num_versiculo_2" class="num-versiculo">2</span><span id="versiculo_2" class="versiculo">Dichosos los que guardan sus preceptos y lo buscan de todo corazón.</span> <span id="num_versiculo_3" class="num-versiculo">3</span><span id="versiculo_3" class="versiculo">Que no cometen iniquidad, y siguen sus caminos.</span> <span id="num_versiculo_4" class="num-versiculo">4</span><span id="versiculo_4" class="versiculo">Tú mandaste que tus decretos se observen exactamente.</span> <span id="num_versiculo_5" class="num-versiculo">5</span><span id="versiculo_5" class="versiculo">Ojalá estén firmes mis caminos para cumplir tus órdenes.</span> <span id="num_versiculo_6" class="num-versiculo">6</span><span id="versiculo_6" class="versiculo">Entonces no quedaré defraudado al fijarme en tus mandatos.</span> <span id="num_versiculo_7" class="num-versiculo">7</span><span id="versiculo_7" class="versiculo">Te daré gracias con sincero corazón cuando aprenda tus justos mandamientos.</span> <span id="num_versiculo_8" class="num-versiculo">8</span><span id="versiculo_8" class="versiculo">He de guardar tus normas: ¡No me abandones del todo, oh Dios grande e inmortal!</span> <span id="num_versiculo_9" class="num-versiculo">9</span><span id="versiculo_9" class="versiculo">¿Cómo limpiará un joven su senda? —Observando tu consigna.</span> <span id="num_versiculo_10" class="num-versiculo">10</span><span id="versiculo_10" class="versiculo">Te busco de todo corazón: no me desvíes de tus mandatos.</span> <span id="num_versiculo_11" class="num-versiculo">11</span><span id="versiculo_11" class="versiculo">Guardo en el corazón tu promesa para no pecar contra ti.</span> <span id="num_versiculo_12" class="num-versiculo">12</span><span id="versiculo_12" class="versiculo">¡Bendito eres, Señor!, enséñame tus normas.</span> <span id="num_versiculo_13" class="num-versiculo">13</span><span id="versiculo_13" class="versiculo">Mis labios recitarán todo lo que manda tu boca.</span> <span id="num_versiculo_14" class="num-versiculo">14</span><span id="versiculo_14" class="versiculo">En el camino de tus preceptos disfruto más que con cualquier fortuna.</span> <span id="num_versiculo_15" class="num-versiculo">15</span><span id="versiculo_15" class="versiculo">Voy a meditar tus decretos y a fijarme en tus sendas.</span> <span id="num_versiculo_16" class="num-versiculo">16</span><span id="versiculo_16" class="versiculo">Tus órdenes son mi delicia: no me olvido de tu palabra.</span> <span id="num_versiculo_17" class="num-versiculo">17</span><span id="versiculo_17" class="versiculo">Cuida de tu siervo y viviré para cumplir tu palabra.</span> <span id="num_versiculo_18" class="num-versiculo">18</span><span id="versiculo_18" class="versiculo">Despeja mis ojos y contemplaré las maravillas de tu ley.</span> <span id="num_versiculo_19" class="num-versiculo">19</span><span id="versiculo_19" class="versiculo">Soy peregrino en la tierra: no me ocultes tus mandatos.</span> <span id="num_versiculo_20" class="num-versiculo">20</span><span id="versiculo_20" class="versiculo">Mi aliento se consume deseando continuamente tus mandamientos.</span> <span id="num_versiculo_21" class="num-versiculo">21</span><span id="versiculo_21" class="versiculo">Has increpado a los arrogantes: ¡malditos los que se desvían de tus mandatos!</span> <span id="num_versiculo_22" class="num-versiculo">22</span><span id="versiculo_22" class="versiculo">Retira de mí afrenta y desprecio, porque guardo tus preceptos.</span> <span id="num_versiculo_23" class="num-versiculo">23</span><span id="versiculo_23" class="versiculo">Aunque unos nobles se sienten a criticarme, tu siervo medita tus órdenes.</span> <span id="num_versiculo_24" class="num-versiculo">24</span><span id="versiculo_24" class="versiculo">También tus preceptos son mi delicia, son mis consejeros.</span> <span id="num_versiculo_25" class="num-versiculo">25</span><span id="versiculo_25" class="versiculo">Mi aliento está pegado al polvo: dame vida por tu palabra.</span> <span id="num_versiculo_26" class="num-versiculo">26</span><span id="versiculo_26" class="versiculo">Te conté mis andanzas y me respondiste: enséñame tus estatutos.</span> <span id="num_versiculo_27" class="num-versiculo">27</span><span id="versiculo_27" class="versiculo">Instrúyeme en la dirección de tus decretos, y meditaré tus maravillas.</span> <span id="num_versiculo_28" class="num-versiculo">28</span><span id="versiculo_28" class="versiculo">Mi aliento desfallece de pena: confórtame con tu palabra.</span> <span id="num_versiculo_29" class="num-versiculo">29</span><span id="versiculo_29" class="versiculo">Aparta de mí el camino falso y dame la gracia de tu voluntad.</span> <span id="num_versiculo_30" class="num-versiculo">30</span><span id="versiculo_30" class="versiculo">He escogido el camino seguro disponiendo tus mandamientos.</span> <span id="num_versiculo_31" class="num-versiculo">31</span><span id="versiculo_31" class="versiculo">Me adhiero a tus preceptos, Señor, no me defraudes.</span> <span id="num_versiculo_32" class="num-versiculo">32</span><span id="versiculo_32" class="versiculo">Por el camino de tus mandatos correré cuando me ensanches el corazón.</span> <span id="num_versiculo_33" class="num-versiculo">33</span><span id="versiculo_33" class="versiculo">Enséñame, Señor, el camino de tus estatutos y lo seguiré puntualmente.</span> <span id="num_versiculo_34" class="num-versiculo">34</span><span id="versiculo_34" class="versiculo">Enséñame a cumplir tu voluntad y a observarla de todo corazón.</span> <span id="num_versiculo_35" class="num-versiculo">35</span><span id="versiculo_35" class="versiculo">Encamíname por la senda de tus mandatos, porque la quiero.</span> <span id="num_versiculo_36" class="num-versiculo">36</span><span id="versiculo_36" class="versiculo">Inclina mi corazón a tus preceptos y no al lucro.</span> <span id="num_versiculo_37" class="num-versiculo">37</span><span id="versiculo_37" class="versiculo">Aparta mis ojos de miradas vacías, en tu camino dame vida.</span> <span id="num_versiculo_38" class="num-versiculo">38</span><span id="versiculo_38" class="versiculo">Cumple a tu siervo la promesa que hiciste a tus fieles.</span> <span id="num_versiculo_39" class="num-versiculo">39</span><span id="versiculo_39" class="versiculo">Apártame la afrenta que temo; tus mandamientos son buenos.</span> <span id="num_versiculo_40" class="num-versiculo">40</span><span id="versiculo_40" class="versiculo">Mira cómo ansío tus decretos; con tu justicia dame vida.</span> <span id="num_versiculo_41" class="num-versiculo">41</span><span id="versiculo_41" class="versiculo">Y que me llegue tu misericordia, Señor, tu salvación, según tu promesa,</span> <span id="num_versiculo_42" class="num-versiculo">42</span><span id="versiculo_42" class="versiculo">y podré responder al que me ultraja que confío en tu palabra.</span> <span id="num_versiculo_43" class="num-versiculo">43</span><span id="versiculo_43" class="versiculo">No apartes de mi boca la palabra auténtica –oh Dios, grande e inmortal–, que espero en tus mandamientos.</span> <span id="num_versiculo_44" class="num-versiculo">44</span><span id="versiculo_44" class="versiculo">Quiero cumplir continuamente tu voluntad, por siempre jamás.</span> <span id="num_versiculo_45" class="num-versiculo">45</span><span id="versiculo_45" class="versiculo">Y seguiré un camino ancho porque busco tus decretos.</span> <span id="num_versiculo_46" class="num-versiculo">46</span><span id="versiculo_46" class="versiculo">Y hablaré de tus preceptos ante reyes sin sentir vergüenza.</span> <span id="num_versiculo_47" class="num-versiculo">47</span><span id="versiculo_47" class="versiculo">Y serán mi delicia tus mandatos que tanto amo.</span> <span id="num_versiculo_48" class="num-versiculo">48</span><span id="versiculo_48" class="versiculo">Y alzaré las palmas hacia ti y meditaré tus normas.</span> <span id="num_versiculo_49" class="num-versiculo">49</span><span id="versiculo_49" class="versiculo">Recuerda la palabra que diste a tu siervo, de la que hiciste mi esperanza.</span> <span id="num_versiculo_50" class="num-versiculo">50</span><span id="versiculo_50" class="versiculo">Éste es mi consuelo en la aflicción: que tu promesa me da vida.</span> <span id="num_versiculo_51" class="num-versiculo">51</span><span id="versiculo_51" class="versiculo">Unos insolentes me insultan gravemente –oh Dios, grande e inmortal–, yo no me aparto de tu voluntad.</span> <span id="num_versiculo_52" class="num-versiculo">52</span><span id="versiculo_52" class="versiculo">Recordando tus antiguos mandamientos, Señor, quedé consolado.</span> <span id="num_versiculo_53" class="num-versiculo">53</span><span id="versiculo_53" class="versiculo">Me domina la indignación por los malvados que abandonan tu ley.</span> <span id="num_versiculo_54" class="num-versiculo">54</span><span id="versiculo_54" class="versiculo">Tus normas eran mi música en casa extranjera.</span> <span id="num_versiculo_55" class="num-versiculo">55</span><span id="versiculo_55" class="versiculo">De noche pronuncio tu Nombre, Señor, y velando, tu voluntad.</span> <span id="num_versiculo_56" class="num-versiculo">56</span><span id="versiculo_56" class="versiculo">Ésta ha sido mi tarea: he observado tus decretos.</span> <span id="num_versiculo_57" class="num-versiculo">57</span><span id="versiculo_57" class="versiculo">Mi porción es el Señor. He resuelto observar tus consignas.</span> <span id="num_versiculo_58" class="num-versiculo">58</span><span id="versiculo_58" class="versiculo">Te aplaco de todo corazón; apiádate de mí según tu promesa.</span> <span id="num_versiculo_59" class="num-versiculo">59</span><span id="versiculo_59" class="versiculo">He calculado mi camino para volver mis pasos a tus preceptos.</span> <span id="num_versiculo_60" class="num-versiculo">60</span><span id="versiculo_60" class="versiculo">Me di prisa, no di largas, para observar tus mandatos.</span> <span id="num_versiculo_61" class="num-versiculo">61</span><span id="versiculo_61" class="versiculo">Los lazos de los malvados me envolvían; no olvidé tu ley.</span> <span id="num_versiculo_62" class="num-versiculo">62</span><span id="versiculo_62" class="versiculo">A media noche me levanto para darte gracias por tus justos mandamientos.</span> <span id="num_versiculo_63" class="num-versiculo">63</span><span id="versiculo_63" class="versiculo">Me junto con todos tus fieles que guardan tus decretos.</span> <span id="num_versiculo_64" class="num-versiculo">64</span><span id="versiculo_64" class="versiculo">De tu bondad, Señor, está llena la tierra: enséñame tus normas.</span> <span id="num_versiculo_65" class="num-versiculo">65</span><span id="versiculo_65" class="versiculo">Trataste bien a tu siervo, Señor, según tu palabra.</span> <span id="num_versiculo_66" class="num-versiculo">66</span><span id="versiculo_66" class="versiculo">Enséñame a discernir y entender, porque me fío de tus mandatos.</span> <span id="num_versiculo_67" class="num-versiculo">67</span><span id="versiculo_67" class="versiculo">Antes del escarmiento yo no lo advertía, pero ahora cumplo tu instrucción.</span> <span id="num_versiculo_68" class="num-versiculo">68</span><span id="versiculo_68" class="versiculo">Bueno eres tú y haces el bien: enséñame tus normas.</span> <span id="num_versiculo_69" class="num-versiculo">69</span><span id="versiculo_69" class="versiculo">Me embadurnan de calumnias unos insolentes; yo guardo de todo corazón tus decretos.</span> <span id="num_versiculo_70" class="num-versiculo">70</span><span id="versiculo_70" class="versiculo">Su corazón es espeso como grasa; yo me deleito en tu voluntad.</span> <span id="num_versiculo_71" class="num-versiculo">71</span><span id="versiculo_71" class="versiculo">Bien me estuvo el escarmiento: así aprendí tus órdenes.</span> <span id="num_versiculo_72" class="num-versiculo">72</span><span id="versiculo_72" class="versiculo">Más vale para mí la ley de tu boca que mil monedas de oro y plata.</span> <span id="num_versiculo_73" class="num-versiculo">73</span><span id="versiculo_73" class="versiculo">Tus manos me hicieron y me afirmaron: instrúyeme para que aprenda tus mandatos.</span> <span id="num_versiculo_74" class="num-versiculo">74</span><span id="versiculo_74" class="versiculo">Tus fieles verán con alegría que he esperado en tu palabra.</span> <span id="num_versiculo_75" class="num-versiculo">75</span><span id="versiculo_75" class="versiculo">Reconozco, Señor, que tus mandamientos son justos, que con razón me afligiste.</span> <span id="num_versiculo_76" class="num-versiculo">76</span><span id="versiculo_76" class="versiculo">Sea tu misericordia mi consuelo como lo prometiste a tu siervo.</span> <span id="num_versiculo_77" class="num-versiculo">77</span><span id="versiculo_77" class="versiculo">Que me alcance tu compasión, y viviré, porque tu ley es mi delicia.</span> <span id="num_versiculo_78" class="num-versiculo">78</span><span id="versiculo_78" class="versiculo">Que fracasen los insolentes cuando me desprestigian con mentiras; yo meditaré tus decretos.</span> <span id="num_versiculo_79" class="num-versiculo">79</span><span id="versiculo_79" class="versiculo">Vuelvan a mí tus fieles que hacen caso de tus preceptos.</span> <span id="num_versiculo_80" class="num-versiculo">80</span><span id="versiculo_80" class="versiculo">Que mi corazón se perfeccione con tus normas, y así no fracasaré.</span> <span id="num_versiculo_81" class="num-versiculo">81</span><span id="versiculo_81" class="versiculo">Mi aliento se consume por tu salvación, espero en tu palabra.</span> <span id="num_versiculo_82" class="num-versiculo">82</span><span id="versiculo_82" class="versiculo">Mis ojos se consumen por tu promesa: ¿cuándo me consolarás?</span> <span id="num_versiculo_83" class="num-versiculo">83</span><span id="versiculo_83" class="versiculo">Cuando estaba como un odre ahumado, no olvidaba tus normas.</span> <span id="num_versiculo_84" class="num-versiculo">84</span><span id="versiculo_84" class="versiculo">¿Cuántos años le quedan a tu siervo?, ¿cuándo harás justicia de mis perseguidores?</span> <span id="num_versiculo_85" class="num-versiculo">85</span><span id="versiculo_85" class="versiculo">Me cavan fosas unos insolentes que no se ajustan a tu ley.</span> <span id="num_versiculo_86" class="num-versiculo">86</span><span id="versiculo_86" class="versiculo">Todos tus mandatos son legítimos; sin razón me persiguen, socórreme.</span> <span id="num_versiculo_87" class="num-versiculo">87</span><span id="versiculo_87" class="versiculo">Casi dieron conmigo en la tumba, pero yo no abandoné tus decretos.</span> <span id="num_versiculo_88" class="num-versiculo">88</span><span id="versiculo_88" class="versiculo">Según tu misericordia dame vida y guardaré la instrucción de tu boca.</span> <span id="num_versiculo_89" class="num-versiculo">89</span><span id="versiculo_89" class="versiculo">Tu palabra, Señor, en el cielo está firme por siempre.</span> <span id="num_versiculo_90" class="num-versiculo">90</span><span id="versiculo_90" class="versiculo">De generación en generación tu fidelidad: afirmaste la tierra y permanece.</span> <span id="num_versiculo_91" class="num-versiculo">91</span><span id="versiculo_91" class="versiculo">Por tu disposición permanecen hasta hoy; el universo está a tu servicio.</span> <span id="num_versiculo_92" class="num-versiculo">92</span><span id="versiculo_92" class="versiculo">Si tu voluntad no fuera mi delicia, habría perecido en mi aflicción.</span> <span id="num_versiculo_93" class="num-versiculo">93</span><span id="versiculo_93" class="versiculo">Jamás olvidaré tus decretos, pues con ellos me diste vida.</span> <span id="num_versiculo_94" class="num-versiculo">94</span><span id="versiculo_94" class="versiculo">Tuyo soy, sálvame, que yo consulto tus decretos.</span> <span id="num_versiculo_95" class="num-versiculo">95</span><span id="versiculo_95" class="versiculo">Los malvados me acechan para perderme, yo meditaba tus preceptos.</span> <span id="num_versiculo_96" class="num-versiculo">96</span><span id="versiculo_96" class="versiculo">He visto el término de todo lo acabado; tu mandato se dilata sin término.</span> <span id="num_versiculo_97" class="num-versiculo">97</span><span id="versiculo_97" class="versiculo">¡Cómo amo tu voluntad!, todo el día la estoy meditando.</span> <span id="num_versiculo_98" class="num-versiculo">98</span><span id="versiculo_98" class="versiculo">Tus mandatos me hacen más hábil que mis enemigos, siempre van conmigo.</span> <span id="num_versiculo_99" class="num-versiculo">99</span><span id="versiculo_99" class="versiculo">Soy más docto que todos mis maestros, porque medito tus preceptos.</span> <span id="num_versiculo_100" class="num-versiculo">100</span><span id="versiculo_100" class="versiculo">Soy más sagaz que los ancianos porque observo tus decretos.</span> <span id="num_versiculo_101" class="num-versiculo">101</span><span id="versiculo_101" class="versiculo">Cohíbo mis pies de todo mal camino, para observar tu palabra.</span> <span id="num_versiculo_102" class="num-versiculo">102</span><span id="versiculo_102" class="versiculo">No me aparto de tus mandamientos porque tú me has instruido.</span> <span id="num_versiculo_103" class="num-versiculo">103</span><span id="versiculo_103" class="versiculo">¡Qué dulce es tu promesa al paladar!, más que miel a la boca.</span> <span id="num_versiculo_104" class="num-versiculo">104</span><span id="versiculo_104" class="versiculo">Reflexiono sobre tus decretos, por eso detesto toda senda falsa.</span> <span id="num_versiculo_105" class="num-versiculo">105</span><span id="versiculo_105" class="versiculo">Tu palabra es lámpara para mis pasos, luz en mi senda.</span> <span id="num_versiculo_106" class="num-versiculo">106</span><span id="versiculo_106" class="versiculo">He jurado, y lo cumpliré, observar tus justos mandamientos.</span> <span id="num_versiculo_107" class="num-versiculo">107</span><span id="versiculo_107" class="versiculo">Me siento gravemente afligido: dame vida, Señor, por tu palabra.</span> <span id="num_versiculo_108" class="num-versiculo">108</span><span id="versiculo_108" class="versiculo">Acepta, Señor, mi oferta generosa y enséñame tus mandamientos.</span> <span id="num_versiculo_109" class="num-versiculo">109</span><span id="versiculo_109" class="versiculo">Continuamente arriesgo la vida, pero no olvido tu voluntad.</span> <span id="num_versiculo_110" class="num-versiculo">110</span><span id="versiculo_110" class="versiculo">Los malvados me ponen trampas: yo no me desvío de tus decretos.</span> <span id="num_versiculo_111" class="num-versiculo">111</span><span id="versiculo_111" class="versiculo">Tus preceptos son mi herencia perpetua, son el gozo de mi corazón.</span> <span id="num_versiculo_112" class="num-versiculo">112</span><span id="versiculo_112" class="versiculo">Incliné mi corazón a cumplir tus normas siempre y cabalmente.</span> <span id="num_versiculo_113" class="num-versiculo">113</span><span id="versiculo_113" class="versiculo">Detesto a los que se han desgajado y amo tu voluntad.</span> <span id="num_versiculo_114" class="num-versiculo">114</span><span id="versiculo_114" class="versiculo">Tú eres mi refugio y mi escudo: en tu palabra espero.</span> <span id="num_versiculo_115" class="num-versiculo">115</span><span id="versiculo_115" class="versiculo">Apartaos, perversos, de mí, y guardaré los mandatos de mi Dios.</span> <span id="num_versiculo_116" class="num-versiculo">116</span><span id="versiculo_116" class="versiculo">Sostenme con tu promesa y viviré, no dejes frustrarse mi esperanza.</span> <span id="num_versiculo_117" class="num-versiculo">117</span><span id="versiculo_117" class="versiculo">Dame apoyo y estaré a salvo y me fijaré continuamente en tus normas.</span> <span id="num_versiculo_118" class="num-versiculo">118</span><span id="versiculo_118" class="versiculo">A los que se desvían de tus normas los tasas como mentira y engaño.</span> <span id="num_versiculo_119" class="num-versiculo">119</span><span id="versiculo_119" class="versiculo">Valoras como escoria a los malvados, por eso amo tus preceptos.</span> <span id="num_versiculo_120" class="num-versiculo">120</span><span id="versiculo_120" class="versiculo">Se me erizan los pelos con tu terror y me asustan tus mandamientos.</span> <span id="num_versiculo_121" class="num-versiculo">121</span><span id="versiculo_121" class="versiculo">Practico la justicia y el derecho: no me entregues a mis opresores.</span> <span id="num_versiculo_122" class="num-versiculo">122</span><span id="versiculo_122" class="versiculo">Sal fiador por tu siervo para que no me opriman los insolentes.</span> <span id="num_versiculo_123" class="num-versiculo">123</span><span id="versiculo_123" class="versiculo">Se me consumen los ojos por tu salvación, por tu promesa de justicia.</span> <span id="num_versiculo_124" class="num-versiculo">124</span><span id="versiculo_124" class="versiculo">Trata a tu siervo con misericordia y enséñame tus normas.</span> <span id="num_versiculo_125" class="num-versiculo">125</span><span id="versiculo_125" class="versiculo">Soy tu siervo, instrúyeme, y comprenderé tus preceptos.</span> <span id="num_versiculo_126" class="num-versiculo">126</span><span id="versiculo_126" class="versiculo">Es hora de actuar, Señor, han quebrantado tu ley.</span> <span id="num_versiculo_127" class="num-versiculo">127</span><span id="versiculo_127" class="versiculo">Por eso amo tus mandatos más que el oro más puro.</span> <span id="num_versiculo_128" class="num-versiculo">128</span><span id="versiculo_128" class="versiculo">Por eso sigo derecho tus normas y detesto toda senda engañosa.</span> <span id="num_versiculo_129" class="num-versiculo">129</span><span id="versiculo_129" class="versiculo">Admirables son tus preceptos: por eso los observa mi alma.</span> <span id="num_versiculo_130" class="num-versiculo">130</span><span id="versiculo_130" class="versiculo">La explicación de tu palabra ilumina, instruye a los inexpertos.</span> <span id="num_versiculo_131" class="num-versiculo">131</span><span id="versiculo_131" class="versiculo">Abro bien la boca para respirar con ansia de tus mandatos.</span> <span id="num_versiculo_132" class="num-versiculo">132</span><span id="versiculo_132" class="versiculo">Vuélvete a mí con piedad, como sueles con los que aman tu Nombre.</span> <span id="num_versiculo_133" class="num-versiculo">133</span><span id="versiculo_133" class="versiculo">Afirma mis pasos con tu promesa, no me entregues en poder de maldad alguna.</span> <span id="num_versiculo_134" class="num-versiculo">134</span><span id="versiculo_134" class="versiculo">Líbrame de la opresión humana, y guardaré tus decretos.</span> <span id="num_versiculo_135" class="num-versiculo">135</span><span id="versiculo_135" class="versiculo">Muestra a tu siervo tu rostro radiante, enséñame tus normas.</span> <span id="num_versiculo_136" class="num-versiculo">136</span><span id="versiculo_136" class="versiculo">Arroyos descienden de mis ojos por los que no guardan tu ley.</span> <span id="num_versiculo_137" class="num-versiculo">137</span><span id="versiculo_137" class="versiculo">Justo eres tú, Señor, recto es tu mandamiento.</span> <span id="num_versiculo_138" class="num-versiculo">138</span><span id="versiculo_138" class="versiculo">Has prescrito preceptos justos, sumamente estables.</span> <span id="num_versiculo_139" class="num-versiculo">139</span><span id="versiculo_139" class="versiculo">Me consumo de celo porque mis enemigos olvidan tus palabras.</span> <span id="num_versiculo_140" class="num-versiculo">140</span><span id="versiculo_140" class="versiculo">Tu promesa es acrisolada y tu siervo la ama.</span> <span id="num_versiculo_141" class="num-versiculo">141</span><span id="versiculo_141" class="versiculo">Soy pequeño y despreciado, pero no olvido tus decretos.</span> <span id="num_versiculo_142" class="num-versiculo">142</span><span id="versiculo_142" class="versiculo">Tu justicia es justa por siempre, tu voluntad es auténtica.</span> <span id="num_versiculo_143" class="num-versiculo">143</span><span id="versiculo_143" class="versiculo">Me asaltan angustia y aprieto; tus mandatos son mi delicia.</span> <span id="num_versiculo_144" class="num-versiculo">144</span><span id="versiculo_144" class="versiculo">Tus preceptos son justos por siempre; instrúyeme y viviré.</span> <span id="num_versiculo_145" class="num-versiculo">145</span><span id="versiculo_145" class="versiculo">Clamo de todo corazón, respóndeme, Señor, guardaré tus normas.</span> <span id="num_versiculo_146" class="num-versiculo">146</span><span id="versiculo_146" class="versiculo">Te llamo, sálvame, y observaré tus preceptos.</span> <span id="num_versiculo_147" class="num-versiculo">147</span><span id="versiculo_147" class="versiculo">Me adelanto a la aurora y pido auxilio aguardando tus palabras.</span> <span id="num_versiculo_148" class="num-versiculo">148</span><span id="versiculo_148" class="versiculo">Mis ojos se adelantan a las velas meditando tu promesa.</span> <span id="num_versiculo_149" class="num-versiculo">149</span><span id="versiculo_149" class="versiculo">Escucha mi voz por tu misericordia, dame vida, Señor, como es tu norma.</span> <span id="num_versiculo_150" class="num-versiculo">150</span><span id="versiculo_150" class="versiculo">Se acercan los que persiguen infamias y de tu ley se alejan.</span> <span id="num_versiculo_151" class="num-versiculo">151</span><span id="versiculo_151" class="versiculo">Cerca estás tú, Señor, y todos tus mandatos son auténticos.</span> <span id="num_versiculo_152" class="num-versiculo">152</span><span id="versiculo_152" class="versiculo">Hace tiempo comprendí que has establecido tus preceptos para siempre.</span> <span id="num_versiculo_153" class="num-versiculo">153</span><span id="versiculo_153" class="versiculo">Mira mi aflicción y líbrame, pues no olvido tu voluntad.</span> <span id="num_versiculo_154" class="num-versiculo">154</span><span id="versiculo_154" class="versiculo">Defiende mi causa y rescátame, por tu promesa dame vida.</span> <span id="num_versiculo_155" class="num-versiculo">155</span><span id="versiculo_155" class="versiculo">Lejos queda de los malvados la salvación, pues no consultan tus normas.</span> <span id="num_versiculo_156" class="num-versiculo">156</span><span id="versiculo_156" class="versiculo">Grande es tu compasión, Señor, dame vida según tu norma.</span> <span id="num_versiculo_157" class="num-versiculo">157</span><span id="versiculo_157" class="versiculo">Muchos son los enemigos que me persiguen, yo no me aparto de tus preceptos.</span> <span id="num_versiculo_158" class="num-versiculo">158</span><span id="versiculo_158" class="versiculo">Viendo a los renegados sentía asco, porque no observan tus instrucciones.</span> <span id="num_versiculo_159" class="num-versiculo">159</span><span id="versiculo_159" class="versiculo">Mira cómo amo tus decretos; Señor, por tu misericordia dame vida.</span> <span id="num_versiculo_160" class="num-versiculo">160</span><span id="versiculo_160" class="versiculo">El compendio de tu palabra es la verdad, es eterno tu justo mandamiento.</span> <span id="num_versiculo_161" class="num-versiculo">161</span><span id="versiculo_161" class="versiculo">Unos príncipes me persiguen sin motivo; mi corazón tiembla por tus palabras.</span> <span id="num_versiculo_162" class="num-versiculo">162</span><span id="versiculo_162" class="versiculo">Yo me alegro de tu promesa, como el que encuentra rico botín.</span> <span id="num_versiculo_163" class="num-versiculo">163</span><span id="versiculo_163" class="versiculo">Detesto y aborrezco la mentira, amo tu voluntad.</span> <span id="num_versiculo_164" class="num-versiculo">164</span><span id="versiculo_164" class="versiculo">Siete veces al día te alabo por tus justos mandamientos.</span> <span id="num_versiculo_165" class="num-versiculo">165</span><span id="versiculo_165" class="versiculo">Mucha paz tienen los que aman tu ley, nada los hace tropezar.</span> <span id="num_versiculo_166" class="num-versiculo">166</span><span id="versiculo_166" class="versiculo">Aguardo tu salvación, Señor, y cumplo tus mandatos.</span> <span id="num_versiculo_167" class="num-versiculo">167</span><span id="versiculo_167" class="versiculo">Mi alma guarda tus preceptos, los ama intensamente.</span> <span id="num_versiculo_168" class="num-versiculo">168</span><span id="versiculo_168" class="versiculo">Guardo tus preceptos y decretos, tienes presentes todos mis caminos.</span> <span id="num_versiculo_169" class="num-versiculo">169</span><span id="versiculo_169" class="versiculo">Llegue mi clamor a tu presencia, Señor, instrúyeme con tu palabra.</span> <span id="num_versiculo_170" class="num-versiculo">170</span><span id="versiculo_170" class="versiculo">Que mi súplica llegue a tu presencia: líbrame según tu promesa.</span> <span id="num_versiculo_171" class="num-versiculo">171</span><span id="versiculo_171" class="versiculo">De mis labios brota la alabanza, porque me enseñaste tus normas.</span> <span id="num_versiculo_172" class="num-versiculo">172</span><span id="versiculo_172" class="versiculo">Entona mi lengua tu promesa porque todos tus mandatos son legítimos.</span> <span id="num_versiculo_173" class="num-versiculo">173</span><span id="versiculo_173" class="versiculo">Que tu mano me auxilie, pues escojo tus decretos.</span> <span id="num_versiculo_174" class="num-versiculo">174</span><span id="versiculo_174" class="versiculo">Ansío tu salvación, Señor, tu voluntad es mi delicia.</span> <span id="num_versiculo_175" class="num-versiculo">175</span><span id="versiculo_175" class="versiculo">Viva mi alma para alabarte; tu mandamiento me auxiliará.</span> <span id="num_versiculo_176" class="num-versiculo">176</span><span id="versiculo_176" class="versiculo">Me extravié como oveja descarriada: busca a tu siervo, que no olvida tus mandatos.</span></div>
+                            </div>
+                            <!-- Panel para comentarios -->
+                            <div id="comment-panel" class="comment-panel">
+                                <h4>Versículos seleccionados</h4>
+                                <div id="selected-verses"></div>
+                                <div id="comment-buttons">
+                                    <button id="add-comment-button" class="btn btn-primary" disabled><i class="fas fa-comment-dots"></i> Añadir comentario</button>
+                                    <button id="cancel-comment-button" class="btn btn-primary"><i class="bi bi-x"></i> Cancelar</button>
+                                </div>
+                                <div id="comment-box" style="display: none;">
+                                    <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
+                                    <div id="comment-links" class="mt-2" style="display: none;">
+                                        <a href="/biblia/mis-comentarios">Ver mis comentarios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación entre capítulos -->
+                        <div class="navigation d-flex justify-content-center">
+                            <button id="prev-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-118.html'"><</button>
+                            <div class="chapter-navigation scroll-horizontal">
+                                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-1.html'">1</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-2.html'">2</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-3.html'">3</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-4.html'">4</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-5.html'">5</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-6.html'">6</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-7.html'">7</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-8.html'">8</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-9.html'">9</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-10.html'">10</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-11.html'">11</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-12.html'">12</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-13.html'">13</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-14.html'">14</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-15.html'">15</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-16.html'">16</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-17.html'">17</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-18.html'">18</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-19.html'">19</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-20.html'">20</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-21.html'">21</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-22.html'">22</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-23.html'">23</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-24.html'">24</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-25.html'">25</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-26.html'">26</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-27.html'">27</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-28.html'">28</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-29.html'">29</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-30.html'">30</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-31.html'">31</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-32.html'">32</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-33.html'">33</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-34.html'">34</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-35.html'">35</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-36.html'">36</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-37.html'">37</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-38.html'">38</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-39.html'">39</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-40.html'">40</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-41.html'">41</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-42.html'">42</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-43.html'">43</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-44.html'">44</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-45.html'">45</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-46.html'">46</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-47.html'">47</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-48.html'">48</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-49.html'">49</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-50.html'">50</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-51.html'">51</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-52.html'">52</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-53.html'">53</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-54.html'">54</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-55.html'">55</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-56.html'">56</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-57.html'">57</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-58.html'">58</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-59.html'">59</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-60.html'">60</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-61.html'">61</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-62.html'">62</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-63.html'">63</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-64.html'">64</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-65.html'">65</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-66.html'">66</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-67.html'">67</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-68.html'">68</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-69.html'">69</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-70.html'">70</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-71.html'">71</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-72.html'">72</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-73.html'">73</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-74.html'">74</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-75.html'">75</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-76.html'">76</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-77.html'">77</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-78.html'">78</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-79.html'">79</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-80.html'">80</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-81.html'">81</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-82.html'">82</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-83.html'">83</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-84.html'">84</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-85.html'">85</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-86.html'">86</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-87.html'">87</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-88.html'">88</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-89.html'">89</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-90.html'">90</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-91.html'">91</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-92.html'">92</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-93.html'">93</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-94.html'">94</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-95.html'">95</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-96.html'">96</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-97.html'">97</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-98.html'">98</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-99.html'">99</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-100.html'">100</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-101.html'">101</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-102.html'">102</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-103.html'">103</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-104.html'">104</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-105.html'">105</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-106.html'">106</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-107.html'">107</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-108.html'">108</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-109.html'">109</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-110.html'">110</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-111.html'">111</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-112.html'">112</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-113.html'">113</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-114.html'">114</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-115.html'">115</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-116.html'">116</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-117.html'">117</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-118.html'">118</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-119.html'">119</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-120.html'">120</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-121.html'">121</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-122.html'">122</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-123.html'">123</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-124.html'">124</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-125.html'">125</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-126.html'">126</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-127.html'">127</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-128.html'">128</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-129.html'">129</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-130.html'">130</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-131.html'">131</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-132.html'">132</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-133.html'">133</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-134.html'">134</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-135.html'">135</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-136.html'">136</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-137.html'">137</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-138.html'">138</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-139.html'">139</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-140.html'">140</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-141.html'">141</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-142.html'">142</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-143.html'">143</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-144.html'">144</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-145.html'">145</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-146.html'">146</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-147.html'">147</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-148.html'">148</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-149.html'">149</button>
+                
+                    <button class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-150.html'">150</button>
+                
+                            </div>
+                            <button id="next-chapter" class="btn btn-primary" onclick="location.href='/biblia/capitulos/salmos-120.html'">></button>
+                        </div>
+                    </div>
+
+                    <!-- Scripts -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="/scripts/common.js"></script>
+                    <script src="/scripts/biblia.js"></script>
+                </body>
+                </html>
+                
