@@ -108,6 +108,12 @@
                         <p class="text-center font-italic font-weight-light">Haz clic aquí para cerrar este mensaje.</p>
                     </div>
 
+                    <!-- Contenedor para cargar dinámicamente las vistas de login o register -->
+                    <div id="auth-modal" style="display: none;"></div>
+
+                    <!-- Identificación de libro y capítulo -->
+                    <div id="libro-id" style="display: none;">51</div>
+                    <div id="capitulo" style="display: none;">1</div>
                     <!-- Contenido del capítulo -->
                     <div class="container">
                         <div id="content-comments-container">
@@ -186,7 +192,7 @@ Jesús le contesta:
                                 </div>
                                 <div id="comment-box" style="display: none;">
                                     <textarea id="comment-text" class="form-control" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
-                                    <button id="save-comment-button" class="btn btn-success mt-2">Guardar comentario</button>
+                                    <button id="save-comment-button" class="btn btn-primary mt-2">Guardar comentario</button>
                                     <span id="comment-status" class="text-success mt-2" style="display: none;"></span>
                                     <div id="comment-links" class="mt-2" style="display: none;">
                                         <a href="/biblia/mis-comentarios">Ver mis comentarios</a>

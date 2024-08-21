@@ -26,6 +26,7 @@ $(document).ready(function() {
       // Validar que los campos no estén vacíos
       if (!email || !password) {
           $('#login-error').text('Por favor, ingrese su correo electrónico y contraseña').show();
+          $('#login-error').css('opacity', '1');
           return;
       }
       loginUser(email, password);

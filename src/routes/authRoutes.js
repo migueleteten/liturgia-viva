@@ -1,5 +1,5 @@
 const express = require('express');
-const { registerParroquiaAdministrador, registerFeligres, login, createParroquiaUser, verifyEmail } = require('../controllers/authController');
+const { registerParroquiaAdministrador, registerFeligres, login, createParroquiaUser, verifyEmail, refreshToken } = require('../controllers/authController');
 const router = express.Router();
 const { authenticateToken } = require('../middleware/authMiddleware'); // Middleware para autenticar el token JWT
 
@@ -8,5 +8,6 @@ router.post('/register/feligres', registerFeligres);
 router.post('/login', login);
 router.post('/createParroquiaUser', authenticateToken, createParroquiaUser);
 router.get('/verify-email', verifyEmail);
+router.post('/token', refreshToken);
 
 module.exports = router;

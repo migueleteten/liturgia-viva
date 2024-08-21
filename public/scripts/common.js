@@ -14,16 +14,18 @@ function loginUser(email, password) {
     success: function(response) {
       console.log('Login exitoso, guardando token...');
       // Guardar el token JWT en localStorage o sessionStorage
-      localStorage.setItem('authToken', response.token);
-      // Redirigir al usuario a la página de inicio o al dashboard
-      window.location.href = '/biblia/capitulos/apocalipsis-1.html'; // O la ruta correspondiente
+      localStorage.setItem('authToken', response.accessToken);
+      $('#auth-modal').hide(); // Oculta el modal
+      alert('Inicio de sesión exitoso. Puedes continuar')
     },
     error: function(xhr) {
       // Manejar errores y mostrar mensaje al usuario
-      if (xhr.status === 401) {
+      if (xhr.status === 400) {
           $('#login-error').text('Correo electrónico o contraseña incorrectos').show();
+          $('#login-error').css('opacity', '1');
       } else {
           $('#login-error').text('Hubo un problema al iniciar sesión. Por favor, intenta de nuevo.').show();
+          $('#login-error').css('opacity', '1');
       }
     }
   });
@@ -48,7 +50,7 @@ $(document).ready(function () {
   if (token) {
     setTimeout(() =>{
       updateUIForAuthenticatedUser();
-    }, 100);
+    }, 200);
   }
 });
 
@@ -56,4 +58,69 @@ $(document).ready(function () {
 function logoutUser() {
   localStorage.removeItem('authToken');
   window.location.href = '/';
+}
+
+function checkTokenExpiry() {
+  const token = localStorage.getItem('authToken');
+  if (token) {
+      const decodedToken = JSON.parse(atob(token.split('.')[1]));
+      const expirationTime = decodedToken.exp * 1000; // Convertir a milisegundos
+
+      const currentTime = Date.now();
+      const fiveMinutesBeforeExpiry = expirationTime - 5 * 60 * 1000;
+
+      if (currentTime > fiveMinutesBeforeExpiry) {
+          // Token está cerca de expirar, solicitar un nuevo access token
+          renewAccessToken();
+      }
+  }
+}
+
+function renewAccessToken() {
+  const refreshToken = localStorage.getItem('refreshToken');
+
+  $.ajax({
+      url: '/api/auth/token',
+      type: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify({ refreshToken: refreshToken }),
+      success: function (response) {
+          localStorage.setItem('authToken', response.accessToken);
+      },
+      error: function () {
+          alert('Tu sesión ha expirado. Por favor, inicia sesión nuevamente.');
+          localStorage.removeItem('authToken');
+          localStorage.removeItem('refreshToken');
+          window.location.href = '/login';
+      }
+  });
+}
+
+// Llama a checkTokenExpiry() regularmente, por ejemplo, cada 10 minutos
+setInterval(checkTokenExpiry, 10 * 60 * 1000);
+
+function loadAuthView(view) {
+  $('#auth-modal').load(`/views/pages/${view}.html`, function() {
+      // Cargar dinámicamente los estilos y scripts necesarios
+      loadCSS(`/styles/${view}.css`);
+      loadScript(`/scripts/${view}.js`, function() {
+          $('#auth-modal').show(); // Mostrar el modal
+      });
+  });
+}
+
+function loadCSS(href) {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = href;
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+function loadScript(src, callback) {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = src;
+  script.onload = callback;
+  document.getElementsByTagName('head')[0].appendChild(script);
 }

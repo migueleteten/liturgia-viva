@@ -1,52 +1,39 @@
 const express = require('express');
 const path = require('path');
+const app = express();
+
+// Importar rutas
 const authRoutes = require('./routes/authRoutes');
 const templeRoutes = require('./routes/templeRoutes');
-const songRoutes = require('./routes/songRoutes'); // Importar rutas de canciones
-const authorRoutes = require('./routes/authorRoutes'); // Importar rutas de autores
-//const bibliaRoutes = require('./routes/bibliaRoutes');
+const songRoutes = require('./routes/songRoutes');
+const authorRoutes = require('./routes/authorRoutes');
 const bibleCommentsRoutes = require('./routes/bibleCommentsRoutes');
-const app = express();
 
 // Middleware para parsear JSON
 app.use(express.json());
 
-// Servir la biblia en verso
-/*app.get('/biblia/:libro/:capitulo', (req, res) => {
-  const { libro, capitulo } = req.params;
-  console.log(`Serving page for /biblia/${req.params.libro}/${req.params.capitulo}`);
-  // Llamar a la función del controlador para obtener el capítulo
-  res.sendFile(path.join(__dirname, 'views', 'pages', 'biblia.html'));
-});*/
-
-// Rutas
+// Configurar rutas de la API
 app.use('/api/auth', authRoutes);
 app.use('/api/templos', templeRoutes);
-app.use('/api/songs', songRoutes); // Usar rutas de canciones
-app.use('/api/authors', authorRoutes); // Usar rutas de autores
-//app.use('/api/biblia', bibliaRoutes);
+app.use('/api/songs', songRoutes);
+app.use('/api/authors', authorRoutes);
 app.use('/api/biblia', bibleCommentsRoutes); // Rutas para comentarios de la Biblia
 
-// Servir archivos estáticos desde la carpeta public
-app.use(express.static(path.join(__dirname, '../public')));
+// Servir archivos estáticos
+app.use(express.static(path.join(__dirname, '../public'))); // Archivos estáticos desde la carpeta public
+app.use('/templates', express.static(path.join(__dirname, 'views/templates'))); // Archivos estáticos desde src/views/templates
+app.use('/views', express.static(path.join(__dirname, 'views'))); // Archivos estáticos desde src/views
+app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/biblia/capitulos'))); // Archivos HTML generados
 
-// Servir archivos estáticos desde src/views/templates
-app.use('/templates', express.static(path.join(__dirname, 'views/templates')));
-
-// Ruta para servir la página de creación de canciones
+// Rutas para servir páginas específicas
 app.get('/create-song', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'createSong.html'));
 });
 
-// Servir archivos HTML generados
-app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/biblia/capitulos')));
-
-// Ruta para servir la página de login
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'login.html'));
 });
 
-// Ruta para servir la página de register
 app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'register.html'));
 });

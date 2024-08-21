@@ -120,6 +120,7 @@ body {
   border-radius: 5px;
   margin-bottom: 5px;
   font-size: 0.9em;
+  cursor: pointer;
 }
 
 #selected-verses .verse-card:hover {
@@ -138,6 +139,20 @@ body {
 #cancel-comment-button {
   margin-bottom: 8px;
   width: 100%;
+}
+
+.versiculo.highlighted {
+  background-color: #ffffcc;
+  border-left: 3px solid #138275;
+}
+
+.comment-card {
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 2px solid #138275;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 #save-comment-button {
