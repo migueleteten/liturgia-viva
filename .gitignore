@@ -23,7 +23,7 @@ Thumbs.db
 # Archivos de pruebas
 csv/
 pruebas/
-scripts/
+scripts_generacion/
 
 # Backup de la base de datos
 db_backup/
