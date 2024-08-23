@@ -15,8 +15,13 @@ function loginUser(email, password) {
       console.log('Login exitoso, guardando token...');
       // Guardar el token JWT en localStorage o sessionStorage
       localStorage.setItem('authToken', response.accessToken);
+      localStorage.setItem('refreshToken', response.refreshToken);
       $('#auth-modal').hide(); // Oculta el modal
-      alert('Inicio de sesión exitoso. Puedes continuar')
+      $('body').css('background', 'white');
+      alert('Inicio de sesión exitoso. Puedes continuar');
+      setTimeout(() =>{
+        updateUIForAuthenticatedUser();
+      }, 200);
     },
     error: function(xhr) {
       // Manejar errores y mostrar mensaje al usuario
@@ -57,41 +62,44 @@ $(document).ready(function () {
 // Función para cerrar sesión
 function logoutUser() {
   localStorage.removeItem('authToken');
-  window.location.href = '/';
+  window.location.reload();
 }
 
 function checkTokenExpiry() {
   const token = localStorage.getItem('authToken');
-  if (token) {
-      const decodedToken = JSON.parse(atob(token.split('.')[1]));
-      const expirationTime = decodedToken.exp * 1000; // Convertir a milisegundos
+  if (!token) return; // Si no hay token, no hacemos nada
 
-      const currentTime = Date.now();
-      const fiveMinutesBeforeExpiry = expirationTime - 5 * 60 * 1000;
+  const tokenPayload = JSON.parse(atob(token.split('.')[1]));
+  const expiryTime = tokenPayload.exp * 1000;
+  const currentTime = Date.now();
 
-      if (currentTime > fiveMinutesBeforeExpiry) {
-          // Token está cerca de expirar, solicitar un nuevo access token
-          renewAccessToken();
-      }
+  // Verificar si el token expirará en menos de 5 minutos
+  if (expiryTime - currentTime < 5 * 60 * 1000) {
+      renewAccessToken(); // Renovar el token
   }
 }
 
 function renewAccessToken() {
   const refreshToken = localStorage.getItem('refreshToken');
 
+  if (!refreshToken) {
+      // Si no hay refreshToken, avisar y cerrar sesión
+      alert('Tu sesión ha expirado, por favor, inicia sesión de nuevo.');
+      logoutUser();
+      return;
+  }
+
   $.ajax({
       url: '/api/auth/token',
       type: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({ refreshToken: refreshToken }),
-      success: function (response) {
+      success: function(response) {
           localStorage.setItem('authToken', response.accessToken);
       },
-      error: function () {
-          alert('Tu sesión ha expirado. Por favor, inicia sesión nuevamente.');
-          localStorage.removeItem('authToken');
-          localStorage.removeItem('refreshToken');
-          window.location.href = '/login';
+      error: function() {
+          alert('Tu sesión ha expirado, por favor, inicia sesión de nuevo.');
+          logoutUser(); // Cerrar sesión si no se puede renovar el token
       }
   });
 }
@@ -100,6 +108,7 @@ function renewAccessToken() {
 setInterval(checkTokenExpiry, 10 * 60 * 1000);
 
 function loadAuthView(view) {
+  alert('No puedes realizar esta acción si no has iniciado sesión.')
   $('#auth-modal').load(`/views/pages/${view}.html`, function() {
       // Cargar dinámicamente los estilos y scripts necesarios
       loadCSS(`/styles/${view}.css`);

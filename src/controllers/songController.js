@@ -224,10 +224,6 @@ const convertSong = async (req, res) => {
   }
 };
 
-module.exports = {
-  convertSong,
-};
-
 const suggestTags = async (req, res) => {
   const { texto } = req.body;
   try {
@@ -285,5 +281,5 @@ module.exports = {
   convertSong,
   suggestTags,
   searchAutores,
-  searchEtiquetas
+  searchEtiquetas,
 };

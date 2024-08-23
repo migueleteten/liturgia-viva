@@ -1,11 +1,16 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+Object.keys(require.cache).forEach(function(key) {
+  delete require.cache[key];
+});
+
 
 // Importar rutas
 const authRoutes = require('./routes/authRoutes');
 const templeRoutes = require('./routes/templeRoutes');
 const songRoutes = require('./routes/songRoutes');
+const songLiturgyRoutes = require('./routes/songLiturgyRoutes');
 const authorRoutes = require('./routes/authorRoutes');
 const bibleCommentsRoutes = require('./routes/bibleCommentsRoutes');
 
@@ -16,6 +21,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/templos', templeRoutes);
 app.use('/api/songs', songRoutes);
+app.use('/api/songsLiturgy', songLiturgyRoutes);
 app.use('/api/authors', authorRoutes);
 app.use('/api/biblia', bibleCommentsRoutes); // Rutas para comentarios de la Biblia
 
@@ -24,6 +30,21 @@ app.use(express.static(path.join(__dirname, '../public'))); // Archivos estátic
 app.use('/templates', express.static(path.join(__dirname, 'views/templates'))); // Archivos estáticos desde src/views/templates
 app.use('/views', express.static(path.join(__dirname, 'views'))); // Archivos estáticos desde src/views
 app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/biblia/capitulos'))); // Archivos HTML generados
+app.use('/liturgias', express.static(path.join(__dirname, 'views/pages/liturgias'))); // Archivos HTML generados
+
+// Middleware para manejar la página de inicio y servir el HTML correspondiente a la fecha de hoy
+app.get('/', (req, res) => {
+  const today = new Date();
+  const formattedDate = today.toISOString().split('T')[0]; // Formato 'YYYY-MM-DD'
+  const filePath = path.join(__dirname, 'views', 'pages', 'liturgias', `${formattedDate}.html`);
+
+  res.sendFile(filePath, err => {
+      if (err) {
+          console.error('Error al servir el archivo:', err);
+          res.status(404).send('Liturgia no encontrada para la fecha de hoy.');
+      }
+  });
+});
 
 // Rutas para servir páginas específicas
 app.get('/create-song', (req, res) => {

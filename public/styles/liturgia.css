@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa; /* Color de fondo claro y limpio */
+  color: #333; /* Color de texto para un buen contraste */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif; /* Una fuente elegante para los títulos */
+  color: #138275; /* Color verde elegante */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#fecha-fechaLiturgica {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#nombre-fecha-liturgica {
+  font-size: x-large;
+  color: #e67e22;
+  font-style: italic;
+}
+
+.reading-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Indicadores de lectura */
+.reading-indicator {
+  font-size: 1.8em;
+  margin: 20px 0;
+  border-bottom: 2px solid #138275; /* Línea inferior elegante */
+  padding-bottom: 5px;
+  color: #555;
+}
+
+.reading-reference {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Contenido de las lecturas */
+.reading-content p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* Salmo responsorial */
+.salmo-respuesta {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #e67e22; /* Un tono naranja suave */
+  margin: 15px 0;
+}
+
+/* Separador de opciones */
+.reading-group-separator {
+  font-style: italic;
+  color: #777;
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+/* Estilos para la navegación entre secciones de Lecturas, Canciones y Textos de Apoyo */
+.nav-tabs {
+  border-bottom: 2px solid #138275; /* Color de borde inferior */
+  margin-bottom: 20px; /* Espacio debajo de las pestañas */
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px; /* Ajustar el espacio entre las pestañas y el contenido */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  color: #138275; /* Color del texto */
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f0f0f0;
+  border-color: #138275 #138275 #fff; /* Border color with active effect */
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #138275;
+  border-color: #138275 #138275 #fff;
+  cursor: default; /* Cursor cambia a no pointer en la pestaña activa */
+}
+
+/* Panel de canciones */
+.song-section {
+  margin-top: 40px;
+}
+
+.song-section h3 {
+  font-family: 'Playfair Display', serif;
+  color: #138275;
+  margin-bottom: 20px;
+}
+
+.song-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.song-section ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #e3f2fd; /* Azul suave */
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.song-section ul li:hover {
+  background: #cfe2f3;
+}
+
+/* Indicador de misa */
+.mass-indicator {
+  font-size: 1.4em;
+  background-color: #138275;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Etiquetas de liturgia ocultas */
+#liturgia-etiquetas {
+  display: none;
+}
+
+/* Medios y ajustes */
+@media (max-width: 768px) {
+  .container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 15px;
+  }
+
+  h1, h2, h3, h4 {
+      font-size: 1.5em;
+  }
+
+  .reading-indicator {
+      font-size: 1.4em;
+  }
+}

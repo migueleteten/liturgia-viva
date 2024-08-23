@@ -187,12 +187,15 @@ const login = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: '2h' });
 
-    const refreshToken = jwt.sign({ userId: user.id, rolId: user.rol_id }, process.env.JWT_REFRESH_SECRET, { expiresIn: '30d' });
+    const refreshToken = jwt.sign(
+      { userId: user.id, rolId: user.rol_id },
+      process.env.JWT_REFRESH_SECRET,
+      { expiresIn: '30d' });
 
     // Guardar el refresh token en la base de datos
     await db.query('UPDATE usuarios SET refresh_token = $1 WHERE id = $2', [refreshToken, user.id]);
 
-    res.status(200).json({ accessToken });
+    res.status(200).json({ accessToken, refreshToken });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -233,7 +236,10 @@ const refreshToken = async (req, res) => {
       if (result.rows.length === 0) return res.sendStatus(403);
 
       // Generar un nuevo access token
-      const newAccessToken = jwt.sign({ userId: decoded.userId, rolId: decoded.rolId }, process.env.JWT_SECRET, { expiresIn: '1h' });
+      const newAccessToken = jwt.sign(
+        { userId: decoded.userId, rolId: decoded.rolId },
+        process.env.JWT_SECRET,
+        { expiresIn: '1h' });
       
       res.json({ accessToken: newAccessToken });
   } catch (error) {

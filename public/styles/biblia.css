@@ -89,7 +89,7 @@ body {
   background-color: #f8f9fa;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  z-index: 1200;
+  z-index: 1500;
   border-left: 1px solid #ccc;
   height: 100%;
   position: fixed;
@@ -109,7 +109,7 @@ body {
 }
 
 #selected-verses {
-  max-height: 200px;
+  max-height: 600px;
   overflow-y: auto;
   margin-bottom: 15px;
 }
@@ -234,7 +234,7 @@ body {
 
 @media (max-width: 768px) {
   #chapter-content {
-      justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
+    justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
   }
 
   #chapter-header {
@@ -269,7 +269,7 @@ body {
     background-color: #f8f9fa;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    z-index: 1200;
+    z-index: 1500;
     border-top: 1px solid #ccc;
     height: auto;
     position: fixed;
@@ -279,7 +279,7 @@ body {
   }
 
   #content-comments-container.comment-panel-active #chapter-content {
-    margin-bottom: 300px; /* El margen debe ser igual al ancho del panel de comentarios */
+    margin-bottom: 450px; /* El margen debe ser igual al ancho del panel de comentarios */
     margin-right: auto;
   }
 
@@ -290,6 +290,10 @@ body {
 
   .switch label {
     transform: translateY(7px);
+  }
+
+  #selected-verses {
+    max-height: 300px;
   }
 
 }

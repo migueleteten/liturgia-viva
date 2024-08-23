@@ -8,7 +8,7 @@ const {
   convertSong,
   suggestTags,
   searchAutores,
-  searchEtiquetas
+  searchEtiquetas,
 } = require('../controllers/songController');
 const router = express.Router();
 

@@ -67,6 +67,12 @@ input#buscador-menu {
   padding: 0.5rem 1.5rem;
 }
 
+#auth-modal {
+  z-index: 1300;
+  width: 100%;
+  position: fixed;
+}
+
 @media (max-width: 768px) {
   .form-inline .form-control {
       width: 100%;

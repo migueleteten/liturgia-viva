@@ -1,7 +1,6 @@
 /* login.css */
 
 body {
-  background: linear-gradient(135deg, #138275, #75b79e);
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   justify-content: space-between;
@@ -17,6 +16,7 @@ body {
   align-items: center;
   height: calc(100vh - 60px); /* Altura total menos la altura del header */
   padding-top: 20px; /* Espacio extra para evitar que quede pegado al header */
+  background: linear-gradient(135deg, #138275, #75b79e);
 }
 
 .login-container {
