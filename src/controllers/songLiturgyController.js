@@ -13,7 +13,7 @@ const getSongsBySectionAndTags = async (req, res) => {
         console.log('Etiquetas:', etiquetasArray);
 
         // Asegúrate de que el array esté formateado correctamente para PostgreSQL
-        const formattedEtiquetasArray = `{${etiquetasArray.join(',')}}`;
+        const formattedEtiquetasArray = `{${etiquetasArray}}`;
 
         // Si la sección es comunion-2 o comunion-3, buscar también en antifona
         if (seccion === 'comunion-2' || seccion === 'comunion-3') {
@@ -26,13 +26,15 @@ const getSongsBySectionAndTags = async (req, res) => {
             SELECT * FROM canciones 
             WHERE ${seccion}
             AND etiquetas && $1::text[]
+            ORDER BY titulo
         `;
-        const params = [formattedEtiquetasArray];
+
+        // Convertir el array en una cadena PostgreSQL-formateada
+        const params = [etiquetasArray];
         console.log('Query:', query);
         console.log('Params:', params);
   
         const result = await db.query(query, params);
-        console.log('Result: ', result.rows);
 
         if (res.headersSent) {
           console.warn('Las cabeceras ya fueron enviadas, no se puede enviar otra respuesta.');

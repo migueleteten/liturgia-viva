@@ -1,0 +1,52 @@
+/* calendario.css */
+
+.calendar-container {
+  width: 60%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+#calendar .day {
+  background-color: #138275;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#calendar .day:hover {
+  background-color: #0f685f;
+}
+
+#calendar .day.selected {
+  background-color: #0c564c;
+}
+
+#preview-container {
+  width: 35%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preview-title {
+  color: #138275;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#preview-content {
+  font-size: 1rem;
+  color: #333;
+}

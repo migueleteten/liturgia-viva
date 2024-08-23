@@ -1,4 +1,4 @@
 UPDATE liturgias_nuevo
-SET etiquetas = etiquetas || ',Pentecostés'
-WHERE fecha_liturgica LIKE '%Pentecostés%'
-  AND etiquetas NOT LIKE '%Pentecostés%';
+SET etiquetas = etiquetas || ',Navidad'
+WHERE fecha_liturgica LIKE '%Natividad del Señor%'
+  AND etiquetas NOT LIKE '%Navidad%';

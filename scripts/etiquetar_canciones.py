@@ -41,15 +41,15 @@ def obtener_letra_por_cancion(cancion_id):
 def generar_etiquetas(textos):
     prompt = (
         "Eres un experto en liturgia católica y letras de canciones de misa. Conoces la intención de la letra de las canciones, relacionada con los textos de la biblia. "
-        "Resume la letra de la siguiente canción en exactamente 4 palabras clave. "
-        "Es fundamental que devuelvas el texto como exactamente 4 palabras, ni más ni menos, la primera letra en mayúscula, "
+        "Resume la letra de la siguiente canción en exactamente 3 palabras clave. "
+        "Es fundamental que devuelvas el texto como exactamente 3 palabras, ni más ni menos, la primera letra en mayúscula, "
         "separadas por comas sin espacios adicionales. Exclusivamente las palabras, sin explicación alguna. "
         "Las palabras deben ser obligatoriamente escogidas de esta lista de 368, sin proponer ninguna nueva: "
         + ",".join(etiquetas_disponibles) + 
         "El éxito de tu tarea radica en la pertinencia de tu elección. Elecciones demasiado genéricas no aportarán valor. Por ejemplo 'Amor' es una palabra clave que podría considerarse demasiado recurrente" +
         ", ya que a priori todas las canciones de misa, de una u otra manera, hablan de Amor. Puesto que tienes un gran listado, aprovéchalo al máximo para ser lo más pertinente posible en tu respuesta"
         ". Te está totalmente prohibido proporcionar palabras no presentes en el listado anterior."
-        + "Asegúrate de que la salida contiene exactamente 4 palabras. Esta es la letra de la canción:\n" + "\n".join(textos)
+        + "Asegúrate de que la salida contiene exactamente 3 palabras. Esta es la letra de la canción:\n" + "\n".join(textos)
         + "el formato de ejemplo sería este '{Amor,Paz,Alabanza,Encuentro}'. Aquí tienes otro ejemplo '{Gloria,Agua,Luz}'"
     )
 
@@ -78,7 +78,7 @@ def actualizar_canciones_con_etiquetas(cancion_id, etiquetas):
     conn.commit()
 
 # Procesar canciones en lotes
-def procesar_canciones_en_lotes(tamaño_lote=50, start_id=29):
+def procesar_canciones_en_lotes(tamaño_lote, start_id):
     print(f'Comenzando el proceso en ID: {start_id}')
     while True:
         sql = cursor.execute("SELECT id FROM canciones WHERE id >= %s ORDER BY id LIMIT %s", (start_id, tamaño_lote))
@@ -106,7 +106,7 @@ def procesar_canciones_en_lotes(tamaño_lote=50, start_id=29):
         start_id = canciones[-1][0] + 1
 
 if __name__ == "__main__":
-    procesar_canciones_en_lotes(tamaño_lote=50, start_id=29)
+    procesar_canciones_en_lotes(50, 1)
 
 # Cerrar la conexión a la base de datos
 cursor.close()

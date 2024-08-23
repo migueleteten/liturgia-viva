@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Litúrgico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/liturgias.css">
+    <link rel="stylesheet" href="/styles/calendario.css"> <!-- Estilos del calendario -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header común -->
+    <div id="header-placeholder">${headerTemplate}</div>
+
+    <div class="container">
+        <div class="calendar-container">
+            <div id="calendar"></div>
+        </div>
+        <div id="preview-container">
+            <h3 class="preview-title">Vista Previa de las Lecturas</h3>
+            <div id="preview-content">Selecciona un día para ver las lecturas.</div>
+        </div>
+    </div>
+
+    <script src="/scripts/calendar.js"></script> <!-- Lógica del calendario -->
+</body>
+</html>

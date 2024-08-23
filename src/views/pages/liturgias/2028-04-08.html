@@ -1,0 +1,143 @@
+
+                    <!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Sábado 08 de Abril de 2028 - Liturgia del día</title>
+                        <meta name="description" content="Lecturas para la liturgia del Sábado 5ª semana de Cuaresma">
+                        <meta name="keywords" content="Liturgia, Lecturas, Sábado 08 de Abril de 2028, Sábado 5ª semana de Cuaresma">
+                        <meta name="author" content="Liturgia Viva">
+
+                        <!-- Open Graph / Facebook -->
+                        <meta property="og:type" content="article">
+                        <meta property="og:title" content="Sábado 08 de Abril de 2028 - Liturgia del día">
+                        <meta property="og:description" content="Lecturas para la liturgia del Sábado 5ª semana de Cuaresma">
+                        <meta property="og:image" content="https://www.liturgiaviva.org/images/liturgia-Sat Apr 08 2028 00:00:00 GMT+0200 (hora de verano de Europa central).jpg">
+                        <meta property="og:url" content="https://www.liturgiaviva.org/liturgias/2028-04-08.html">
+
+                        <!-- Twitter -->
+                        <meta name="twitter:card" content="summary_large_image">
+                        <meta name="twitter:title" content="Sábado 08 de Abril de 2028 - Liturgia del día">
+                        <meta name="twitter:description" content="Lecturas para la liturgia del Sábado 5ª semana de Cuaresma">
+                        <meta name="twitter:image" content="https://www.liturgiaviva.org/images/liturgia-Sat Apr 08 2028 00:00:00 GMT+0200 (hora de verano de Europa central).jpg">
+
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                        <link rel="stylesheet" href="/styles/liturgia.css">
+                        <link rel="stylesheet" href="/styles/common.css">
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                    </head>
+                <body><!-- Header Común --><div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div><h1 id="fecha-fechaLiturgica" class="container">Lecturas del <span id="nombre-fecha">Sábado 08 de Abril de 2028</span><br><span id="nombre-fecha-liturgica">Sábado 5ª semana de Cuaresma</span></h1><div id="liturgia-etiquetas" style="display: none;" data-etiquetas="{Redención,Unidad,Gozo,Paz,Salvación}"></div><ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Lecturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Canciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Textos de apoyo</a>
+                </li>
+            </ul>
+    <div id="liturgy-container" class="container"><div class="reading-container container"><h2 id="reading-indicator_1" class="reading-indicator">Primera lectura</h2><div class="reading-1 option-1"><i class="reading-reference">Ezequiel 37,21-28</i><p>Así dice el Señor: "Yo voy a recoger a los israelitas por las naciones adonde marcharon, voy a congregarlos de todas partes y los voy a repatriar. Los haré un solo pueblo en su país, en los montes de Israel, y un solo rey reinará sobre todos ellos. No volverán a ser dos naciones ni a desmembrarse en dos monarquías. No volverán a contaminarse con sus ídolos y fetiches y con todos sus crímenes. Los libraré de sus pecados y prevaricaciones, los purificaré: ellos serán mi pueblo y yo seré su Dios. Mi siervo David será su rey, el único pastor de todos ellos. Caminarán según mis mandatos y cumplirán mis preceptos, poniéndolos por obra. Habitarán en la tierra que le di a mi siervo Jacob, en la que habitaron vuestros padres; allí vivirán para siempre, ellos y sus hijos y sus nietos; y mi siervo David será su príncipe para siempre. Haré con ellos una alianza de paz, alianza eterna pactaré con ellos. Los estableceré, los multiplicaré y pondré entre ellos mi santuario para siempre; tendré mi morada junto a ellos, yo seré su Dios, y ellos serán mi pueblo. Y sabrán las naciones que yo soy el Señor que consagra a Israel, cuando esté entre ellos mi santuario para siempre."</p></div></div><div class="reading-container container"><h2 id="reading-indicator_2" class="reading-indicator">Interleccional</h2><div class="reading-2 option-1"><i class="reading-reference">Interleccional: Jeremías 31</i><p>Escuchad, pueblos, la palabra del Señor,  anunciadla en las islas remotas:  "El que dispersó a Israel lo reunirá,  lo guardará como un pastor a su rebaño."</p><p class="r">R.</p><p>Porque el Señor redimió a Jacob,  lo rescató de una mano más fuerte.  Vendrán con aclamaciones a la altura de Sión,  afluirán hacia los bienes del Señor.</p><p class="r">R.</p><p>Entonces se alegrará la doncella en la danza,  gozarán los jóvenes y los viejos;  convertiré su tristeza en gozo,  los alegraré y aliviaré sus penas.</p><p class="r">R.</p><p></p></div></div><div class="reading-container container"><h2 id="reading-indicator_3" class="reading-indicator">Evangelio</h2><div class="reading-3 option-1"><i class="reading-reference">Juan 11,45-57</i><p>En aquel tiempo, muchos judíos que habían venido a casa de María, al ver lo que había hecho Jesús, creyeron en él. Pero algunos acudieron a los fariseos y les contaron lo que había hecho Jesús. Los sumos sacerdotes y los fariseos convocaron el Sanedrín y dijeron: "¿Qué hacemos? Este hombre hace muchos signos. Si lo dejamos seguir, todos creerán en él, y vendrán los romanos y nos destruirán el lugar santo y la nación." Uno de ellos, Caifás, que era sumo sacerdote aquel año, les dijo: "Vosotros no entendéis ni palabra; no comprendéis que os conviene que uno muera por el pueblo, y que no perezca la nación entera." Esto no lo dijo por propio impulso, sino que, por ser sumo sacerdote aquel año, habló proféticamente, anunciando que Jesús iba a morir por la nación; y no sólo por la nación, sino también para reunir a los hijos de Dios dispersos. Y aquel día decidieron darle muerte. Por eso Jesús ya no andaba públicamente con los judíos, sino que se retiró a la región vecina al desierto, a una ciudad llamada Efraín, y pasaba allí el tiempo con los discípulos. Se acercaba la Pascua de los judíos, y muchos de aquella región subían a Jerusalén, antes de la Pascua, para purificarse. Buscaban a Jesús y, estando en el templo, se preguntaban: "¿Qué os parece? ¿No vendrá a la fiesta?" Los sumos sacerdotes y fariseos habían mandado que el que se enterase de dónde estaba les avisara para prenderlo.</p></div></div></div><div id="songs-container" class="songs-container container"><div class="song-section">
+                    <h3>Entrada</h3>
+                    <ul id="songs-entrada"></ul>
+                 </div><div class="song-section">
+                    <h3>Gloria</h3>
+                    <ul id="songs-gloria"></ul>
+                 </div><div class="song-section">
+                    <h3>Antífona</h3>
+                    <ul id="songs-antifona"></ul>
+                 </div><div class="song-section">
+                    <h3>Aleluya</h3>
+                    <ul id="songs-aleluya"></ul>
+                 </div><div class="song-section">
+                    <h3>Ofertorio</h3>
+                    <ul id="songs-ofertorio"></ul>
+                 </div><div class="song-section">
+                    <h3>Santo</h3>
+                    <ul id="songs-santo"></ul>
+                 </div><div class="song-section">
+                    <h3>Paz</h3>
+                    <ul id="songs-paz"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión</h3>
+                    <ul id="songs-comunion"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión 2</h3>
+                    <ul id="songs-comunion-2"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión 3</h3>
+                    <ul id="songs-comunion-3"></ul>
+                 </div><div class="song-section">
+                    <h3>Salida</h3>
+                    <ul id="songs-salida"></ul>
+                 </div></div><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><script src="/scripts/liturgias.js"></script><script src="/scripts/common.js"></script></body></html>

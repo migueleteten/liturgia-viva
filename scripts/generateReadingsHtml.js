@@ -58,7 +58,7 @@ async function generateLiturgiasHtml() {
             fs.writeFileSync(filePath, htmlContent, 'utf8');
             generatedCount++;
 
-            if (generatedCount >= 90) { // Detener después de 20 archivos
+            if (generatedCount >= 2000) { // Detener después de 20 archivos
                 break;
             }
         }

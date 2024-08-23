@@ -1,0 +1,143 @@
+
+                    <!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Lunes 26 de Julio de 2027 - Liturgia del día</title>
+                        <meta name="description" content="Lecturas para la liturgia del Lunes 17ª semana de tiempo ordinario">
+                        <meta name="keywords" content="Liturgia, Lecturas, Lunes 26 de Julio de 2027, Lunes 17ª semana de tiempo ordinario">
+                        <meta name="author" content="Liturgia Viva">
+
+                        <!-- Open Graph / Facebook -->
+                        <meta property="og:type" content="article">
+                        <meta property="og:title" content="Lunes 26 de Julio de 2027 - Liturgia del día">
+                        <meta property="og:description" content="Lecturas para la liturgia del Lunes 17ª semana de tiempo ordinario">
+                        <meta property="og:image" content="https://www.liturgiaviva.org/images/liturgia-Mon Jul 26 2027 00:00:00 GMT+0200 (hora de verano de Europa central).jpg">
+                        <meta property="og:url" content="https://www.liturgiaviva.org/liturgias/2027-07-26.html">
+
+                        <!-- Twitter -->
+                        <meta name="twitter:card" content="summary_large_image">
+                        <meta name="twitter:title" content="Lunes 26 de Julio de 2027 - Liturgia del día">
+                        <meta name="twitter:description" content="Lecturas para la liturgia del Lunes 17ª semana de tiempo ordinario">
+                        <meta name="twitter:image" content="https://www.liturgiaviva.org/images/liturgia-Mon Jul 26 2027 00:00:00 GMT+0200 (hora de verano de Europa central).jpg">
+
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+                        <link rel="stylesheet" href="/styles/liturgia.css">
+                        <link rel="stylesheet" href="/styles/common.css">
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+                    </head>
+                <body><!-- Header Común --><div id="header-placeholder"><header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #138275;">
+        <a class="navbar-brand" href="/">
+            <img class="logo-completo-fondo-oscuro-H" src="/images/logo-completo-fondo-oscuro_H.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#ffffff; transform: translateY(5px);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Buscador de recursos -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" action="/recursos-liturgicos/buscador" method="GET">
+                        <input id="buscador-menu" class="form-control mr-sm-2" type="search" placeholder="Busca lecturas, canciones, textos de apoyo..." name="busqueda" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+
+                <!-- Recursos litúrgicos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recursos litúrgicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <a class="dropdown-item" href="/recursos-liturgicos/lecturas">Lecturas</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/canciones">Canciones</a>
+                        <a class="dropdown-item" href="/recrusos-liturgicos/textos-de-apoyo">Textos de apoyo</a>
+                        <a class="dropdown-item" href="/recursos-liturgicos/imagenes">Imágenes</a>
+                    </div>
+                </li>
+
+                <!-- Biblia -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="bibliaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Biblia
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="bibliaDropdown">
+                        <a class="dropdown-item" href="/biblia/1/1">Antiguo Testamento</a>
+                        <a class="dropdown-item" href="/biblia/48/1">Nuevo Testamento</a>
+                    </div>
+                </li>
+
+                <!-- Lecturas del día -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="lecturasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lecturas del día
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="lecturasDropdown">
+                        <a class="dropdown-item" href="/">Lecturas de hoy</a>
+                        <a class="dropdown-item" href="/lecturas-del-domingo">Lecturas del domingo</a>
+                        <a class="dropdown-item" href="/calendario">Calendario</a>
+                    </div>
+                </li>
+
+                <!-- Ir a misa -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ir-a-misa">Ir a misa</a>
+                </li>
+
+                <!-- Login o Mi Cuenta -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="login-button" href="/login">Login</a> <!-- O "Mi cuenta" según el estado de autenticación -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header></div><h1 id="fecha-fechaLiturgica" class="container">Lecturas del <span id="nombre-fecha">Lunes 26 de Julio de 2027</span><br><span id="nombre-fecha-liturgica">Lunes 17ª semana de tiempo ordinario</span></h1><div id="liturgia-etiquetas" style="display: none;" data-etiquetas="{Expiación,Adoración,Conversión,Intercesión,Redención}"></div><ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Lecturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Canciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Textos de apoyo</a>
+                </li>
+            </ul>
+    <div id="liturgy-container" class="container"><div class="reading-container container"><h2 id="reading-indicator_1" class="reading-indicator">Primera lectura</h2><div class="reading-1 option-1"><i class="reading-reference">Éxodo 32,15-24.30-34</i><p>En aquellos días, Moisés se volvió y bajó del monte con las dos tablas de la alianza en la mano. Las tablas estaban escritas por ambos lados; eran hechura de Dios, y la escritura era escritura de Dios, grabada en las tablas. Al oír Josué el griterío del pueblo, dijo a Moisés: "Se oyen gritos de guerra en el campamento." Contestó él: "No es grito de victoria, no es grito de derrota, que son cantos lo que oigo." Al acercarse al campamento y ver el becerro y las danzas, Moisés, enfurecido, tiró las tablas y las rompió al pie del monte. Después agarró el becerro que habían hecho, lo quemó y lo trituró hasta hacerlo polvo, que echó en agua, haciéndoselo beber a los israelitas. Moisés dijo a Aarón: "¿Qué te ha hecho este pueblo, para que nos acarreases tan enorme pecado?" Contestó Aarón: "No se irrite mi señor. Sabes que este pueblo es perverso. Me dijeron: "Haznos un Dios que vaya delante de nosotros, pues a ese Moisés que nos sacó de Egipto no sabemos qué le ha pasado." Yo les dije: "Quien tenga oro que se desprenda de él y me lo dé"; yo lo eché al fuego, y salió este becerro." Al día siguiente, Moisés dijo al pueblo: "Habéis cometido un pecado gravísimo; pero ahora subiré al Señor a expiar vuestro pecado." Volvió, pues, Moisés al Señor y le dijo: "Este pueblo ha cometido un pecado gravísimo, haciéndose dioses de oro. Pero ahora, o perdonas su pecado o me borras del libro de tu registro." El Señor respondió: "Al que haya pecado contra mí lo borraré del libro. Ahora ve y guía a tu pueblo al sitio que te dije; mi ángel irá delante de ti; y cuando llegue el día de la cuenta, les pediré cuentas de su pecado."</p></div></div><div class="reading-container container"><h2 id="reading-indicator_2" class="reading-indicator">Salmo responsorial</h2><div class="reading-2 option-1"><i class="reading-reference">Salmo responsorial: 105</i><h3 class="salmo-respuesta">Dad gracias al Señor  porque es bueno.</h3><p>En Horeb se hicieron un becerro,  adoraron un ídolo de fundición;  cambiaron su gloria por la imagen  de un toro que come hierba.</p><p class="r">R.</p><p>Se olvidaron de Dios, su salvador,  que había hecho prodigios en Egipto,  maravillas en el país de Cam,  portentos junto al mar Rojo.</p><p class="r">R.</p><p>Dios hablaba ya de aniquilarlos;  pero Moisés, su elegido,  se puso en la brecha frente a él,  para apartar su cólera del exterminio.</p><p class="r">R.</p><p></p></div></div><div class="reading-container container"><h2 id="reading-indicator_3" class="reading-indicator">Evangelio</h2><div class="reading-3 option-1"><i class="reading-reference">Mateo 13,31-35</i><p>En aquel tiempo, Jesús propuso esta otra parábola a la gente: "El reino de los cielos se parece a un grano de mostaza que uno siembra en su huerta; aunque es la más pequeña de las semillas, cuando crece es más alta que las hortalizas; se hace un arbusto más alto que las hortalizas, y vienen los pájaros a anidar en sus ramas." Les dijo otra parábola: "El reino de los cielos se parece a la levadura; una mujer la amasa con tres medidas de harina, y basta para que todo fermente." Jesús expuso todo esto a la gente en parábolas y sin parábolas no les exponía nada. Así se cumplió el oráculo del profeta: "Abriré mi boca diciendo parábolas, anunciaré lo secreto desde la fundación del mundo."</p></div></div></div><div id="songs-container" class="songs-container container"><div class="song-section">
+                    <h3>Entrada</h3>
+                    <ul id="songs-entrada"></ul>
+                 </div><div class="song-section">
+                    <h3>Gloria</h3>
+                    <ul id="songs-gloria"></ul>
+                 </div><div class="song-section">
+                    <h3>Antífona</h3>
+                    <ul id="songs-antifona"></ul>
+                 </div><div class="song-section">
+                    <h3>Aleluya</h3>
+                    <ul id="songs-aleluya"></ul>
+                 </div><div class="song-section">
+                    <h3>Ofertorio</h3>
+                    <ul id="songs-ofertorio"></ul>
+                 </div><div class="song-section">
+                    <h3>Santo</h3>
+                    <ul id="songs-santo"></ul>
+                 </div><div class="song-section">
+                    <h3>Paz</h3>
+                    <ul id="songs-paz"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión</h3>
+                    <ul id="songs-comunion"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión 2</h3>
+                    <ul id="songs-comunion-2"></ul>
+                 </div><div class="song-section">
+                    <h3>Comunión 3</h3>
+                    <ul id="songs-comunion-3"></ul>
+                 </div><div class="song-section">
+                    <h3>Salida</h3>
+                    <ul id="songs-salida"></ul>
+                 </div></div><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><script src="/scripts/liturgias.js"></script><script src="/scripts/common.js"></script></body></html>

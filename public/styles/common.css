@@ -9,6 +9,21 @@ main {
   height: 40px;
 }
 
+/* Estilos generales */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa; /* Color de fondo claro y limpio */
+  color: #333; /* Color de texto para un buen contraste */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif; /* Una fuente elegante para los títulos */
+  color: #138275; /* Color verde elegante */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 #header-placeholder {
   position: sticky;
   color: white;
@@ -19,6 +34,44 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0;
   margin: 0;
+}
+
+/* Estilos para la navegación entre secciones de Lecturas, Canciones y Textos de Apoyo */
+.nav-tabs {
+  border-bottom: 2px solid #138275; /* Color de borde inferior */
+  margin-bottom: 20px; /* Espacio debajo de las pestañas */
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px; /* Ajustar el espacio entre las pestañas y el contenido */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  color: #138275; /* Color del texto */
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f0f0f0;
+  border-color: #138275 #138275 #fff; /* Border color with active effect */
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #138275;
+  border-color: #138275 #138275 #fff;
+  cursor: default; /* Cursor cambia a no pointer en la pestaña activa */
 }
 
 /* General */

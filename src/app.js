@@ -46,6 +46,26 @@ app.get('/', (req, res) => {
   });
 });
 
+// Middleware para manejar la página de lecturas del domingo y servir el HTML correspondiente
+app.get('/lecturas-del-domingo', (req, res) => {
+  const today = new Date();
+  const todayWeekDay = today.getDay(); // 0 para domingo, 1 para lunes, ..., 6 para sábado
+
+  // Si hoy no es domingo, calcular el próximo domingo
+  const sunday = new Date(today);
+  sunday.setDate(today.getDate() + (7 - todayWeekDay) % 7);
+
+  const formattedDate = sunday.toISOString().split('T')[0]; // Formato 'YYYY-MM-DD'
+  const filePath = path.join(__dirname, 'views', 'pages', 'liturgias', `${formattedDate}.html`);
+
+  res.sendFile(filePath, err => {
+      if (err) {
+          console.error('Error al servir el archivo:', err);
+          res.status(404).send('Liturgia no encontrada para el domingo.');
+      }
+  });
+});
+
 // Rutas para servir páginas específicas
 app.get('/create-song', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'createSong.html'));
@@ -57,6 +77,10 @@ app.get('/login', (req, res) => {
 
 app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'register.html'));
+});
+
+app.get('/calendario', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'pages', 'calendario.html'));
 });
 
 // Middleware para manejar errores

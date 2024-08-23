@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Obtener etiquetas de la liturgia desde un atributo de la página
-  const liturgiaEtiquetas = $('#liturgia-etiquetas').data('etiquetas').split(', ');
+  const liturgiaEtiquetas = $('#liturgia-etiquetas').data('etiquetas').replace(/[{}]/g, '').split(', ');
   console.log(liturgiaEtiquetas);
 
   // Secciones de la misa
@@ -21,7 +21,6 @@ $(document).ready(function() {
           success: function(data) {
             console.log(`Canciones para ${seccion}:`, data);  // Verifica la respuesta
             const $ul = $(`#songs-${seccion}`);
-            console.log('Sección UL:', $ul);  // Verifica el elemento UL  
             if (data && data.length) {
                 data.forEach(cancion => {
                     $ul.append(`<li>${cancion.titulo}</li>`);
