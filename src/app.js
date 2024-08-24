@@ -13,6 +13,7 @@ const songRoutes = require('./routes/songRoutes');
 const songLiturgyRoutes = require('./routes/songLiturgyRoutes');
 const authorRoutes = require('./routes/authorRoutes');
 const bibleCommentsRoutes = require('./routes/bibleCommentsRoutes');
+const liturgiasRoutes = require('./routes/liturgiaRoutes');
 
 // Middleware para parsear JSON
 app.use(express.json());
@@ -24,6 +25,7 @@ app.use('/api/songs', songRoutes);
 app.use('/api/songsLiturgy', songLiturgyRoutes);
 app.use('/api/authors', authorRoutes);
 app.use('/api/biblia', bibleCommentsRoutes); // Rutas para comentarios de la Biblia
+app.use('/api/liturgia', liturgiasRoutes); // Rutas para calendarios
 
 // Servir archivos estáticos
 app.use(express.static(path.join(__dirname, '../public'))); // Archivos estáticos desde la carpeta public

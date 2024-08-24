@@ -1,3 +1,5 @@
+const db = require('../config/dbConfig');
+
 const getLiturgiasForDate = async (req, res) => {
   const { date } = req.params;
   try {
@@ -12,3 +14,5 @@ const getLiturgiasForDate = async (req, res) => {
       res.status(500).send('Error al obtener las lecturas.');
   }
 };
+
+module.exports = { getLiturgiasForDate };

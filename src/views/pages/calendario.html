@@ -1,22 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario Litúrgico</title>
+    <title>Calendario Litúrgico - Selecciona una fecha</title>
+    <meta name="description" content="Accede a las lecturas y canciones litúrgicas de cualquier día del año a través de nuestro calendario litúrgico interactivo.">
+    <meta name="keywords" content="Liturgia, Calendario Litúrgico, Lecturas, Misas, Fechas Litúrgicas, Liturgia Viva">
+    <meta name="author" content="Liturgia Viva">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calendario Litúrgico - Selecciona una fecha">
+    <meta property="og:description" content="Explora las lecturas y canciones litúrgicas de cualquier día con nuestro calendario litúrgico.">
+    <meta property="og:image" content="https://www.liturgiaviva.org/images/default-calendar-image.jpg">
+    <meta property="og:url" content="https://www.liturgiaviva.org/calendario.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calendario Litúrgico - Selecciona una fecha">
+    <meta name="twitter:description" content="Accede a las lecturas y canciones litúrgicas de cualquier día del año con nuestro calendario litúrgico.">
+    <meta name="twitter:image" content="https://www.liturgiaviva.org/images/default-calendar-image.jpg">
+
+    <!-- CSS y Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/liturgias.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/liturgia.css">
     <link rel="stylesheet" href="/styles/calendario.css"> <!-- Estilos del calendario -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <!-- Header común -->
     <div id="header-placeholder">${headerTemplate}</div>
 
-    <div class="container">
+    <div id="title" class="d-flex justify-content-center">
+        <h1>Calendario litúrgico</h1>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
         <div class="calendar-container">
+            <!-- Header del calendario -->
+            <div id="calendar-header" class="d-flex justify-content-between align-items-center">
+                <div class="col-md-3">
+                    <button id="today-button" class="calendar-nav-button">Hoy</button>
+                </div>
+                <div class="col-md-2">
+                    <button id="prev-month-button" class="calendar-nav-button">&#8249;</button>
+                </div>                
+                <div class="col-md-5">
+                    <span id="current-month" class="calendar-month">Agosto 2024</span>
+                </div>                
+                <div class="col-md-2">
+                    <button id="next-month-button" class="calendar-nav-button">&#8250;</button>
+                </div>                
+            </div>
+            <!-- Formulario para seleccionar fecha -->
+            <div id="date-form">
+                <div id="date-selector" class="form-row align-items-center">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="day">Día:</label>
+                            <input type="number" id="day" name="day" min="1" max="31" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="month">Mes:</label>
+                            <input type="number" id="month" name="month" min="1" max="12" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="year">Año:</label>
+                            <input type="number" id="year" name="year" min="2024" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" id="submit-button" class="btn btn-success">Ir</button>
+                    <button type="button" id="cancel-button">Cancelar</button>
+                </div>
+            </div>
+            <!-- Calendario -->
             <div id="calendar"></div>
         </div>
+    </div>
+    <div class="d-flex justify-content-center">
         <div id="preview-container">
             <h3 class="preview-title">Vista Previa de las Lecturas</h3>
             <div id="preview-content">Selecciona un día para ver las lecturas.</div>
@@ -24,5 +95,9 @@
     </div>
 
     <script src="/scripts/calendar.js"></script> <!-- Lógica del calendario -->
+    <script src="/scripts/common.js"></script> <!-- Lógica del calendario -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 </body>
+
 </html>
