@@ -176,3 +176,58 @@
 .hidden {
   display: none;
 }
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .calendar-container,
+  #preview-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #calendar {
+    gap: 5px;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  #calendar .day {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  #calendar-header {
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .calendar-nav-button {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .calendar-month {
+    margin-top: 5px;
+  }
+
+  #date-form {
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 480px) {
+  #calendar .day {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+
+  #calendar-header {
+    font-size: 0.9rem;
+  }
+
+  .calendar-nav-button {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}
