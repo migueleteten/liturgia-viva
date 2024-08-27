@@ -23,12 +23,20 @@ const getSongsBySectionAndTags = async (req, res) => {
         }
   
         const query = `
-            SELECT * FROM canciones 
+          WITH matched_tags AS (
+            SELECT id
+            FROM canciones, unnest(etiquetas::text[]) AS e(tag)
             WHERE ${seccion}
-            AND etiquetas && $1::text[]
-            ORDER BY titulo
+            AND e.tag = ANY($1::text[])
+            GROUP BY id
+            HAVING COUNT(*) >= 2
+          )
+          SELECT *
+          FROM canciones
+          WHERE id IN (SELECT id FROM matched_tags)
+          ORDER BY titulo;
         `;
-
+        
         // Convertir el array en una cadena PostgreSQL-formateada
         const params = [etiquetasArray];
         console.log('Query:', query);
