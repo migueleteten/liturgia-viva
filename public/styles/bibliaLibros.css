@@ -1,3 +1,17 @@
+.testament-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #138275; /* Verde, el color de la marca */
+  text-decoration: none;
+  text-align: center;
+}
+
+.testament-link:hover {
+  text-decoration: underline;
+  color: #0c564c; /* Un verde más oscuro en el hover */
+}
+
 .search-bar {
   text-align: center;
   margin-bottom: 20px;
@@ -58,8 +72,10 @@
 
 /* Colores personalizados para los tipos de libro */
 .book-card[data-type="1"] { border-color: #138275; }
+.book-card[data-type="6"] { border-color: #138275; }
 .book-card[data-type="2"] { border-color: #8e44ad; }
 .book-card[data-type="3"] { border-color: #2980b9; }
+.book-card[data-type="5"] { border-color: #e67e22; }
 .book-card[data-type="4"] { border-color: #e67e22; }
 
 /* Responsivo */

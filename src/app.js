@@ -33,6 +33,7 @@ app.use('/templates', express.static(path.join(__dirname, 'views/templates'))); 
 app.use('/views', express.static(path.join(__dirname, 'views'))); // Archivos estáticos desde src/views
 app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/biblia/capitulos'))); // Archivos HTML generados
 app.use('/biblia/antiguo-testamento', express.static(path.join(__dirname, 'views/pages/antiguo-testamento.html')));
+app.use('/biblia/nuevo-testamento', express.static(path.join(__dirname, 'views/pages/nuevo-testamento.html')));
 app.use('/liturgias', express.static(path.join(__dirname, 'views/pages/liturgias'))); // Archivos HTML generados
 
 // Middleware para manejar la página de inicio y servir el HTML correspondiente a la fecha de hoy

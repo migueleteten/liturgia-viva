@@ -29,11 +29,12 @@
 
 #chapter-header .switch {
   margin-right: 40px;
+  margin-top: 20px;
 }
 
 #chapter-text {
-  margin-top: 130px;
-  margin-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 40px;
   padding: 20px;
   background: #ffffff;
   border-radius: 10px;
@@ -88,7 +89,7 @@
 /* Estilos para el panel de comentarios */
 .comment-panel {
   right: 0;
-  top: 60px;
+  top: 65px;
   width: 400px;
   background-color: #f8f9fa;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
