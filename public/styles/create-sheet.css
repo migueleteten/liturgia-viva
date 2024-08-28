@@ -1,0 +1,123 @@
+/* crearHoja.css */
+
+.editor-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar, .options-bar {
+  width: 20%;
+  padding: 20px;
+  background-color: #138275;
+  color: white;
+}
+
+.sidebar h3, .options-bar h3 {
+  margin-top: 0;
+}
+
+.content-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-list li {
+  background-color: #0c564c;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: grab;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.content-list li:hover {
+  background-color: #0f685f;
+}
+
+.canvas-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.canvas {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1.414 / 1; /* Mantener la proporción de A4 */
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  border: 1px solid #000;
+}
+
+.half-page {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.half-page.left {
+  background-color: #f1f1f1;
+}
+
+.half-page.right {
+  background-color: #f7f7f7;
+}
+
+.divider {
+  width: 2px;
+  background-color: #138275;
+}
+
+.column {
+  flex: 0 0 48%;
+  margin: 1%;
+  padding: 10px;
+  border: 2px dashed #0c564c;
+  background-color: white;
+  overflow: auto;
+  min-height: 200px;  /* Asegura que tengan una altura mínima */
+  cursor: pointer;
+}
+
+.column p {
+  text-align: justify;
+}
+
+/* Adaptabilidad para diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+  .canvas-container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .canvas-container {
+      display: none; /* Ocultar el canvas en pantallas muy pequeñas */
+  }
+}
+
+.template-option {
+  background-color: #0c564c;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.template-option:hover {
+  background-color: #0f685f;
+}
+
+#paper-size {
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}

@@ -71,6 +71,7 @@
 #toggleVersiculos {
   margin-left: 10px;
   display: inline;
+  margin-right: 5px;
 }
 
 #content-comments-container {
@@ -237,7 +238,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #chapter-content {
     justify-content: flex-start; /* En pantallas pequeñas, alinear al inicio */
   }
@@ -256,6 +257,14 @@
     transform: translateY(3.5px);
   }
 
+  .switch {
+    margin-right: 5px;
+    margin-top: 20px;
+    font-size: x-small;
+    text-wrap: nowrap;
+    align-self: center;
+  }
+
   input#buscador-menu {
     width: 250px !important;
     margin-right: 10px;
@@ -263,7 +272,9 @@
   }
   
   #chapter-text {
-    padding-top: 40px;
+    padding-top: 20px;
+    margin-top: 90px;
+    margin-bottom: 100px;
   }
 
   .comment-panel {
@@ -293,14 +304,43 @@
     opacity: 1; /* Aplicar opacidad completa */
   }
 
-  .switch label {
-    transform: translateY(7px);
+  #chapter-header .switch label {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #chapter-header .switch {
+    overflow: visible;
+    align-items: flex-start;
+    margin-right: 0;
+    padding-right: 5px;
   }
 
   #selected-verses {
     max-height: 300px;
   }
 
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #chapter-header h1 {
+    margin-left: 30px;
+    font-size: 2rem;
+    margin-top: 25px;
+  }
+
+  #chapter-text {
+    margin-top: 130px;
+    margin-bottom: 70px;
+  }
+
+  /* Clase adicional para cuando el panel de comentarios está activo */
+  #content-comments-container.comment-panel-active #chapter-content {
+    margin-right: 200px; /* El margen debe ser igual al ancho del panel de comentarios */
+    margin-left: 50px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

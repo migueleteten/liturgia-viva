@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Hoja Litúrgica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/create-sheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="editor-container">
+      <!-- Margen izquierdo: listado de contenidos -->
+      <div class="sidebar">
+          <h3>Contenidos</h3>
+          <ul class="content-list">
+              <li class="draggable-content" draggable="true" data-content-id="1" data-example="En aquel tiempo, Jesús dijo a sus discípulos: 'Lorem ipsum dolor sit amet asdf lfkjflkfj d  a e fefe fef ef e als lslf ls f salg.">Lectura del Evangelio</li>
+              <li class="draggable-content" draggable="true" data-content-id="2" data-example="En aquel tiempo, Jesús dijo a sus discípulos: 'Lorem ipsum dolor sit amet asdf lfkjflkfj d  a e fefe fef ef e als lslf ls f salg.">Salmo Responsorial</li>
+              <li class="draggable-content" draggable="true" data-content-id="3" data-example="En aquel tiempo, Jesús dijo a sus discípulos: 'Lorem ipsum dolor sit amet asdf lfkjflkfj d  a e fefe fef ef e als lslf ls f salg.">Oración de los Fieles</li>
+              <li class="draggable-content" draggable="true" data-content-id="4" data-example="En aquel tiempo, Jesús dijo a sus discípulos: 'Lorem ipsum dolor sit amet asdf lfkjflkfj d  a e fefe fef ef e als lslf ls f salg.">Himno</li>
+              <li class="draggable-content" draggable="true" data-content-id="5" data-example="En aquel tiempo, Jesús dijo a sus discípulos: 'Lorem ipsum dolor sit amet asdf lfkjflkfj d  a e fefe fef ef e als lslf ls f salg.">Texto de Apoyo</li>
+          </ul>
+      </div>
+
+      <!-- Canvas central con plantilla 1 -->
+      <div class="canvas-container">
+          <div id="canvas" class="canvas">
+              <!-- Plantilla 1: A4 horizontal dividido en dos mitades -->
+              <div class="half-page left">
+                  <div class="column"></div>
+                  <div class="column"></div>
+              </div>
+              <div class="divider"></div>
+              <div class="half-page right">
+                  <div class="column"></div>
+                  <div class="column"></div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Margen derecho: plantillas y configuraciones -->
+      <div class="options-bar">
+          <h3>Plantillas</h3>
+          <div class="templates">
+              <div class="template-option">Plantilla 1</div>
+              <div class="template-option">Plantilla 2</div>
+              <div class="template-option">Plantilla 3</div>
+              <div class="template-option">Plantilla 4</div>
+          </div>
+          <h3>Tamaño de Papel</h3>
+          <select id="paper-size">
+              <option value="A4" selected>A4</option>
+              <option value="A3">A3</option>
+              <option value="A5">A5</option>
+          </select>
+      </div>
+  </div>
+
+    <script src="/scripts/create-sheet.js"></script>
+    <script src="/scripts/common.js"></script> <!-- Lógica del calendario -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+</body>
+</html>

@@ -35,6 +35,7 @@ app.use('/biblia/capitulos', express.static(path.join(__dirname, 'views/pages/bi
 app.use('/biblia/antiguo-testamento', express.static(path.join(__dirname, 'views/pages/antiguo-testamento.html')));
 app.use('/biblia/nuevo-testamento', express.static(path.join(__dirname, 'views/pages/nuevo-testamento.html')));
 app.use('/liturgias', express.static(path.join(__dirname, 'views/pages/liturgias'))); // Archivos HTML generados
+app.use('/', express.static(path.join(__dirname, '../'))); // Archivos HTML generados
 
 // Middleware para manejar la página de inicio y servir el HTML correspondiente a la fecha de hoy
 app.get('/', (req, res) => {
@@ -73,6 +74,11 @@ app.get('/lecturas-del-domingo', (req, res) => {
 // Rutas para servir páginas específicas
 app.get('/create-song', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'pages', 'createSong.html'));
+});
+
+// Rutas para servir páginas específicas
+app.get('/recursos-liturgicos/crear-hoja', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'pages', 'create-sheet.html'));
 });
 
 app.get('/login', (req, res) => {

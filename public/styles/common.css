@@ -119,6 +119,12 @@ input#buscador-menu {
   width: 300px;
   font-size: smaller;
   height: 35px;
+  padding-top: 11px;
+}
+
+#buscar-recursos-header {
+  padding-top: 10px;
+  height: 35px;
 }
 
 .dropdown-item {
@@ -129,13 +135,6 @@ input#buscador-menu {
   z-index: 1300;
   width: 100%;
   position: fixed;
-}
-
-@media (max-width: 768px) {
-  .form-inline .form-control {
-      width: 100%;
-      margin-bottom: 10px;
-  }
 }
 
 /* Dropdown Menus */
@@ -164,7 +163,7 @@ input#buscador-menu {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar-nav .nav-item {
       margin-bottom: 10px;
   }
@@ -175,5 +174,26 @@ input#buscador-menu {
 
   .navbar-nav .nav-item .nav-link {
     text-align: left !important;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #buscador-menu {
+    width: 200px !important;
+    margin-bottom: 0;
+  }
+
+  .nav-item {
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #buscador-menu {
+    width: 500px !important;
   }
 }
