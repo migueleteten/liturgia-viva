@@ -1,8 +1,12 @@
 /* crearHoja.css */
+body {
+  background-color: #138275;
+}
 
 .editor-container {
   display: flex;
   height: 100vh;
+  background-color: #138275;
 }
 
 .sidebar, .options-bar {
@@ -14,6 +18,7 @@
 
 .sidebar h3, .options-bar h3 {
   margin-top: 0;
+  color: white;
 }
 
 .content-list {
@@ -34,40 +39,84 @@
   background-color: #0f685f;
 }
 
-.canvas-container {
+.canvas-canvas-container {
   flex: 1;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
+  background-color: #c1d7d4;
 }
 
+#canvas-container {
+  flex: 1;
+  padding: 1% 3%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1d7d4;
+}
+
+/* Tamaño y disposición del canvas */
 .canvas {
   width: 100%;
   position: relative;
-  aspect-ratio: 1.414 / 1; /* Mantener la proporción de A4 */
-  margin: 0 auto;
+  aspect-ratio: 1 / 1.414; /* Mantener la proporción de A4 en vertical */
+  margin: 10px auto;
   background-color: #ffffff;
   display: flex;
   border: 1px solid #000;
+  font-size: 1vw; /* El font-size inicial es proporcional al ancho de la pantalla */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+/* Horizontal (cambia el aspecto para orientación horizontal) */
+.canvas.horizontal {
+  aspect-ratio: 1.414 / 1; /* Proporción de A4 en horizontal */
+  margin: 10px;
+}
+
+.canvas.vertical {
+  margin: 10px;
+}
+
+/* Estilo para 4 caras (dos secciones por canvas) */
+.canvas.double {
+  flex-direction: row;
+}
+
+.canvas.vertical #canvas-container {
+  display: flex;
+}
+
+.canvas.double .section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #ccc;
+}
+
+.left-section {
+  border-right: 1px dashed #138275; /* Línea divisoria entre las secciones */
+}
+
+.right-section {
+  border-left: 1px dashed #138275; /* Línea divisoria entre las secciones */
+}
+
 
 .half-page {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px auto;
   box-sizing: border-box;
 }
 
 .half-page.left {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 .half-page.right {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 .divider {
@@ -78,12 +127,20 @@
 .column {
   flex: 0 0 48%;
   margin: 1%;
-  padding: 10px;
-  border: 2px dashed #0c564c;
+  padding: 1%;
+  border: 1.5px dashed #0c564c;
   background-color: white;
   overflow: auto;
   min-height: 200px;  /* Asegura que tengan una altura mínima */
   cursor: pointer;
+  font-size: 1em; /* Mantiene el tamaño de fuente relativo al canvas */
+  transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Resaltar la columna durante el arrastre */
+.column.drag-over {
+  background-color: #f4f4f4; /* Color de resaltado */
+  border-color: #e67e22;
 }
 
 .column p {
@@ -112,6 +169,15 @@
   cursor: pointer;
 }
 
+.draggable-content {
+  background-color: #0c564c;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
 .template-option:hover {
   background-color: #0f685f;
 }
@@ -120,4 +186,49 @@
   margin-top: 10px;
   padding: 5px;
   width: 100%;
+}
+
+.canvas .highlight {
+  background-color: #e0f7fa;
+  border: 2px dashed #00897b;
+}
+
+.content-box {
+  padding: 10px;
+  background-color: #d0d0d0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.rectangular-text {
+  width: 100%;
+  height: 100%;
+}
+
+.l-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-text-right-down {
+  flex-direction: row;
+}
+
+.l-text-right-up {
+  flex-direction: row-reverse;
+}
+
+.l-text-left-down {
+  flex-direction: row-reverse;
+}
+
+.l-text-left-up {
+  flex-direction: row;
+}
+
+.image-container {
+  background-color: #c0c0c0;
+  text-align: center;
+  height: 100%;
 }

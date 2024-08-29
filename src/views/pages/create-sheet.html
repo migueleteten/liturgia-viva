@@ -27,36 +27,41 @@
       </div>
 
       <!-- Canvas central con plantilla 1 -->
-      <div class="canvas-container">
-          <div id="canvas" class="canvas">
-              <!-- Plantilla 1: A4 horizontal dividido en dos mitades -->
-              <div class="half-page left">
-                  <div class="column"></div>
-                  <div class="column"></div>
-              </div>
-              <div class="divider"></div>
-              <div class="half-page right">
-                  <div class="column"></div>
-                  <div class="column"></div>
-              </div>
+      <div class="canvas-canvas-container">
+          <div id="canvas-container">
           </div>
       </div>
 
       <!-- Margen derecho: plantillas y configuraciones -->
       <div class="options-bar">
-          <h3>Plantillas</h3>
-          <div class="templates">
-              <div class="template-option">Plantilla 1</div>
-              <div class="template-option">Plantilla 2</div>
-              <div class="template-option">Plantilla 3</div>
-              <div class="template-option">Plantilla 4</div>
-          </div>
-          <h3>Tamaño de Papel</h3>
-          <select id="paper-size">
-              <option value="A4" selected>A4</option>
-              <option value="A3">A3</option>
-              <option value="A5">A5</option>
-          </select>
+        <h3>Configuración de Hoja</h3>
+        <label for="paper-size">Tamaño:</label>
+        <select id="paper-size">
+        <option value="A4">A4</option>
+        <option value="A5">A5</option>
+        <option value="A3">A3</option>
+        </select>
+
+        <label for="orientation">Orientación:</label>
+        <select id="orientation">
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+        </select>
+
+        <label for="layout">Disposición:</label>
+        <select id="layout">
+        <option value="1-cara">1 Cara</option>
+        <option value="2-caras">2 Caras</option>
+        <option value="4-caras">4 Caras</option>
+        </select>
+
+        <h3>Elementos</h3>
+        <div class="draggable-content" data-content-id="rectangular-text" draggable="true">Contenedor de Texto Rectangular</div>
+        <div class="draggable-content" data-content-id="l-text-right-down" draggable="true">Contenedor de Texto L (Derecha Abajo)</div>
+        <div class="draggable-content" data-content-id="l-text-right-up" draggable="true">Contenedor de Texto L (Derecha Arriba)</div>
+        <div class="draggable-content" data-content-id="l-text-left-down" draggable="true">Contenedor de Texto L (Izquierda Abajo)</div>
+        <div class="draggable-content" data-content-id="l-text-left-up" draggable="true">Contenedor de Texto L (Izquierda Arriba)</div>
+        <div class="draggable-content" data-content-id="image" draggable="true">Contenedor de Imagen</div>
       </div>
   </div>
 
